@@ -41,15 +41,15 @@ const stages = {
     { position: 35, team: "Rosenborg BK", played: 8, won: 0, drawn: 1, lost: 7, goalsFor: 8, goalsAgainst: 21, goalDifference: "-13", points: 1 },
     { position: 36, team: "FC Luzern", played: 8, won: 0, drawn: 0, lost: 8, goalsFor: 9, goalsAgainst: 21, goalDifference: "-12", points: 0 }
   ],
-  "Playoff Round of 16": [
-    { home: "FC Barcelona", score: "2 × 2", away: "Liverpool" },
-    { home: "RB Leipzig", score: "1 × 1", away: "Atlético de Madrid" },
-    { home: "BSC Young Boys", score: "1 × 1", away: "AS Monaco" },
-    { home: "Girona FC", score: "0 × 2", away: "Milano FC" },
-    { home: "Shakhtar Donetsk", score: "0 × 1", away: "Leverkusen" },
-    { home: "Sporting CP", score: "2 × 2", away: "Celtic" },
-    { home: "PSV", score: "2 × 0", away: "VfB Stuttgart" },
-    { home: "FC Bayern München", score: "1 × 1", away: "Juventus" }
+ "Playoff Round of 16": [
+  { home: "FC Barcelona", away: "Liverpool" },
+  { home: "RB Leipzig", away: "Atlético de Madrid" },
+  { home: "BSC Young Boys", away: "AS Monaco" },
+  { home: "Girona FC", away: "Milano FC" },
+  { home: "Shakhtar Donetsk", away: "Leverkusen" },
+  { home: "Sporting CP", away: "Celtic" },
+  { home: "PSV", away: "VfB Stuttgart" },
+  { home: "FC Bayern München", away: "Juventus" }
   ],
   "Round of 16": [],
   "Quarter Finals": [],
