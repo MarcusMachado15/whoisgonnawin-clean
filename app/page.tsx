@@ -9,7 +9,7 @@ const stages = {
     { position: 3, team: "Manchester City", played: 8, won: 5, drawn: 2, lost: 1, goalsFor: 21, goalsAgainst: 10, goalDifference: "+11", points: 17 },
     { position: 4, team: "Borussia Dortmund", played: 8, won: 5, drawn: 2, lost: 1, goalsFor: 19, goalsAgainst: 11, goalDifference: "+8", points: 17 },
     { position: 5, team: "Stade Brestois 29", played: 8, won: 5, drawn: 1, lost: 2, goalsFor: 16, goalsAgainst: 11, goalDifference: "+5", points: 16 },
-    { position: 6, team: "Internazionale Milan", played: 8, won: 5, drawn: 1, lost: 2, goalsFor: 13, goalsAgainst: 9, goalDifference: "+4", points: 16 },
+    { position: 6, team: "Internazionale", played: 8, won: 5, drawn: 1, lost: 2, goalsFor: 13, goalsAgainst: 9, goalDifference: "+4", points: 16 },
     { position: 7, team: "Paris SG", played: 8, won: 4, drawn: 3, lost: 1, goalsFor: 17, goalsAgainst: 12, goalDifference: "+5", points: 15 },
     { position: 8, team: "Arsenal", played: 8, won: 4, drawn: 3, lost: 1, goalsFor: 17, goalsAgainst: 12, goalDifference: "+5", points: 15 },
     { position: 9, team: "Liverpool", played: 8, won: 4, drawn: 2, lost: 2, goalsFor: 17, goalsAgainst: 13, goalDifference: "+4", points: 14 },
@@ -54,23 +54,31 @@ export default function TournamentPage() {
   const [currentStage, setCurrentStage] = useState(0);
   const currentTeams = stages[stageNames[currentStage]];
 
-  const nextStage = () => {
-    if (currentStage < stageNames.length - 1) setCurrentStage(currentStage + 1);
-  };
-
-  const prevStage = () => {
-    if (currentStage > 0) setCurrentStage(currentStage - 1);
-  };
-
   return (
     <div>
       <h1>Champions League Standings 2025</h1>
-      <h2>{stageNames[currentStage]}</h2>
 
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px', gap: '15px' }}>
-        <button onClick={prevStage} disabled={currentStage === 0}>⬅ Prev</button>
-        <button onClick={nextStage} disabled={currentStage === stageNames.length - 1}>Next ➡</button>
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '10px' }}>
+        {stageNames.map((stage, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentStage(index)}
+            style={{
+              padding: '6px 12px',
+              backgroundColor: currentStage === index ? '#0044cc' : '#ddd',
+              color: currentStage === index ? '#fff' : '#000',
+              border: 'none',
+              borderRadius: '5px',
+              cursor: 'pointer',
+              fontWeight: currentStage === index ? 'bold' : 'normal'
+            }}
+          >
+            {stage}
+          </button>
+        ))}
       </div>
+
+      <h2>{stageNames[currentStage]}</h2>
 
       <table>
         <thead>
