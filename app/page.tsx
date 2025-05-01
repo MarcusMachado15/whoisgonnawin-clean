@@ -90,9 +90,9 @@ export default function TournamentPage() {
         <tbody>
           {currentTeams.map((team, index) => (
             <tr key={index}>
-              <td><strong>{team.points}</strong></td>
               <td>{team.position}</td>
               <td>{team.team}</td>
+              <td><strong>{team.points}</strong></td>
               <td>{team.played}</td>
               <td>{team.won}</td>
               <td>{team.drawn}</td>
