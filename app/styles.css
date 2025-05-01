@@ -1,0 +1,63 @@
+/* General styling for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  th {
+    background-color: #0044cc;
+    color: white;
+  }
+  
+  td {
+    background-color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f4f4f4;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  table td, table th {
+    border: 1px solid #ddd;
+  }
+  
+  td, th {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  td {
+    color: #555;
+  }
+  
+  img {
+    vertical-align: middle; /* Ensures the flag is aligned with the text */
+    width: 25px;  /* Adjust flag size */
+    height: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+    color: #333;
+  }
+  
