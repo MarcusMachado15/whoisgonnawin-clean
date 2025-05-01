@@ -41,7 +41,16 @@ const stages = {
     { position: 35, team: "Rosenborg BK", played: 8, won: 0, drawn: 1, lost: 7, goalsFor: 8, goalsAgainst: 21, goalDifference: "-13", points: 1 },
     { position: 36, team: "FC Luzern", played: 8, won: 0, drawn: 0, lost: 8, goalsFor: 9, goalsAgainst: 21, goalDifference: "-12", points: 0 }
   ],
-  "Playoff Round of 16": [],
+  "Playoff Round of 16": [
+    { home: "FC Barcelona", score: "2 × 2", away: "Liverpool" },
+    { home: "RB Leipzig", score: "1 × 1", away: "Atlético de Madrid" },
+    { home: "BSC Young Boys", score: "1 × 1", away: "AS Monaco" },
+    { home: "Girona FC", score: "0 × 2", away: "Milano FC" },
+    { home: "Shakhtar Donetsk", score: "0 × 1", away: "Leverkusen" },
+    { home: "Sporting CP", score: "2 × 2", away: "Celtic" },
+    { home: "PSV", score: "2 × 0", away: "VfB Stuttgart" },
+    { home: "FC Bayern München", score: "1 × 1", away: "Juventus" }
+  ],
   "Round of 16": [],
   "Quarter Finals": [],
   "Semi Final": [],
@@ -52,26 +61,17 @@ const stageNames = Object.keys(stages);
 
 export default function TournamentPage() {
   const [currentStage, setCurrentStage] = useState(0);
-  const currentTeams = stages[stageNames[currentStage]];
+  const currentData = stages[stageNames[currentStage]];
 
   return (
     <div>
       <h1>Champions League Standings 2025</h1>
-
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '10px' }}>
+      <div className="tabs">
         {stageNames.map((stage, index) => (
           <button
             key={index}
             onClick={() => setCurrentStage(index)}
-            style={{
-              padding: '6px 12px',
-              backgroundColor: currentStage === index ? '#0044cc' : '#ddd',
-              color: currentStage === index ? '#fff' : '#000',
-              border: 'none',
-              borderRadius: '5px',
-              cursor: 'pointer',
-              fontWeight: currentStage === index ? 'bold' : 'normal'
-            }}
+            className={currentStage === index ? "active" : ""}
           >
             {stage}
           </button>
@@ -80,38 +80,59 @@ export default function TournamentPage() {
 
       <h2>{stageNames[currentStage]}</h2>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Position</th>
-            <th>Team</th>
-            <th><strong>Pts</strong></th>
-            <th>Pld</th>
-            <th>W</th>
-            <th>D</th>
-            <th>L</th>
-            <th>GF</th>
-            <th>GA</th>
-            <th>GD</th>
-          </tr>
-        </thead>
-        <tbody>
-          {currentTeams.map((team, index) => (
-            <tr key={index}>
-              <td>{team.position}</td>
-              <td>{team.team}</td>
-              <td><strong>{team.points}</strong></td>
-              <td>{team.played}</td>
-              <td>{team.won}</td>
-              <td>{team.drawn}</td>
-              <td>{team.lost}</td>
-              <td>{team.goalsFor}</td>
-              <td>{team.goalsAgainst}</td>
-              <td>{team.goalDifference}</td>
+      {Array.isArray(currentData) && currentData.length > 0 && currentData[0].position !== undefined ? (
+        <table>
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Team</th>
+              <th><strong>Pts</strong></th>
+              <th>Pld</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>GF</th>
+              <th>GA</th>
+              <th>GD</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {currentData.map((team, index) => (
+              <tr key={index}>
+                <td>{team.position}</td>
+                <td>{team.team}</td>
+                <td><strong>{team.points}</strong></td>
+                <td>{team.played}</td>
+                <td>{team.won}</td>
+                <td>{team.drawn}</td>
+                <td>{team.lost}</td>
+                <td>{team.goalsFor}</td>
+                <td>{team.goalsAgainst}</td>
+                <td>{team.goalDifference}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        <table>
+          <thead>
+            <tr>
+              <th>Home</th>
+              <th>Score</th>
+              <th>Away</th>
+            </tr>
+          </thead>
+          <tbody>
+            {currentData.map((match, index) => (
+              <tr key={index}>
+                <td>{match.home}</td>
+                <td>{match.score}</td>
+                <td>{match.away}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
     </div>
   );
 }
