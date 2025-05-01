@@ -43,7 +43,7 @@ const teams = [
 export default function TournamentPage() {
   return (
     <div>
-      <h1>Champions League Standings</h1>
+      <h1>Champions League Standings 2025</h1>
 
       <a href="https://your-site-url" target="_blank">
         <button style={{ padding: '10px 20px', backgroundColor: '#0044cc', color: 'white', border: 'none', cursor: 'pointer', fontSize: '16px', borderRadius: '5px' }}>
