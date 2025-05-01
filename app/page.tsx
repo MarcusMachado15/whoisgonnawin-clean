@@ -47,37 +47,37 @@ export default function TournamentPage() {
       </div>
 
       <table>
-        <thead>
-          <tr>
-            <th>Position</th>
-            <th>Team</th>
-            <th>Pld</th>
-            <th>W</th>
-            <th>D</th>
-            <th>L</th>
-            <th>GF</th>
-            <th>GA</th>
-            <th>GD</th>
-            <th>Pts</th>
-          </tr>
-        </thead>
-        <tbody>
-          {currentTeams.map((team, index) => (
-            <tr key={index}>
-              <td>{team.position}</td>
-              <td>{team.team}</td>
-              <td>{team.played}</td>
-              <td>{team.won}</td>
-              <td>{team.drawn}</td>
-              <td>{team.lost}</td>
-              <td>{team.goalsFor}</td>
-              <td>{team.goalsAgainst}</td>
-              <td>{team.goalDifference}</td>
-              <td>{team.points}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+  <thead>
+    <tr>
+      <th><strong>Pts</strong></th>
+      <th>Position</th>
+      <th>Team</th>
+      <th>Pld</th>
+      <th>W</th>
+      <th>D</th>
+      <th>L</th>
+      <th>GF</th>
+      <th>GA</th>
+      <th>GD</th>
+    </tr>
+  </thead>
+  <tbody>
+    {currentTeams.map((team, index) => (
+      <tr key={index}>
+        <td><strong>{team.points}</strong></td>
+        <td>{team.position}</td>
+        <td>{team.team}</td>
+        <td>{team.played}</td>
+        <td>{team.won}</td>
+        <td>{team.drawn}</td>
+        <td>{team.lost}</td>
+        <td>{team.goalsFor}</td>
+        <td>{team.goalsAgainst}</td>
+        <td>{team.goalDifference}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
     </div>
   );
 }
