@@ -45,7 +45,7 @@ const stages = {
   { home: "FC Barcelona", away: "Liverpool" },
   { home: "RB Leipzig", away: "Atlético de Madrid" },
   { home: "BSC Young Boys", away: "AS Monaco" },
-  { home: "Girona FC", away: "Milano FC" },
+  { home: "Girona FC", away: "Ac Milan" },
   { home: "Shakhtar Donetsk", away: "Leverkusen" },
   { home: "Sporting CP", away: "Celtic" },
   { home: "PSV", away: "VfB Stuttgart" },
