@@ -75,9 +75,9 @@ export default function TournamentPage() {
       <table>
         <thead>
           <tr>
-            <th><strong>Pts</strong></th>
             <th>Position</th>
             <th>Team</th>
+            <th><strong>Pts</strong></th>
             <th>Pld</th>
             <th>W</th>
             <th>D</th>
