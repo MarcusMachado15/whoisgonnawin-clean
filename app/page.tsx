@@ -109,7 +109,7 @@ export default function TournamentPage() {
         <table>
           <thead>
             <tr>
-              <th>Position</th>
+              <th style={{ width: '60px' }}>Position</th>
               <th>Team</th>
               <th><strong>Pts</strong></th>
               <th>Pld</th>
@@ -123,10 +123,17 @@ export default function TournamentPage() {
           </thead>
           <tbody>
             {currentData.map((team, index) => (
-              <tr key={index}>
+              <tr
+                key={index}
+                style={{
+                  color: team.position <= 8 ? 'green' : team.position <= 24 ? 'deepskyblue' : '#555',
+                  backgroundColor: '#f9f9f9',
+                  fontWeight: 'bold'
+                }}
+              >
                 <td>{team.position}</td>
                 <td>{team.team}</td>
-                <td><strong>{team.points}</strong></td>
+                <td style={{ backgroundColor: '#dff0d8' }}><strong>{team.points}</strong></td>
                 <td>{team.played}</td>
                 <td>{team.won}</td>
                 <td>{team.drawn}</td>
