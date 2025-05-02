@@ -60,7 +60,7 @@ const stages = {
   { home: "VfB Stuttgart", away: "Arsenal" },
   { home: "FC Barcelona", away: "SL Benfica" },
   { home: "RB Leipzig", away: "Paris SG" }
-]
+],
   "Quarter Finals": [],
   "Semi Final": [],
   "Final": []
