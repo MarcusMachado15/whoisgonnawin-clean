@@ -66,15 +66,30 @@ const stages = {
   { home: "FC Bayern München", away: "Juventus" },
   { home: "Juventus", away: "FC Bayern München" }
 ],
-  "Round of 16": [
+ "Round of 16": [
   { home: "Sporting CP", away: "Borussia Dortmund" },
+  { home: "Borussia Dortmund", away: "Sporting CP" },
+
   { home: "Leverkusen", away: "Internazionale" },
+  { home: "Internazionale", away: "Leverkusen" },
+
   { home: "Girona FC", away: "Manchester City" },
+  { home: "Manchester City", away: "Girona FC" },
+
   { home: "FC Bayern München", away: "Stade Brestois 29" },
+  { home: "Stade Brestois 29", away: "FC Bayern München" },
+
   { home: "AS Monaco", away: "Real Madrid" },
+  { home: "Real Madrid", away: "AS Monaco" },
+
   { home: "VfB Stuttgart", away: "Arsenal" },
+  { home: "Arsenal", away: "VfB Stuttgart" },
+
   { home: "FC Barcelona", away: "SL Benfica" },
-  { home: "RB Leipzig", away: "Paris SG" }
+  { home: "SL Benfica", away: "FC Barcelona" },
+
+  { home: "RB Leipzig", away: "Paris SG" },
+  { home: "Paris SG", away: "RB Leipzig" }
 ],
   "Quarter Finals": [],
   "Semi Final": [],
