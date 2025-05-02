@@ -7,9 +7,10 @@ table {
 
 th, td {
   padding: 12px 20px;
-  text-align: left;
+  text-align: center;
   border: 1px solid #ddd;
   font-size: 16px;
+  color: #555;
 }
 
 th {
@@ -35,22 +36,9 @@ caption {
   margin-bottom: 10px;
 }
 
-table td, table th {
-  border: 1px solid #ddd;
-}
-
-td, th {
-  padding: 12px;
-  text-align: center;
-}
-
-td {
-  color: #555;
-}
-
 img {
-  vertical-align: middle; /* Ensures the flag is aligned with the text */
-  width: 25px;  /* Adjust flag size */
+  vertical-align: middle;
+  width: 25px;
   height: auto;
 }
 
@@ -85,9 +73,34 @@ h1 {
   font-weight: bold;
 }
 
-/* Match divider line between home and away legs */
+/* Divider between matches (home and away legs) */
 .match-divider td {
   border-top: 3px solid #333;
   font-weight: bold;
   background-color: #eaeaea;
+}
+
+/* Make the position column narrower */
+td:first-child, th:first-child {
+  width: 60px;
+}
+
+/* Color positions 1–8 in green */
+tbody tr td:first-child {
+  font-weight: bold;
+}
+
+tbody tr:nth-child(-n+8) td:first-child {
+  color: green;
+}
+
+/* Color positions 9–24 in light blue */
+tbody tr:nth-child(n+9):nth-child(-n+24) td:first-child {
+  color: #3399ff;
+}
+
+/* Highlight points column */
+td:nth-child(3) {
+  background-color: #dff0d8;
+  font-weight: bold;
 }
