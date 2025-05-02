@@ -51,7 +51,16 @@ const stages = {
   { home: "PSV", away: "VfB Stuttgart" },
   { home: "FC Bayern München", away: "Juventus" }
   ],
-  "Round of 16": [],
+  "Round of 16": [
+  { home: "Sporting CP", away: "Borussia Dortmund" },
+  { home: "Leverkusen", away: "Lombardia FC" },
+  { home: "Girona FC", away: "Manchester City" },
+  { home: "FC Bayern München", away: "Stade Brestois 29" },
+  { home: "AS Monaco", away: "Real Madrid" },
+  { home: "VfB Stuttgart", away: "Arsenal" },
+  { home: "FC Barcelona", away: "SL Benfica" },
+  { home: "RB Leipzig", away: "Paris SG" }
+]
   "Quarter Finals": [],
   "Semi Final": [],
   "Final": []
