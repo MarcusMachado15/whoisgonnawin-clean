@@ -43,17 +43,32 @@ const stages = {
   ],
  "Playoff Round of 16": [
   { home: "FC Barcelona", away: "Liverpool" },
+  { home: "Liverpool", away: "FC Barcelona" },
+
   { home: "RB Leipzig", away: "Atlético de Madrid" },
+  { home: "Atlético de Madrid", away: "RB Leipzig" },
+
   { home: "BSC Young Boys", away: "AS Monaco" },
-  { home: "Girona FC", away: "Ac Milan" },
+  { home: "AS Monaco", away: "BSC Young Boys" },
+
+  { home: "Girona FC", away: "AC Milan" },
+  { home: "AC Milan", away: "Girona FC" },
+
   { home: "Shakhtar Donetsk", away: "Leverkusen" },
+  { home: "Leverkusen", away: "Shakhtar Donetsk" },
+
   { home: "Sporting CP", away: "Celtic" },
+  { home: "Celtic", away: "Sporting CP" },
+
   { home: "PSV", away: "VfB Stuttgart" },
-  { home: "FC Bayern München", away: "Juventus" }
-  ],
+  { home: "VfB Stuttgart", away: "PSV" },
+
+  { home: "FC Bayern München", away: "Juventus" },
+  { home: "Juventus", away: "FC Bayern München" }
+],
   "Round of 16": [
   { home: "Sporting CP", away: "Borussia Dortmund" },
-  { home: "Leverkusen", away: "Lombardia FC" },
+  { home: "Leverkusen", away: "Internazionale" },
   { home: "Girona FC", away: "Manchester City" },
   { home: "FC Bayern München", away: "Stade Brestois 29" },
   { home: "AS Monaco", away: "Real Madrid" },
