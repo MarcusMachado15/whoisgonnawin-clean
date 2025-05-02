@@ -41,56 +41,42 @@ const stages = {
     { position: 35, team: "Rosenborg BK", played: 8, won: 0, drawn: 1, lost: 7, goalsFor: 8, goalsAgainst: 21, goalDifference: "-13", points: 1 },
     { position: 36, team: "FC Luzern", played: 8, won: 0, drawn: 0, lost: 8, goalsFor: 9, goalsAgainst: 21, goalDifference: "-12", points: 0 }
   ],
- "Playoff Round of 16": [
-  { home: "FC Barcelona", away: "Liverpool" },
-  { home: "Liverpool", away: "FC Barcelona" },
-
-  { home: "RB Leipzig", away: "Atlético de Madrid" },
-  { home: "Atlético de Madrid", away: "RB Leipzig" },
-
-  { home: "BSC Young Boys", away: "AS Monaco" },
-  { home: "AS Monaco", away: "BSC Young Boys" },
-
-  { home: "Girona FC", away: "AC Milan" },
-  { home: "AC Milan", away: "Girona FC" },
-
-  { home: "Shakhtar Donetsk", away: "Leverkusen" },
-  { home: "Leverkusen", away: "Shakhtar Donetsk" },
-
-  { home: "Sporting CP", away: "Celtic" },
-  { home: "Celtic", away: "Sporting CP" },
-
-  { home: "PSV", away: "VfB Stuttgart" },
-  { home: "VfB Stuttgart", away: "PSV" },
-
-  { home: "FC Bayern München", away: "Juventus" },
-  { home: "Juventus", away: "FC Bayern München" }
-],
- "Round of 16": [
-  { home: "Sporting CP", away: "Borussia Dortmund" },
-  { home: "Borussia Dortmund", away: "Sporting CP" },
-
-  { home: "Leverkusen", away: "Internazionale" },
-  { home: "Internazionale", away: "Leverkusen" },
-
-  { home: "Girona FC", away: "Manchester City" },
-  { home: "Manchester City", away: "Girona FC" },
-
-  { home: "FC Bayern München", away: "Stade Brestois 29" },
-  { home: "Stade Brestois 29", away: "FC Bayern München" },
-
-  { home: "AS Monaco", away: "Real Madrid" },
-  { home: "Real Madrid", away: "AS Monaco" },
-
-  { home: "VfB Stuttgart", away: "Arsenal" },
-  { home: "Arsenal", away: "VfB Stuttgart" },
-
-  { home: "FC Barcelona", away: "SL Benfica" },
-  { home: "SL Benfica", away: "FC Barcelona" },
-
-  { home: "RB Leipzig", away: "Paris SG" },
-  { home: "Paris SG", away: "RB Leipzig" }
-],
+  "Playoff Round of 16": [
+    { home: "FC Barcelona", away: "Liverpool" },
+    { home: "Liverpool", away: "FC Barcelona" },
+    { home: "RB Leipzig", away: "Atlético de Madrid" },
+    { home: "Atlético de Madrid", away: "RB Leipzig" },
+    { home: "BSC Young Boys", away: "AS Monaco" },
+    { home: "AS Monaco", away: "BSC Young Boys" },
+    { home: "Girona FC", away: "AC Milan" },
+    { home: "AC Milan", away: "Girona FC" },
+    { home: "Shakhtar Donetsk", away: "Leverkusen" },
+    { home: "Leverkusen", away: "Shakhtar Donetsk" },
+    { home: "Sporting CP", away: "Celtic" },
+    { home: "Celtic", away: "Sporting CP" },
+    { home: "PSV", away: "VfB Stuttgart" },
+    { home: "VfB Stuttgart", away: "PSV" },
+    { home: "FC Bayern München", away: "Juventus" },
+    { home: "Juventus", away: "FC Bayern München" }
+  ],
+  "Round of 16": [
+    { home: "Sporting CP", away: "Borussia Dortmund" },
+    { home: "Borussia Dortmund", away: "Sporting CP" },
+    { home: "Leverkusen", away: "Internazionale" },
+    { home: "Internazionale", away: "Leverkusen" },
+    { home: "Girona FC", away: "Manchester City" },
+    { home: "Manchester City", away: "Girona FC" },
+    { home: "FC Bayern München", away: "Stade Brestois 29" },
+    { home: "Stade Brestois 29", away: "FC Bayern München" },
+    { home: "AS Monaco", away: "Real Madrid" },
+    { home: "Real Madrid", away: "AS Monaco" },
+    { home: "VfB Stuttgart", away: "Arsenal" },
+    { home: "Arsenal", away: "VfB Stuttgart" },
+    { home: "FC Barcelona", away: "SL Benfica" },
+    { home: "SL Benfica", away: "FC Barcelona" },
+    { home: "RB Leipzig", away: "Paris SG" },
+    { home: "Paris SG", away: "RB Leipzig" }
+  ],
   "Quarter Finals": [],
   "Semi Final": [],
   "Final": []
@@ -163,11 +149,18 @@ export default function TournamentPage() {
           </thead>
           <tbody>
             {currentData.map((match, index) => (
-              <tr key={index}>
-                <td>{match.home}</td>
-                <td>{match.score}</td>
-                <td>{match.away}</td>
-              </tr>
+              <>
+                <tr key={`${index}-1`}>
+                  <td>{match.home}</td>
+                  <td></td>
+                  <td>{match.away}</td>
+                </tr>
+                {index % 2 === 1 && (
+                  <tr key={`divider-${index}`} className="match-divider">
+                    <td colSpan={3}></td>
+                  </tr>
+                )}
+              </>
             ))}
           </tbody>
         </table>
