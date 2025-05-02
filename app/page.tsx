@@ -106,7 +106,7 @@ export default function TournamentPage() {
       <h2>{stageNames[currentStage]}</h2>
 
       {Array.isArray(currentData) && currentData.length > 0 && currentData[0].position !== undefined ? (
-        <table>
+  <table className="group-stage">
           <thead>
             <tr>
               <th style={{ width: '60px' }}>Position</th>
