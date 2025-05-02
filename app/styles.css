@@ -80,27 +80,27 @@ h1 {
   background-color: #eaeaea;
 }
 
-/* Make the position column narrower */
-td:first-child, th:first-child {
+/* === STYLES ONLY FOR GROUP STAGE TABLE === */
+.group-stage td:first-child,
+.group-stage th:first-child {
   width: 60px;
 }
 
 /* Color positions 1–8 in green */
-tbody tr td:first-child {
+.group-stage tbody tr td:first-child {
   font-weight: bold;
 }
-
-tbody tr:nth-child(-n+8) td:first-child {
+.group-stage tbody tr:nth-child(-n+8) td:first-child {
   color: green;
 }
 
 /* Color positions 9–24 in light blue */
-tbody tr:nth-child(n+9):nth-child(-n+24) td:first-child {
+.group-stage tbody tr:nth-child(n+9):nth-child(-n+24) td:first-child {
   color: #3399ff;
 }
 
-/* Highlight points column */
-td:nth-child(3) {
+/* Highlight points column in group stage */
+.group-stage td:nth-child(3) {
   background-color: #dff0d8;
   font-weight: bold;
 }
