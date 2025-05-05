@@ -139,21 +139,27 @@ export default function TournamentPage() {
             <tr><th>Home</th><th>Score</th><th>Away</th></tr>
           </thead>
           <tbody>
-            {currentData.map((match, index) => (
-              <React.Fragment key={index}>
-                <tr>
-                  <td>{match.home}</td>
-                  <td>{match.score || '-'}</td>
-                  <td>{match.away}</td>
-                </tr>
-                {index % 2 === 1 && (
-                  <tr className="match-divider">
-                    <td colSpan={3}><strong>Aggregate: {match.aggregate || '-'}</strong></td>
-                  </tr>
-                )}
-              </React.Fragment>
-            ))}
-          </tbody>
+  {currentData.map((match, index) => (
+    <React.Fragment key={index}>
+      <tr>
+        <td>{match.home}</td>
+        <td>{match.score || '-'}</td>
+        <td>{match.away}</td>
+      </tr>
+      {index % 2 === 1 && (
+        <>
+          <tr className="aggregate-line">
+            <td colSpan={3}><strong>Aggregate: {match.aggregate || '-'}</strong></td>
+          </tr>
+          <tr className="match-divider">
+            <td colSpan={3}></td>
+          </tr>
+        </>
+      )}
+    </React.Fragment>
+  ))}
+</tbody>
+
         </table>
       )}
     </div>
