@@ -63,10 +63,10 @@ const stages = {
 
   "Round of 16": [
     { home: "Sporting CP", away: "Borussia Dortmund" , score: "1 - 1"},
-    { home: "Borussia Dortmund", away: "Sporting CP", score: "1 - 1", aggregate: "Dortmund won 1 - 1 (5-3 pens)"},
+    { home: "Borussia Dortmund", away: "Sporting CP", score: "1 - 1", aggregate: "Dortmund won 2 - 2 (5-3 pens)"},
     { home: "Leverkusen", away: "Internazionale" , score: "0 - 0"},
-    { home: "Internazionale", away: "Leverkusen" },
-    { home: "Girona FC", away: "Manchester City" , score: "0 - 0"},
+    { home: "Internazionale", away: "Leverkusen", score: "4 - 1", aggregate: "Dortmund won 4 - 1"},
+    { home: "Girona FC", away: "Manchester City" , score: "0 - 0"
     { home: "Manchester City", away: "Girona FC" },
     { home: "FC Bayern München", away: "Stade Brestois 29" , score: "3 - 0"},
     { home: "Stade Brestois 29", away: "FC Bayern München" },
