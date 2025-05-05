@@ -125,5 +125,20 @@ h1 {
   .tabs button {
     padding: 8px 12px;
     font-size: 14px;
+    
+  }.aggregate-line td {
+    background-color: #eaeaea;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: none;
   }
+  
+  .match-divider td {
+    border-top: 4px solid #333;
+    background-color: #fff;
+    height: 8px;
+    padding: 0;
+  }
+  
 }
