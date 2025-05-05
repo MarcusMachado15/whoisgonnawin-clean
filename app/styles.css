@@ -3,6 +3,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 th, td {
@@ -10,12 +11,14 @@ th, td {
   text-align: center;
   border: 1px solid #ddd;
   font-size: 16px;
-  color: #555;
+  color: #444;
 }
 
 th {
   background-color: #0044cc;
   color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 td {
@@ -23,7 +26,7 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
 }
 
 tr:hover {
@@ -44,9 +47,9 @@ img {
 
 h1 {
   text-align: center;
-  margin-top: 20px;
-  font-size: 32px;
-  color: #333;
+  margin-top: 30px;
+  font-size: 36px;
+  color: #222;
 }
 
 /* Extra styles for tab navigation */
@@ -55,16 +58,21 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 .tabs button {
-  padding: 8px 16px;
+  padding: 10px 18px;
   border: none;
   background-color: #eee;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.tabs button:hover {
+  background-color: #ccc;
 }
 
 .tabs button.active {
@@ -86,21 +94,36 @@ h1 {
   width: 60px;
 }
 
-/* Color positions 1–8 in green */
 .group-stage tbody tr td:first-child {
   font-weight: bold;
 }
+
 .group-stage tbody tr:nth-child(-n+8) td:first-child {
   color: green;
 }
 
-/* Color positions 9–24 in light blue */
 .group-stage tbody tr:nth-child(n+9):nth-child(-n+24) td:first-child {
   color: #3399ff;
 }
 
-/* Highlight points column in group stage */
 .group-stage td:nth-child(3) {
   background-color: #dff0d8;
   font-weight: bold;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  th, td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .tabs button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
 }
