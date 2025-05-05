@@ -46,19 +46,19 @@ const stages = {
     { home: "FC Barcelona", away: "Liverpool", score: "1 - 0", aggregate: "2-0" },
     { home: "Liverpool", away: "FC Barcelona", score: "0 - 1", aggregate: "Barcelona won 0-2" },
     { home: "RB Leipzig", away: "Atlético de Madrid", score: "2 - 1", aggregate: "3-3" },
-    { home: "Atlético de Madrid", away: "RB Leipzig", score: "1 - 1", aggregate: "2-3" },
+    { home: "Atlético de Madrid", away: "RB Leipzig", score: "1 - 1", aggregate: "RB Leipzig won 2-3" },
     { home: "BSC Young Boys", away: "AS Monaco", score: "1 - 2", aggregate: "1-4" },
-    { home: "AS Monaco", away: "BSC Young Boys", score: "2 - 0", aggregate: "4-1" },
+    { home: "AS Monaco", away: "BSC Young Boys", score: "2 - 0", aggregate: "Monaco won 4-1" },
     { home: "Girona FC", away: "AC Milan", score: "1 - 1", aggregate: "2-1" },
-    { home: "AC Milan", away: "Girona FC", score: "1 - 0", aggregate: "1-2" },
+    { home: "AC Milan", away: "Girona FC", score: "1 - 0", aggregate: "Girona won 1-2" },
     { home: "Shakhtar Donetsk", away: "Leverkusen", score: "0 - 0", aggregate: "0-2" },
-    { home: "Leverkusen", away: "Shakhtar Donetsk", score: "2 - 1", aggregate: "2-1" },
+    { home: "Leverkusen", away: "Shakhtar Donetsk", score: "2 - 1", aggregate: "leverkusen won 2-1" },
     { home: "Sporting CP", away: "Celtic", score: "1 - 0", aggregate: "2-1" },
-    { home: "Celtic", away: "Sporting CP", score: "1 - 1", aggregate: "1-2" },
-    { home: "PSV", away: "VfB Stuttgart", score: "1 - 0", aggregate: "1-1 (4-3 pens)" },
+    { home: "Celtic", away: "Sporting CP", score: "1 - 1", aggregate: "Sporting won 1-2" },
+    { home: "PSV", away: "VfB Stuttgart", score: "1 - 0", aggregate: "Stuttigart 1-1 (4-3 pens)" },
     { home: "VfB Stuttgart", away: "PSV", score: "1 - 0", aggregate: "1-1 (4-3 pens)" },
     { home: "FC Bayern München", away: "Juventus", score: "2 - 1", aggregate: "3-1" },
-    { home: "Juventus", away: "FC Bayern München", score: "0 - 1", aggregate: "1-3" }
+    { home: "Juventus", away: "FC Bayern München", score: "0 - 1", aggregate: "Bayern Munchen won 1-3" }
   ],
 
   "Round of 16": [
