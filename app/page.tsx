@@ -65,7 +65,7 @@ const stages = {
     { home: "Sporting CP", away: "Borussia Dortmund" , score: "1 - 1"},
     { home: "Borussia Dortmund", away: "Sporting CP", score: "1 - 1", aggregate: "Dortmund won 2 - 2 (5-3 pens)"},
     { home: "Leverkusen", away: "Internazionale" , score: "0 - 0"},
-    { home: "Internazionale", away: "Leverkusen", score: "4 - 1", aggregate: "Dortmund won 4 - 1"},
+    { home: "Internazionale", away: "Leverkusen", score: "4 - 1", aggregate: "Internazionale won 4 - 1"},
     { home: "Girona FC", away: "Manchester City" , score: "0 - 0"},
     { home: "Manchester City", away: "Girona FC", score: "2 - 1", aggregate: "Manchester City won 2 - 1"},
     { home: "FC Bayern München", away: "Stade Brestois 29" , score: "3 - 0"},
