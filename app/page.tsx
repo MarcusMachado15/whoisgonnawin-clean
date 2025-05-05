@@ -41,55 +41,50 @@ const stages = {
     { position: 35, team: "Rosenborg BK", played: 8, won: 0, drawn: 1, lost: 7, goalsFor: 8, goalsAgainst: 21, goalDifference: "-13", points: 1 },
     { position: 36, team: "FC Luzern", played: 8, won: 0, drawn: 0, lost: 8, goalsFor: 9, goalsAgainst: 21, goalDifference: "-12", points: 0 }
   ],
-    "Playoff Round of 16": [
-      { home: "FC Barcelona", away: "Liverpool", score: "1 - 0", aggregate: "2-0" },
-      { home: "Liverpool", away: "FC Barcelona", score: "0 - 1", aggregate: "0-2" },
-  
-      { home: "RB Leipzig", away: "Atlético de Madrid", score: "2 - 2", aggregate: "3-3" },
-      { home: "Atlético de Madrid", away: "RB Leipzig", score: "1 - 1", aggregate: "2-3" },
-  
-      { home: "BSC Young Boys", away: "AS Monaco", score: "1 - 2", aggregate: "1-4" },
-      { home: "AS Monaco", away: "BSC Young Boys", score: "2 - 0", aggregate: "4-1" },
-  
-      { home: "Girona FC", away: "AC Milan", score: "2 - 0", aggregate: "2-1" },
-      { home: "AC Milan", away: "Girona FC", score: "1 - 0", aggregate: "1-2" },
-  
-      { home: "Shakhtar Donetsk", away: "Leverkusen", score: "0 - 0", aggregate: "0-2" },
-      { home: "Leverkusen", away: "Shakhtar Donetsk", score: "2 - 1", aggregate: "2-1" },
-  
-      { home: "Sporting CP", away: "Celtic", score: "1 - 0", aggregate: "2-1" },
-      { home: "Celtic", away: "Sporting CP", score: "1 - 1", aggregate: "1-2" },
-  
-      { home: "PSV", away: "VfB Stuttgart", score: "1 - 0", aggregate: "1-1 (4-3 pens)" },
-      { home: "VfB Stuttgart", away: "PSV", score: "1 - 0", aggregate: "1-1 (4-3 pens)" },
-  
-      { home: "FC Bayern München", away: "Juventus", score: "2 - 1", aggregate: "3-1" },
-      { home: "Juventus", away: "FC Bayern München", score: "0 - 1", aggregate: "1-3" }
-    ],
-  
-    "Round of 16": [
-      { home: "Sporting CP", away: "Borussia Dortmund" },
-      { home: "Borussia Dortmund", away: "Sporting CP" },
-      { home: "Leverkusen", away: "Internazionale" },
-      { home: "Internazionale", away: "Leverkusen" },
-      { home: "Girona FC", away: "Manchester City" },
-      { home: "Manchester City", away: "Girona FC" },
-      { home: "FC Bayern München", away: "Stade Brestois 29" },
-      { home: "Stade Brestois 29", away: "FC Bayern München" },
-      { home: "AS Monaco", away: "Real Madrid" },
-      { home: "Real Madrid", away: "AS Monaco" },
-      { home: "VfB Stuttgart", away: "Arsenal" },
-      { home: "Arsenal", away: "VfB Stuttgart" },
-      { home: "FC Barcelona", away: "SL Benfica" },
-      { home: "SL Benfica", away: "FC Barcelona" },
-      { home: "RB Leipzig", away: "Paris SG" },
-      { home: "Paris SG", away: "RB Leipzig" }
-    ],
-  
-    "Quarter Finals": [],
-    "Semi Final": [],
-    "Final": []
-  };
+
+  "Playoff Round of 16": [
+    { home: "FC Barcelona", away: "Liverpool", score: "1 - 0", aggregate: "2-0" },
+    { home: "Liverpool", away: "FC Barcelona", score: "0 - 1", aggregate: "0-2" },
+    { home: "RB Leipzig", away: "Atlético de Madrid", score: "2 - 2", aggregate: "3-3" },
+    { home: "Atlético de Madrid", away: "RB Leipzig", score: "1 - 1", aggregate: "2-3" },
+    { home: "BSC Young Boys", away: "AS Monaco", score: "1 - 2", aggregate: "1-4" },
+    { home: "AS Monaco", away: "BSC Young Boys", score: "2 - 0", aggregate: "4-1" },
+    { home: "Girona FC", away: "AC Milan", score: "2 - 0", aggregate: "2-1" },
+    { home: "AC Milan", away: "Girona FC", score: "1 - 0", aggregate: "1-2" },
+    { home: "Shakhtar Donetsk", away: "Leverkusen", score: "0 - 0", aggregate: "0-2" },
+    { home: "Leverkusen", away: "Shakhtar Donetsk", score: "2 - 1", aggregate: "2-1" },
+    { home: "Sporting CP", away: "Celtic", score: "1 - 0", aggregate: "2-1" },
+    { home: "Celtic", away: "Sporting CP", score: "1 - 1", aggregate: "1-2" },
+    { home: "PSV", away: "VfB Stuttgart", score: "1 - 0", aggregate: "1-1 (4-3 pens)" },
+    { home: "VfB Stuttgart", away: "PSV", score: "1 - 0", aggregate: "1-1 (4-3 pens)" },
+    { home: "FC Bayern München", away: "Juventus", score: "2 - 1", aggregate: "3-1" },
+    { home: "Juventus", away: "FC Bayern München", score: "0 - 1", aggregate: "1-3" }
+  ],
+
+  "Round of 16": [
+    { home: "Sporting CP", away: "Borussia Dortmund" },
+    { home: "Borussia Dortmund", away: "Sporting CP" },
+    { home: "Leverkusen", away: "Internazionale" },
+    { home: "Internazionale", away: "Leverkusen" },
+    { home: "Girona FC", away: "Manchester City" },
+    { home: "Manchester City", away: "Girona FC" },
+    { home: "FC Bayern München", away: "Stade Brestois 29" },
+    { home: "Stade Brestois 29", away: "FC Bayern München" },
+    { home: "AS Monaco", away: "Real Madrid" },
+    { home: "Real Madrid", away: "AS Monaco" },
+    { home: "VfB Stuttgart", away: "Arsenal" },
+    { home: "Arsenal", away: "VfB Stuttgart" },
+    { home: "FC Barcelona", away: "SL Benfica" },
+    { home: "SL Benfica", away: "FC Barcelona" },
+    { home: "RB Leipzig", away: "Paris SG" },
+    { home: "Paris SG", away: "RB Leipzig" }
+  ],
+
+  "Quarter Finals": [],
+  "Semi Final": [],
+  "Final": []
+};
+
 const stageNames = Object.keys(stages);
 
 export default function TournamentPage() {
@@ -114,34 +109,18 @@ export default function TournamentPage() {
       <h2>{stageNames[currentStage]}</h2>
 
       {Array.isArray(currentData) && currentData.length > 0 && currentData[0].position !== undefined ? (
-  <table className="group-stage">
+        <table className="group-stage">
           <thead>
             <tr>
-              <th style={{ width: '60px' }}>Position</th>
-              <th>Team</th>
-              <th><strong>Pts</strong></th>
-              <th>Pld</th>
-              <th>W</th>
-              <th>D</th>
-              <th>L</th>
-              <th>GF</th>
-              <th>GA</th>
-              <th>GD</th>
+              <th>Position</th><th>Team</th><th>Pts</th><th>Pld</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th>
             </tr>
           </thead>
           <tbody>
             {currentData.map((team, index) => (
-              <tr
-                key={index}
-                style={{
-                  color: team.position <= 8 ? 'green' : team.position <= 24 ? 'deepskyblue' : '#555',
-                  backgroundColor: '#f9f9f9',
-                  fontWeight: 'bold'
-                }}
-              >
+              <tr key={index}>
                 <td>{team.position}</td>
                 <td>{team.team}</td>
-                <td style={{ backgroundColor: '#dff0d8' }}><strong>{team.points}</strong></td>
+                <td>{team.points}</td>
                 <td>{team.played}</td>
                 <td>{team.won}</td>
                 <td>{team.drawn}</td>
@@ -156,26 +135,17 @@ export default function TournamentPage() {
       ) : (
         <table>
           <thead>
-            <tr>
-              <th>Home</th>
-              <th>Score</th>
-              <th>Away</th>
-            </tr>
+            <tr><th>Home</th><th>Score</th><th>Away</th></tr>
           </thead>
           <tbody>
             {currentData.map((match, index) => (
-              <>
-                <tr key={`${index}-1`}>
+              <React.Fragment key={index}>
+                <tr>
                   <td>{match.home}</td>
-                  <td></td>
+                  <td>{match.score || '-'}</td>
                   <td>{match.away}</td>
                 </tr>
-                {index % 2 === 1 && (
-                  <tr key={`divider-${index}`} className="match-divider">
-                    <td colSpan={3}></td>
-                  </tr>
-                )}
-              </>
+              </React.Fragment>
             ))}
           </tbody>
         </table>
