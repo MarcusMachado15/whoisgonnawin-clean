@@ -77,7 +77,7 @@ const stages = {
     { home: "FC Barcelona", away: "SL Benfica" , score: "3 - 0"},
     { home: "SL Benfica", away: "FC Barcelona" , score: "0 - 1", aggregate: "Barcelona won 0 - 4"},
     { home: "RB Leipzig", away: "Paris SG" , score: "0 - 2"},
-    { home: "Paris SG", away: "RB Leipzig" }
+    { home: "Paris SG", away: "RB Leipzig", score: "2 - 0", aggregate: "PSG won 4 - 0"}
   ],
 
   "Quarter Finals": [],
