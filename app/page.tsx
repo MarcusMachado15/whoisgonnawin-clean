@@ -81,18 +81,19 @@ const stages = {
   ],
 
   "Quarter Finals": [
-  { home: "VfB Stuttgart", away: "FC Barcelona" },
-  { home: "FC Barcelona", away: "VfB Stuttgart" },
+  { home: "VfB Stuttgart", away: "FC Barcelona", score: "0 - 1" },
+  { home: "FC Barcelona", away: "VfB Stuttgart", score: "1 - 1", aggregate: "Barcelona won 2-1" },
 
-  { home: "Internazionale", away: "Manchester City" },
-  { home: "Manchester City", away: "Internazionale" },
+  { home: "Internazionale", away: "Manchester City", score: "1 - 1" },
+  { home: "Manchester City", away: "Internazionale", score: "1 - 1", aggregate: "Internazionale won 2-2 (8 - 7  pens)"},
 
-  { home: "FC Bayern München", away: "Paris SG" },
-  { home: "Paris SG", away: "FC Bayern München" },
+  { home: "FC Bayern München", away: "Paris SG", score: "2 - 2" },
+  { home: "Paris SG", away: "FC Bayern München", score: "0 - 2", aggregate: "Bayern München won 2-4" },
 
-  { home: "Real Madrid", away: "Borussia Dortmund" },
-  { home: "Borussia Dortmund", away: "Real Madrid" }
+  { home: "Real Madrid", away: "Borussia Dortmund", score: "1 - 1" },
+  { home: "Borussia Dortmund", away: "Real Madrid", score: "0 - 4", aggregate: "Real Madrid won 5-1" }
 ],
+
   "Semi Final": [],
   "Final": []
 };
