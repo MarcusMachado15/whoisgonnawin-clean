@@ -94,6 +94,7 @@ export default function TournamentPage() {
   return (
     <div>
       <h1>Champions League Standings 2025</h1>
+
       <div className="tabs">
         {stageNames.map((stage, index) => (
           <button
@@ -145,6 +146,11 @@ export default function TournamentPage() {
                   <td>{match.score || '-'}</td>
                   <td>{match.away}</td>
                 </tr>
+                {index % 2 === 1 && (
+                  <tr className="match-divider">
+                    <td colSpan={3}><strong>Aggregate: {match.aggregate || '-'}</strong></td>
+                  </tr>
+                )}
               </React.Fragment>
             ))}
           </tbody>
