@@ -52,7 +52,7 @@ const stages = {
     { home: "Girona FC", away: "AC Milan", score: "1 - 1", aggregate: "2-1" },
     { home: "AC Milan", away: "Girona FC", score: "1 - 0", aggregate: "Girona won 1-2" },
     { home: "Shakhtar Donetsk", away: "Leverkusen", score: "0 - 0", aggregate: "0-2" },
-    { home: "Leverkusen", away: "Shakhtar Donetsk", score: "2 - 1", aggregate: "leverkusen won 2-1" },
+    { home: "Leverkusen", away: "Shakhtar Donetsk", score: "2 - 1", aggregate: "Leverkusen won 2-1" },
     { home: "Sporting CP", away: "Celtic", score: "1 - 0", aggregate: "2-1" },
     { home: "Celtic", away: "Sporting CP", score: "1 - 1", aggregate: "Sporting won 1-2" },
     { home: "PSV", away: "VfB Stuttgart", score: "1 - 0", aggregate: "Stuttigart 1-1 (4-3 pens)" },
