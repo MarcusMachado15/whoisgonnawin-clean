@@ -41,54 +41,55 @@ const stages = {
     { position: 35, team: "Rosenborg BK", played: 8, won: 0, drawn: 1, lost: 7, goalsFor: 8, goalsAgainst: 21, goalDifference: "-13", points: 1 },
     { position: 36, team: "FC Luzern", played: 8, won: 0, drawn: 0, lost: 8, goalsFor: 9, goalsAgainst: 21, goalDifference: "-12", points: 0 }
   ],
-  const playoffRoundOf16 = [
-    { home: "FC Barcelona", away: "Liverpool", score: "1 - 0", aggregate: "2-0" },
-    { home: "Liverpool", away: "FC Barcelona", score: "0 - 1", aggregate: "0-2" },
+    "Playoff Round of 16": [
+      { home: "FC Barcelona", away: "Liverpool", score: "1 - 0", aggregate: "2-0" },
+      { home: "Liverpool", away: "FC Barcelona", score: "0 - 1", aggregate: "0-2" },
   
-    { home: "RB Leipzig", away: "Atlético de Madrid", score: "2 - 2", aggregate: "3-3" },
-    { home: "Atlético de Madrid", away: "RB Leipzig", score: "1 - 1", aggregate: "2-3" },
+      { home: "RB Leipzig", away: "Atlético de Madrid", score: "2 - 2", aggregate: "3-3" },
+      { home: "Atlético de Madrid", away: "RB Leipzig", score: "1 - 1", aggregate: "2-3" },
   
-    { home: "BSC Young Boys", away: "AS Monaco", score: "1 - 2", aggregate: "1-4" },
-    { home: "AS Monaco", away: "BSC Young Boys", score: "2 - 0", aggregate: "4-1" },
+      { home: "BSC Young Boys", away: "AS Monaco", score: "1 - 2", aggregate: "1-4" },
+      { home: "AS Monaco", away: "BSC Young Boys", score: "2 - 0", aggregate: "4-1" },
   
-    { home: "Girona FC", away: "AC Milan", score: "2 - 0", aggregate: "2-1" },
-    { home: "AC Milan", away: "Girona FC", score: "1 - 0", aggregate: "1-2" },
+      { home: "Girona FC", away: "AC Milan", score: "2 - 0", aggregate: "2-1" },
+      { home: "AC Milan", away: "Girona FC", score: "1 - 0", aggregate: "1-2" },
   
-    { home: "Shakhtar Donetsk", away: "Leverkusen", score: "0 - 0", aggregate: "0-2" },
-    { home: "Leverkusen", away: "Shakhtar Donetsk", score: "2 - 1", aggregate: "2-1" },
+      { home: "Shakhtar Donetsk", away: "Leverkusen", score: "0 - 0", aggregate: "0-2" },
+      { home: "Leverkusen", away: "Shakhtar Donetsk", score: "2 - 1", aggregate: "2-1" },
   
-    { home: "Sporting CP", away: "Celtic", score: "1 - 0", aggregate: "2-1" },
-    { home: "Celtic", away: "Sporting CP", score: "1 - 1", aggregate: "1-2" },
+      { home: "Sporting CP", away: "Celtic", score: "1 - 0", aggregate: "2-1" },
+      { home: "Celtic", away: "Sporting CP", score: "1 - 1", aggregate: "1-2" },
   
-    { home: "PSV", away: "VfB Stuttgart", score: "1 - 0", aggregate: "1-1 (4-3 pens)" },
-    { home: "VfB Stuttgart", away: "PSV", score: "1 - 0", aggregate: "1-1 (4-3 pens)" },
+      { home: "PSV", away: "VfB Stuttgart", score: "1 - 0", aggregate: "1-1 (4-3 pens)" },
+      { home: "VfB Stuttgart", away: "PSV", score: "1 - 0", aggregate: "1-1 (4-3 pens)" },
   
-    { home: "FC Bayern München", away: "Juventus", score: "2 - 1", aggregate: "3-1" },
-    { home: "Juventus", away: "FC Bayern München", score: "0 - 1", aggregate: "1-3" }
-  ];
-  "Round of 16": [
-    { home: "Sporting CP", away: "Borussia Dortmund" },
-    { home: "Borussia Dortmund", away: "Sporting CP" },
-    { home: "Leverkusen", away: "Internazionale" },
-    { home: "Internazionale", away: "Leverkusen" },
-    { home: "Girona FC", away: "Manchester City" },
-    { home: "Manchester City", away: "Girona FC" },
-    { home: "FC Bayern München", away: "Stade Brestois 29" },
-    { home: "Stade Brestois 29", away: "FC Bayern München" },
-    { home: "AS Monaco", away: "Real Madrid" },
-    { home: "Real Madrid", away: "AS Monaco" },
-    { home: "VfB Stuttgart", away: "Arsenal" },
-    { home: "Arsenal", away: "VfB Stuttgart" },
-    { home: "FC Barcelona", away: "SL Benfica" },
-    { home: "SL Benfica", away: "FC Barcelona" },
-    { home: "RB Leipzig", away: "Paris SG" },
-    { home: "Paris SG", away: "RB Leipzig" }
-  ],
-  "Quarter Finals": [],
-  "Semi Final": [],
-  "Final": []
-};
-
+      { home: "FC Bayern München", away: "Juventus", score: "2 - 1", aggregate: "3-1" },
+      { home: "Juventus", away: "FC Bayern München", score: "0 - 1", aggregate: "1-3" }
+    ],
+  
+    "Round of 16": [
+      { home: "Sporting CP", away: "Borussia Dortmund" },
+      { home: "Borussia Dortmund", away: "Sporting CP" },
+      { home: "Leverkusen", away: "Internazionale" },
+      { home: "Internazionale", away: "Leverkusen" },
+      { home: "Girona FC", away: "Manchester City" },
+      { home: "Manchester City", away: "Girona FC" },
+      { home: "FC Bayern München", away: "Stade Brestois 29" },
+      { home: "Stade Brestois 29", away: "FC Bayern München" },
+      { home: "AS Monaco", away: "Real Madrid" },
+      { home: "Real Madrid", away: "AS Monaco" },
+      { home: "VfB Stuttgart", away: "Arsenal" },
+      { home: "Arsenal", away: "VfB Stuttgart" },
+      { home: "FC Barcelona", away: "SL Benfica" },
+      { home: "SL Benfica", away: "FC Barcelona" },
+      { home: "RB Leipzig", away: "Paris SG" },
+      { home: "Paris SG", away: "RB Leipzig" }
+    ],
+  
+    "Quarter Finals": [],
+    "Semi Final": [],
+    "Final": []
+  };
 const stageNames = Object.keys(stages);
 
 export default function TournamentPage() {
