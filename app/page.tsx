@@ -94,7 +94,14 @@ const stages = {
   { home: "Borussia Dortmund", away: "Real Madrid", score: "0 - 4", aggregate: "Real Madrid won 5-1" }
 ],
 
-  "Semi Final": [],
+ "Semi Final": [
+  { home: "FC Barcelona", away: "Real Madrid" },
+  { home: "Real Madrid", away: "FC Barcelona" },
+
+  { home: "Internazionale", away: "FC Bayern München" },
+  { home: "FC Bayern München", away: "Internazionale" }
+],
+
   "Final": []
 };
 
