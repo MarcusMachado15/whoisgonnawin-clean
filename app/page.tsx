@@ -71,7 +71,7 @@ const stages = {
     { home: "FC Bayern München", away: "Stade Brestois 29" , score: "3 - 0"},
     { home: "Stade Brestois 29", away: "FC Bayern München" },
     { home: "AS Monaco", away: "Real Madrid" , score: "0 - 1"},
-    { home: "Real Madrid", away: "AS Monaco" },
+    { home: "Real Madrid", away: "AS Monaco" , score: "2 - 0", aggregate: "Real Madrid won 3-0"},
     { home: "VfB Stuttgart", away: "Arsenal" , score: "1 - 0"},
     { home: "Arsenal", away: "VfB Stuttgart" },
     { home: "FC Barcelona", away: "SL Benfica" , score: "3 - 0"},
