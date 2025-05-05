@@ -80,7 +80,19 @@ const stages = {
     { home: "Paris SG", away: "RB Leipzig", score: "2 - 0", aggregate: "PSG won 4 - 0"}
   ],
 
-  "Quarter Finals": [],
+  "Quarter Finals": [
+  { home: "VfB Stuttgart", away: "FC Barcelona" },
+  { home: "FC Barcelona", away: "VfB Stuttgart" },
+
+  { home: "Internazionale", away: "Manchester City" },
+  { home: "Manchester City", away: "Internazionale" },
+
+  { home: "FC Bayern München", away: "Paris SG" },
+  { home: "Paris SG", away: "FC Bayern München" },
+
+  { home: "Real Madrid", away: "Borussia Dortmund" },
+  { home: "Borussia Dortmund", away: "Real Madrid" }
+],
   "Semi Final": [],
   "Final": []
 };
