@@ -95,10 +95,10 @@ const stages = {
 ],
 
  "Semi Final": [
-  { home: "FC Barcelona", away: "Real Madrid" },
+  { home: "FC Barcelona", away: "Real Madrid", score: "0 - 1"},
   { home: "Real Madrid", away: "FC Barcelona" },
 
-  { home: "Internazionale", away: "FC Bayern München" },
+  { home: "Internazionale", away: "FC Bayern München", score: "0 - 0"},
   { home: "FC Bayern München", away: "Internazionale" }
 ],
 
