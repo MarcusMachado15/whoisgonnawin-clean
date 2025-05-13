@@ -330,7 +330,7 @@ const groupStandingsSouthAmerica: Record<string, Standing[]> = {
 
 const groupMatchesAfrica: Record<string, Match[]> = {
   'Group A WC Qualifiers Argentina 2025': [
-    { home: '🇲🇦 Morocco',      score: '', away: '🇿🇲 Zambia'     },
+    { home: '🇲🇦 Morocco',      score: '1 - 0', away: '🇿🇲 Zambia'     },
     { home: '🇨🇲 Cameroon',     score: '', away: '🇲🇱 Mali'       },
     { home: '🇲🇱 Mali',         score: '', away: '🇲🇦 Morocco'    },
     { home: '🇰🇪 Kenya',        score: '', away: '🇨🇲 Cameroon'   },
