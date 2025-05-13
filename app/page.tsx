@@ -313,7 +313,7 @@ const groupMatchesSouthAmerica: Record<string, Match[]> = {
 
   'Group B WC Qualifiers Argentina 2025': [
     { home: '🇧🇷 Brazil',    score: '1 - 1', away: '🇻🇪 Venezuela' },
-    { home: '🇺🇾 Uruguay',   score: '', away: '🇵🇪 Peru' },
+    { home: '🇺🇾 Uruguay',   score: '3 - 0', away: '🇵🇪 Peru' },
     { home: '🇵🇪 Peru',      score: '', away: '🇧🇷 Brazil' },
     { home: '🇧🇴 Bolivia',   score: '', away: '🇺🇾 Uruguay' },
     { home: '🇧🇷 Brazil',    score: '', away: '🇧🇴 Bolivia' },
@@ -563,36 +563,36 @@ export default function WorldCup2025Page() {
         ))}
       </div>
       <div className="flex-container">
-        {Object.entries(matches).map(([fullGroupName, gm]) => {
-          // extrai "Group X" para buscar em groupStandings
-          const baseGroup = fullGroupName.split(' ').slice(0, 2).join(' ');
-          return (
-            <div key={fullGroupName} className="group-block">
-              <div className="matches-block">
-                <div className="group-title">{fullGroupName}</div>
-                <table className="match-table group-stage">
-                  <thead>
-                    <tr><th>HOME</th><th>SCORE</th><th>AWAY</th></tr>
-                  </thead>
-                  <tbody>
-                    {gm.map((m, i) => (
-                      <tr key={i}>
-                        <td>{m.home}</td>
-                        <td>{m.score}</td>
-                        <td>{m.away}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-              <StandingsTable
-                groupName={fullGroupName}
-                rows={standings[fullGroupName] || []}
-              />
-            </div>
-          );
-        })}
+  {Object.entries(matches).map(([fullGroupName, gm]) => {
+    const baseGroup = fullGroupName.split(' ').slice(0, 2).join(' ');
+    return (
+      <div key={fullGroupName} className="group-block">
+        <div className="matches-block">
+          <div className="group-title">{fullGroupName}</div>
+          <table className="match-table group-stage">
+            <thead>
+              <tr><th>HOME</th><th>SCORE</th><th>AWAY</th></tr>
+            </thead>
+            <tbody>
+              {gm.map((m, i) => (
+                <tr key={i}>
+                  <td>{m.home}</td>
+                  <td>{m.score}</td>
+                  <td>{m.away}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <StandingsTable
+          groupName={fullGroupName}
+          rows={standings[fullGroupName] || []}
+        />
       </div>
+    );
+  })}
+</div>
     </div>
   );
 }
