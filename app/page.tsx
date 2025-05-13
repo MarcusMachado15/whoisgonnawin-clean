@@ -1,187 +1,598 @@
+/// app/worldcup2025/page.tsx
 'use client';
-import React, { useState } from "react";
+
+import React, { useState } from 'react';
 import './styles.css';
 
-const stages = {
-  "Group Stage": [
-    { position: 1, team: "Real Madrid", played: 8, won: 7, drawn: 0, lost: 1, goalsFor: 19, goalsAgainst: 8, goalDifference: "+11", points: 21 },
-    { position: 2, team: "SL Benfica", played: 8, won: 6, drawn: 2, lost: 0, goalsFor: 13, goalsAgainst: 6, goalDifference: "+7", points: 20 },
-    { position: 3, team: "Manchester City", played: 8, won: 5, drawn: 2, lost: 1, goalsFor: 21, goalsAgainst: 10, goalDifference: "+11", points: 17 },
-    { position: 4, team: "Borussia Dortmund", played: 8, won: 5, drawn: 2, lost: 1, goalsFor: 19, goalsAgainst: 11, goalDifference: "+8", points: 17 },
-    { position: 5, team: "Stade Brestois 29", played: 8, won: 5, drawn: 1, lost: 2, goalsFor: 16, goalsAgainst: 11, goalDifference: "+5", points: 16 },
-    { position: 6, team: "Internazionale", played: 8, won: 5, drawn: 1, lost: 2, goalsFor: 13, goalsAgainst: 9, goalDifference: "+4", points: 16 },
-    { position: 7, team: "Paris SG", played: 8, won: 4, drawn: 3, lost: 1, goalsFor: 17, goalsAgainst: 12, goalDifference: "+5", points: 15 },
-    { position: 8, team: "Arsenal", played: 8, won: 4, drawn: 3, lost: 1, goalsFor: 17, goalsAgainst: 12, goalDifference: "+5", points: 15 },
-    { position: 9, team: "Liverpool", played: 8, won: 4, drawn: 2, lost: 2, goalsFor: 17, goalsAgainst: 13, goalDifference: "+4", points: 14 },
-    { position: 10, team: "Atlético de Madrid", played: 8, won: 4, drawn: 1, lost: 3, goalsFor: 15, goalsAgainst: 10, goalDifference: "+5", points: 13 },
-    { position: 11, team: "AS Monaco", played: 8, won: 4, drawn: 1, lost: 3, goalsFor: 16, goalsAgainst: 12, goalDifference: "+4", points: 13 },
-    { position: 12, team: "AC Milan", played: 8, won: 3, drawn: 4, lost: 1, goalsFor: 15, goalsAgainst: 13, goalDifference: "+2", points: 13 },
-    { position: 13, team: "Bayer Leverkusen", played: 8, won: 3, drawn: 4, lost: 1, goalsFor: 13, goalsAgainst: 10, goalDifference: "+3", points: 13 },
-    { position: 14, team: "Celtic", played: 8, won: 4, drawn: 1, lost: 3, goalsFor: 15, goalsAgainst: 14, goalDifference: "+1", points: 13 },
-    { position: 15, team: "VfB Stuttgart", played: 8, won: 3, drawn: 1, lost: 4, goalsFor: 12, goalsAgainst: 13, goalDifference: "-1", points: 13 },
-    { position: 16, team: "Juventus", played: 8, won: 3, drawn: 1, lost: 4, goalsFor: 15, goalsAgainst: 14, goalDifference: "+1", points: 13 },
-    { position: 17, team: "FC Bayern München", played: 8, won: 3, drawn: 3, lost: 2, goalsFor: 11, goalsAgainst: 8, goalDifference: "+3", points: 12 },
-    { position: 18, team: "RB Leipzig", played: 8, won: 3, drawn: 2, lost: 3, goalsFor: 15, goalsAgainst: 14, goalDifference: "+1", points: 11 },
-    { position: 19, team: "FC Barcelona", played: 8, won: 3, drawn: 2, lost: 3, goalsFor: 12, goalsAgainst: 11, goalDifference: "+1", points: 11 },
-    { position: 20, team: "BSC Young Boys", played: 8, won: 3, drawn: 2, lost: 3, goalsFor: 12, goalsAgainst: 12, goalDifference: "0", points: 11 },
-    { position: 21, team: "Girona FC", played: 8, won: 3, drawn: 1, lost: 4, goalsFor: 12, goalsAgainst: 14, goalDifference: "-2", points: 10 },
-    { position: 22, team: "Sporting CP", played: 8, won: 2, drawn: 4, lost: 2, goalsFor: 10, goalsAgainst: 13, goalDifference: "-3", points: 10 },
-    { position: 23, team: "PSV", played: 8, won: 2, drawn: 1, lost: 5, goalsFor: 14, goalsAgainst: 12, goalDifference: "+2", points: 10 },
-    { position: 24, team: "Shakhtar Donetsk", played: 8, won: 2, drawn: 3, lost: 3, goalsFor: 12, goalsAgainst: 14, goalDifference: "-2", points: 9 },
-    { position: 25, team: "Club Brugge", played: 8, won: 2, drawn: 3, lost: 3, goalsFor: 14, goalsAgainst: 17, goalDifference: "-3", points: 9 },
-    { position: 26, team: "Sparta Praha", played: 8, won: 3, drawn: 0, lost: 5, goalsFor: 12, goalsAgainst: 15, goalDifference: "-3", points: 9 },
-    { position: 27, team: "Feyenoord", played: 8, won: 2, drawn: 3, lost: 3, goalsFor: 10, goalsAgainst: 13, goalDifference: "-3", points: 9 },
-    { position: 28, team: "Aston Villa", played: 8, won: 1, drawn: 5, lost: 2, goalsFor: 11, goalsAgainst: 12, goalDifference: "-1", points: 8 },
-    { position: 29, team: "LOSC Lille", played: 8, won: 2, drawn: 2, lost: 4, goalsFor: 12, goalsAgainst: 17, goalDifference: "-5", points: 8 },
-    { position: 30, team: "Bologna", played: 8, won: 2, drawn: 2, lost: 4, goalsFor: 9, goalsAgainst: 14, goalDifference: "-5", points: 8 },
-    { position: 31, team: "Atalanta", played: 8, won: 2, drawn: 0, lost: 6, goalsFor: 12, goalsAgainst: 15, goalDifference: "-3", points: 6 },
-    { position: 32, team: "RB Salzburg", played: 8, won: 1, drawn: 2, lost: 5, goalsFor: 9, goalsAgainst: 17, goalDifference: "-8", points: 5 },
-    { position: 33, team: "Dinamo Zagreb", played: 8, won: 1, drawn: 2, lost: 5, goalsFor: 10, goalsAgainst: 18, goalDifference: "-8", points: 5 },
-    { position: 34, team: "SK Sturm Graz", played: 8, won: 1, drawn: 0, lost: 7, goalsFor: 9, goalsAgainst: 20, goalDifference: "-11", points: 3 },
-    { position: 35, team: "Rosenborg BK", played: 8, won: 0, drawn: 1, lost: 7, goalsFor: 8, goalsAgainst: 21, goalDifference: "-13", points: 1 },
-    { position: 36, team: "FC Luzern", played: 8, won: 0, drawn: 0, lost: 8, goalsFor: 9, goalsAgainst: 21, goalDifference: "-12", points: 0 }
-  ],
-
-  "Playoff Round of 16": [
-    { home: "FC Barcelona", away: "Liverpool", score: "1 - 0", aggregate: "2-0" },
-    { home: "Liverpool", away: "FC Barcelona", score: "0 - 1", aggregate: "Barcelona won 0-2" },
-    { home: "RB Leipzig", away: "Atlético de Madrid", score: "2 - 1", aggregate: "3-3" },
-    { home: "Atlético de Madrid", away: "RB Leipzig", score: "1 - 1", aggregate: "RB Leipzig won 2-3" },
-    { home: "BSC Young Boys", away: "AS Monaco", score: "1 - 2", aggregate: "1-4" },
-    { home: "AS Monaco", away: "BSC Young Boys", score: "2 - 0", aggregate: "Monaco won 4-1" },
-    { home: "Girona FC", away: "AC Milan", score: "1 - 1", aggregate: "2-1" },
-    { home: "AC Milan", away: "Girona FC", score: "0 - 1", aggregate: "Girona won 1-2" },
-    { home: "Shakhtar Donetsk", away: "Leverkusen", score: "0 - 0", aggregate: "0-2" },
-    { home: "Leverkusen", away: "Shakhtar Donetsk", score: "2 - 1", aggregate: "Leverkusen won 2-1" },
-    { home: "Sporting CP", away: "Celtic", score: "1 - 0", aggregate: "2-1" },
-    { home: "Celtic", away: "Sporting CP", score: "1 - 1", aggregate: "Sporting won 1-2" },
-    { home: "PSV", away: "VfB Stuttgart", score: "1 - 0", aggregate: "1-1 (4-3 pens)" },
-    { home: "VfB Stuttgart", away: "PSV", score: "1 - 0", aggregate: "Stuttgart won 1-1 (4-3 pens)" },
-    { home: "FC Bayern München", away: "Juventus", score: "2 - 1", aggregate: "3-1" },
-    { home: "Juventus", away: "FC Bayern München", score: "0 - 1", aggregate: "Bayern Munchen won 1-3" }
-  ],
-
-  "Round of 16": [
-    { home: "Sporting CP", away: "Borussia Dortmund" , score: "1 - 1"},
-    { home: "Borussia Dortmund", away: "Sporting CP", score: "1 - 1", aggregate: "Dortmund won 2 - 2 (5-3 pens)"},
-    { home: "Leverkusen", away: "Internazionale" , score: "0 - 0"},
-    { home: "Internazionale", away: "Leverkusen", score: "4 - 1", aggregate: "Internazionale won 4 - 1"},
-    { home: "Girona FC", away: "Manchester City" , score: "0 - 0"},
-    { home: "Manchester City", away: "Girona FC", score: "2 - 1", aggregate: "Manchester City won 2 - 1"},
-    { home: "FC Bayern München", away: "Stade Brestois 29" , score: "3 - 0"},
-    { home: "Stade Brestois 29", away: "FC Bayern München", score: "0 - 2", aggregate: "Bayern Munich won 0 - 5"},
-    { home: "AS Monaco", away: "Real Madrid" , score: "0 - 1"},
-    { home: "Real Madrid", away: "AS Monaco" , score: "2 - 0", aggregate: "Real Madrid won 3 - 0"},
-    { home: "VfB Stuttgart", away: "Arsenal" , score: "1 - 0"},
-    { home: "Arsenal", away: "VfB Stuttgart" , score: "1 - 1", aggregate: "Stuttgart won 1 - 2"},
-    { home: "FC Barcelona", away: "SL Benfica" , score: "3 - 0"},
-    { home: "SL Benfica", away: "FC Barcelona" , score: "0 - 1", aggregate: "Barcelona won 0 - 4"},
-    { home: "RB Leipzig", away: "Paris SG" , score: "0 - 2"},
-    { home: "Paris SG", away: "RB Leipzig", score: "2 - 0", aggregate: "PSG won 4 - 0"}
-  ],
-
-  "Quarter Finals": [
-  { home: "VfB Stuttgart", away: "FC Barcelona", score: "0 - 1" },
-  { home: "FC Barcelona", away: "VfB Stuttgart", score: "1 - 1", aggregate: "Barcelona won 2-1" },
-
-  { home: "Internazionale", away: "Manchester City", score: "1 - 1" },
-  { home: "Manchester City", away: "Internazionale", score: "1 - 1", aggregate: "Internazionale won 2-2 (8 - 7  pens)"},
-
-  { home: "FC Bayern München", away: "Paris SG", score: "2 - 2" },
-  { home: "Paris SG", away: "FC Bayern München", score: "0 - 2", aggregate: "Bayern München won 2-4" },
-
-  { home: "Real Madrid", away: "Borussia Dortmund", score: "1 - 1" },
-  { home: "Borussia Dortmund", away: "Real Madrid", score: "0 - 4", aggregate: "Real Madrid won 5-1" }
-],
-
- "Semi Final": [
-  { home: "FC Barcelona", away: "Real Madrid", score: "0 - 1"},
-  { home: "Real Madrid", away: "FC Barcelona" },
-
-  { home: "Internazionale", away: "FC Bayern München", score: "0 - 0"},
-  { home: "FC Bayern München", away: "Internazionale" }
-],
-
-  "Final": []
+type Standing = {
+  pos: number;
+  team: string;
+  played: number;
+  won: number;
+  draw: number;
+  lost: number;
+  gf: number;
+  ga: number;
+  gd: number;
+  pts: number;
 };
 
-const stageNames = Object.keys(stages);
+type Match = {
+  home: string;
+  score: string;
+  away: string;
+};
 
-export default function TournamentPage() {
-  const [currentStage, setCurrentStage] = useState(0);
-  const currentData = stages[stageNames[currentStage]];
+const regions = [
+  'Europe',
+  'South America',
+  'Africa',
+  'Asia',
+  'N/C America',
+] as const;
+type Region = typeof regions[number];
+
+/** ——— EUROPE DATA ——— **/
+const groupMatchesEurope: Record<string, Match[]> = {
+  'Group A WC Qualifiers Argentina 2025': [
+    { home: '🇪🇸 Spain', score: '1 – 1', away: '🇫🇮 Finland' },
+    { home: '🏴 Wales',   score: '5 – 1', away: '🇷🇸 Serbia' },
+    { home: '🇷🇸 Serbia', score: '',      away: '🇪🇸 Spain' },
+    { home: '🇧🇦 Bosnia', score: '',      away: '🏴 Wales' },
+    { home: '🇪🇸 Spain', score: '',      away: '🇧🇦 Bosnia' },
+    { home: '🇫🇮 Finland', score: '',     away: '🇷🇸 Serbia' },
+    { home: '🏴 Wales',   score: '',      away: '🇪🇸 Spain' },
+    { home: '🇧🇦 Bosnia', score: '',      away: '🇫🇮 Finland' },
+    { home: '🇫🇮 Finland', score: '',     away: '🏴 Wales' },
+    { home: '🇷🇸 Serbia', score: '',      away: '🇧🇦 Bosnia' },
+  ],
+  'Group B WC Qualifiers Argentina 2025': [
+    { home: '🇫🇷 France', score: '3 – 0', away: '🇬🇪 Georgia' },
+    { home: '🇸🇪 Sweden', score: '2 – 0', away: '🇵🇱 Poland' },
+    { home: '🇵🇱 Poland', score: '', away: '🇫🇷 France' },
+    { home: '🇬🇧 N. Ireland', score: '', away: '🇸🇪 Sweden' },
+    { home: '🇫🇷 France', score: '', away: '🇬🇧 N. Ireland' },
+    { home: '🇬🇪 Georgia', score: '', away: '🇵🇱 Poland' },
+    { home: '🇸🇪 Sweden', score: '', away: '🇫🇷 France' },
+    { home: '🇬🇧 N. Ireland', score: '', away: '🇬🇪 Georgia' },
+    { home: '🇬🇪 Georgia', score: '', away: '🇸🇪 Sweden' },
+    { home: '🇵🇱 Poland', score: '', away: '🇬🇧 N. Ireland' },
+  ],
+  'Group C WC Qualifiers Argentina 2025': [
+    { home: '🏴 England', score: '1 – 0', away: '🇲🇰 N. Macedonia' },
+    { home: '🇹🇷 Turkey', score: '1 – 1', away: '🇷🇺 Russia' },
+    { home: '🏴 England', score: '', away: '🇷🇺 Russia' },
+    { home: '🇮🇸 Iceland', score: '', away: '🇹🇷 Turkey' },
+    { home: '🇲🇰 N. Macedonia', score: '', away: '🇷🇺 Russia' },
+    { home: '🏴 England', score: '', away: '🇮🇸 Iceland' },
+    { home: '🇹🇷 Turkey', score: '', away: '🇲🇰 N. Macedonia' },
+    { home: '🇮🇸 Iceland', score: '', away: '🇷🇺 Russia' },
+    { home: '🇲🇰 N. Macedonia', score: '', away: '🇹🇷 Turkey' },
+    { home: '🇷🇺 Russia', score: '', away: '🇮🇸 Iceland' },
+  ],
+  'Group D WC Qualifiers Argentina 2025': [
+    { home: '🇳🇱 Netherlands', score: '1 – 0', away: '🇦🇱 Albania' },
+    { home: '🇺🇦 Ukraine', score: '2 – 1', away: '🇭🇺 Hungary' },
+    { home: '🇭🇺 Hungary', score: '', away: '🇳🇱 Netherlands' },
+    { home: '🇮🇱 Israel', score: '', away: '🇺🇦 Ukraine' },
+    { home: '🇳🇱 Netherlands', score: '', away: '🇮🇱 Israel' },
+    { home: '🇦🇱 Albania', score: '', away: '🇭🇺 Hungary' },
+    { home: '🇺🇦 Ukraine', score: '', away: '🇳🇱 Netherlands' },
+    { home: '🇮🇱 Israel', score: '', away: '🇦🇱 Albania' },
+    { home: '🇦🇱 Albania', score: '', away: '🇺🇦 Ukraine' },
+    { home: '🇭🇺 Hungary', score: '', away: '🇮🇱 Israel' },
+  ],
+  'Group E WC Qualifiers Argentina 2025': [
+    { home: '🇵🇹 Portugal', score: '1 – 1', away: '🇮🇪 Ireland' },
+    { home: '🇦🇹 Austria', score: '1 – 1', away: '🇳🇴 Norway' },
+    { home: '🇳🇴 Norway', score: '', away: '🇵🇹 Portugal' },
+    { home: '🇧🇬 Bulgaria', score: '', away: '🇦🇹 Austria' },
+    { home: '🇵🇹 Portugal', score: '', away: '🇧🇬 Bulgaria' },
+    { home: '🇮🇪 Ireland', score: '', away: '🇳🇴 Norway' },
+    { home: '🇦🇹 Austria', score: '', away: '🇵🇹 Portugal' },
+    { home: '🇧🇬 Bulgaria', score: '', away: '🇮🇪 Ireland' },
+    { home: '🇮🇪 Ireland', score: '', away: '🇦🇹 Austria' },
+    { home: '🇳🇴 Norway', score: '', away: '🇧🇬 Bulgaria' },
+  ],
+  'Group F WC Qualifiers Argentina 2025': [
+    { home: '🇧🇪 Belgium', score: '4 – 0', away: '🇸🇮 Slovenia' },
+    { home: '🇩🇰 Denmark', score: '0 – 0', away: '🇨🇿 Czech Rep.' },
+    { home: '🇨🇿 Czech Rep.', score: '', away: '🇧🇪 Belgium' },
+    { home: '🇰🇿 Kazakhstan', score: '', away: '🇩🇰 Denmark' },
+    { home: '🇧🇪 Belgium', score: '', away: '🇰🇿 Kazakhstan' },
+    { home: '🇸🇮 Slovenia', score: '', away: '🇨🇿 Czech Rep.' },
+    { home: '🇩🇰 Denmark', score: '', away: '🇧🇪 Belgium' },
+    { home: '🇰🇿 Kazakhstan', score: '', away: '🇸🇮 Slovenia' },
+    { home: '🇸🇮 Slovenia', score: '', away: '🇩🇰 Denmark' },
+    { home: '🇨🇿 Czech Rep.', score: '', away: '🇰🇿 Kazakhstan' },
+  ],
+  'Group G WC Qualifiers Argentina 2025': [
+    { home: '🇮🇹 Italy', score: '3 – 2', away: '🇸🇰 Slovakia' },
+    { home: '🇨🇭 Switzerland', score: '0 – 0', away: '🇬🇷 Greece' },
+    { home: '🇬🇷 Greece', score: '', away: '🇮🇹 Italy' },
+    { home: '🇦🇿 Azerbaijan', score: '', away: '🇨🇭 Switzerland' },
+    { home: '🇮🇹 Italy', score: '', away: '🇸🇰 Slovakia' },
+    { home: '🇨🇭 Switzerland', score: '', away: '🇦🇿 Azerbaijan' },
+    { home: '🇬🇷 Greece', score: '', away: '🇮🇹 Italy' },
+    { home: '🇸🇰 Slovakia', score: '', away: '🇨🇭 Switzerland' },
+    { home: '🇦🇿 Azerbaijan', score: '', away: '🇬🇷 Greece' },
+    { home: '🇮🇹 Italy', score: '', away: '🇨🇭 Switzerland' },
+  ],
+  'Group H WC Qualifiers Argentina 2025': [
+    { home: '🇩🇪 Germany', score: '1 – 2', away: '🇷🇴 Romania' },
+    { home: '🇭🇷 Croatia', score: '2 – 0', away: '🏴 Scotland' },
+    { home: '🏴 Scotland', score: '', away: '🇩🇪 Germany' },
+    { home: '🇨🇾 Cyprus', score: '', away: '🇭🇷 Croatia' },
+    { home: '🇩🇪 Germany', score: '', away: '🇨🇾 Cyprus' },
+    { home: '🇷🇴 Romania', score: '', away: '🏴 Scotland' },
+    { home: '🇭🇷 Croatia', score: '', away: '🇩🇪 Germany' },
+    { home: '🇨🇾 Cyprus', score: '', away: '🇷🇴 Romania' },
+    { home: '🇷🇴 Romania', score: '', away: '🇭🇷 Croatia' },
+    { home: '🏴 Scotland', score: '', away: '🇨🇾 Cyprus' },
+  ],
+
+  'Group A WC Qualifiers Turkey 2024': [
+    { home: '🇫🇷 France',         score: '4 – 2', away: '🇲🇰 N. Macedonia' },
+    { home: '🏴 Wales',           score: '2 – 0', away: '🇭🇺 Hungary'        },
+    { home: '🇭🇺 Hungary',        score: '2 – 0', away: '🇫🇷 France'        },
+    { home: '🇲🇪 Montenegro',     score: '4 – 1', away: '🏴 Wales'          },
+    { home: '🇫🇷 France',         score: '2 – 1', away: '🇲🇪 Montenegro'     },
+    { home: '🇲🇰 N. Macedonia',   score: '1 – 1', away: '🇭🇺 Hungary'        },
+    { home: '🏴 Wales',           score: '2 – 2', away: '🇫🇷 France'        },
+    { home: '🇲🇪 Montenegro',     score: '2 – 1', away: '🇲🇰 N. Macedonia'   },
+    { home: '🇲🇰 N. Macedonia',   score: '1 – 0', away: '🏴 Wales'          },
+    { home: '🇭🇺 Hungary',        score: '0 – 0', away: '🇲🇪 Montenegro'     },
+  ],
+
+  'Group B WC Qualifiers Turkey 2024': [
+    { home: '🇪🇸 Spain',         score: '1 – 1', away: '🇮🇸 Iceland'      },
+    { home: '🇸🇪 Sweden',        score: '0 – 0', away: '🇷🇸 Serbia'       },
+    { home: '🇷🇸 Serbia',        score: '1 – 1', away: '🇪🇸 Spain'        },
+    { home: '🇳🇮 N. Ireland',    score: '1 – 2', away: '🇸🇪 Sweden'       },
+    { home: '🇪🇸 Spain',         score: '2 – 0', away: '🇳🇮 N. Ireland'   },
+    { home: '🇮🇸 Iceland',       score: '0 – 2', away: '🇷🇸 Serbia'       },
+    { home: '🇸🇪 Sweden',        score: '0 – 1', away: '🇪🇸 Spain'        },
+    { home: '🇳🇮 N. Ireland',    score: '2 – 0', away: '🇮🇸 Iceland'      },
+    { home: '🇮🇸 Iceland',       score: '0 – 0', away: '🇸🇪 Sweden'       },
+    { home: '🇷🇸 Serbia',        score: '1 – 2', away: '🇳🇮 N. Ireland'   },
+  ],
+
+  'Group C WC Qualifiers Turkey 2024': [
+    { home: '🏴 England',        score: '1 – 0', away: '🇬🇪 Georgia'      },
+    { home: '🇵🇱 Poland',        score: '1 – 2', away: '🇷🇺 Russia'       },
+    { home: '🇷🇺 Russia',        score: '2 – 3', away: '🏴 England'      },
+    { home: '🏴 England',        score: '0 – 1', away: '🇮🇱 Israel'       },
+    { home: '🇬🇪 Georgia',       score: '2 – 0', away: '🇷🇺 Russia'       },
+    { home: '🇵🇱 Poland',        score: '1 – 3', away: '🏴 England'      },
+    { home: '🇮🇱 Israel',        score: '1 – 0', away: '🇬🇪 Georgia'      },
+    { home: '🇬🇪 Georgia',       score: '4 – 1', away: '🇵🇱 Poland'       },
+    { home: '🇷🇺 Russia',        score: '1 – 4', away: '🇮🇱 Israel'       },
+    { home: '🇮🇱 Israel',        score: '',      away: '🇵🇱 Poland'       }, 
+  ],
+
+  'Group D WC Qualifiers Turkey 2024': [
+    { home: '🇧🇪 Belgium',       score: '2 – 0', away: '🇦🇱 Albania'     },
+    { home: '🇺🇦 Ukraine',       score: '1 – 2', away: '🇸🇰 Slovakia'    },
+    { home: '🇸🇰 Slovakia',      score: '0 – 1', away: '🇧🇪 Belgium'     },
+    { home: '🇧🇬 Bulgaria',      score: '2 – 2', away: '🇺🇦 Ukraine'     },
+    { home: '🇧🇪 Belgium',       score: '3 – 1', away: '🇧🇬 Bulgaria'    },
+    { home: '🇦🇱 Albania',       score: '1 – 2', away: '🇸🇰 Slovakia'    },
+    { home: '🇺🇦 Ukraine',       score: '1 – 1', away: '🇧🇪 Belgium'     },
+    { home: '🇧🇬 Bulgaria',      score: '0 – 1', away: '🇦🇱 Albania'     },
+    { home: '🇸🇰 Slovakia',      score: '1 – 2', away: '🇧🇬 Bulgaria'    },
+    { home: '🇦🇱 Albania',       score: '',      away: '🇺🇦 Ukraine'     }, // preencha quando souber
+  ],
+
+  'Group E WC Qualifiers Turkey 2024': [
+    { home: '🇳🇱 Netherlands',   score: '3 – 1', away: '🇫🇮 Finland'     },
+    { home: '🇦🇹 Austria',       score: '1 – 1', away: '🇷🇴 Romania'     },
+    { home: '🇷🇴 Romania',       score: '0 – 0', away: '🇳🇱 Netherlands' },
+    { home: '🇰🇿 Kazakhstan',    score: '2 – 2', away: '🇦🇹 Austria'      },
+    { home: '🇳🇱 Netherlands',   score: '0 – 0', away: '🇰🇿 Kazakhstan'  },
+    { home: '🇫🇮 Finland',       score: '2 – 1', away: '🇷🇴 Romania'     },
+    { home: '🇦🇹 Austria',       score: '1 – 1', away: '🇳🇱 Netherlands' },
+    { home: '🇰🇿 Kazakhstan',    score: '0 – 3', away: '🇫🇮 Finland'     },
+    { home: '🇫🇮 Finland',       score: '2 – 1', away: '🇦🇹 Austria'      },
+    { home: '🇷🇴 Romania',       score: '2 – 0', away: '🇰🇿 Kazakhstan'  },
+  ],
+
+  'Group F WC Qualifiers Turkey 2024': [
+    { home: '🇵🇹 Portugal',      score: '1 – 3', away: '🇮🇪 Ireland'     },
+    { home: '🇩🇰 Denmark',       score: '2 – 2', away: '🇨🇿 Czech Rep.'  },
+    { home: '🇨🇿 Czech Rep.',    score: '0 – 1', away: '🇵🇹 Portugal'    },
+    { home: '🇦🇿 Azerbaijan',    score: '3 – 1', away: '🇩🇰 Denmark'     },
+    { home: '🇵🇹 Portugal',      score: '2 – 1', away: '🇦🇿 Azerbaijan'  },
+    { home: '🇮🇪 Ireland',       score: '0 – 0', away: '🇨🇿 Czech Rep.'  },
+    { home: '🇩🇰 Denmark',       score: '0 – 0', away: '🇵🇹 Portugal'    },
+    { home: '🇦🇿 Azerbaijan',    score: '1 – 0', away: '🇮🇪 Ireland'     },
+    { home: '🇮🇪 Ireland',       score: '0 – 0', away: '🇩🇰 Denmark'     },
+    { home: '🇨🇿 Czech Rep.',    score: '1 – 0', away: '🇦🇿 Azerbaijan'  },
+  ],
+
+  'Group G WC Qualifiers Turkey 2024': [
+    { home: '🇮🇹 Italy',         score: '2 – 1', away: '🇬🇷 Greece'      },
+    { home: '🇨🇭 Switzerland',   score: '0 – 1', away: '🏴 Scotland'     },
+    { home: '🏴 Scotland',       score: '0 – 2', away: '🇮🇹 Italy'        },
+    { home: '🇨🇾 Cyprus',        score: '1 – 0', away: '🇨🇭 Switzerland' },
+    { home: '🇮🇹 Italy',         score: '0 – 0', away: '🇨🇾 Cyprus'       },
+    { home: '🇬🇷 Greece',        score: '0 – 0', away: '🏴 Scotland'     },
+    { home: '🇨🇭 Switzerland',   score: '0 – 0', away: '🇮🇹 Italy'        },
+    { home: '🇨🇾 Cyprus',        score: '0 – 0', away: '🇬🇷 Greece'      },
+    { home: '🇬🇷 Greece',        score: '2 – 0', away: '🇨🇭 Switzerland' },
+    { home: '🏴 Scotland',       score: '0 – 0', away: '🇨🇾 Cyprus'       },
+  ],
+
+  'Group H WC Qualifiers Turkey 2024': [
+    { home: '🇭🇷 Croatia',       score: '1 – 1', away: '🇸🇮 Slovenia'    },
+    { home: '🇩🇪 Germany',       score: '3 – 2', away: '🇳🇴 Norway'       },
+    { home: '🇳🇴 Norway',        score: '0 – 1', away: '🇭🇷 Croatia'     },
+    { home: '🇲🇹 Malta',         score: '0 – 0', away: '🇩🇪 Germany'     },
+    { home: '🇭🇷 Croatia',       score: '1 – 2', away: '🇲🇹 Malta'        },
+    { home: '🇸🇮 Slovenia',      score: '0 – 3', away: '🇳🇴 Norway'       },
+    { home: '🇩🇪 Germany',       score: '1 – 0', away: '🇭🇷 Croatia'     },
+    { home: '🇲🇹 Malta',         score: '3 – 1', away: '🇸🇮 Slovenia'    },
+    { home: '🇸🇮 Slovenia',      score: '2 – 1', away: '🇩🇪 Germany'     },
+    { home: '🇳🇴 Norway',        score: '2 – 0', away: '🇲🇹 Malta'        },
+  ],
+};
+
+
+const groupStandingsEurope: Record<string, Standing[]> = {
+  'Group A WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'Wales',   played: 1, won: 1, draw: 0, lost: 0, gf: 5,  ga: 1,  gd:  4, pts: 3 },
+    { pos: 2, team: 'Spain',   played: 1, won: 0, draw: 1, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 1 },
+    { pos: 3, team: 'Finland', played: 1, won: 0, draw: 1, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 1 },
+    { pos: 4, team: 'Serbia',  played: 1, won: 0, draw: 0, lost: 1, gf: 1,  ga: 5,  gd: -4, pts: 0 },
+  ],
+  'Group B WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'France',  played: 1, won: 1, draw: 0, lost: 0, gf: 3,  ga: 0,  gd:  3, pts: 3 },
+    { pos: 2, team: 'Sweden',  played: 1, won: 1, draw: 0, lost: 0, gf: 2,  ga: 0,  gd:  2, pts: 3 },
+    { pos: 3, team: 'Poland',  played: 1, won: 0, draw: 0, lost: 1, gf: 0,  ga: 2,  gd: -2, pts: 0 },
+    { pos: 4, team: 'Georgia', played: 1, won: 0, draw: 0, lost: 1, gf: 0,  ga: 3,  gd: -3, pts: 0 },
+  ],
+  'Group C WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'England',      played: 1, won: 1, draw: 0, lost: 0, gf: 1,  ga: 0,  gd:  1, pts: 3 },
+    { pos: 2, team: 'Turkey',       played: 1, won: 0, draw: 1, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 1 },
+    { pos: 3, team: 'Russia',       played: 1, won: 0, draw: 1, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 1 },
+    { pos: 4, team: 'N. Macedonia', played: 1, won: 0, draw: 0, lost: 1, gf: 0,  ga: 1,  gd: -1, pts: 0 },
+    { pos: 5, team: 'Iceland',      played: 0, won: 0, draw: 0, lost: 0, gf: 0,  ga: 0,  gd:  0, pts: 0 },
+  ],
+  'Group D WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'Ukraine',     played: 1, won: 1, draw: 0, lost: 0, gf: 2,  ga: 1,  gd:  1, pts: 3 },
+    { pos: 2, team: 'Netherlands', played: 1, won: 1, draw: 0, lost: 0, gf: 1,  ga: 0,  gd:  1, pts: 3 },
+    { pos: 3, team: 'Hungary',     played: 1, won: 0, draw: 0, lost: 1, gf: 1,  ga: 2,  gd: -1, pts: 0 },
+    { pos: 4, team: 'Albania',     played: 1, won: 0, draw: 0, lost: 1, gf: 0,  ga: 1,  gd: -1, pts: 0 },
+  ],
+  'Group E WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'Portugal', played: 1, won: 0, draw: 1, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 1 },
+    { pos: 2, team: 'Austria',  played: 1, won: 0, draw: 1, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 1 },
+    { pos: 3, team: 'Ireland',  played: 1, won: 0, draw: 1, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 1 },
+    { pos: 4, team: 'Norway',   played: 1, won: 0, draw: 1, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 1 },
+  ],
+  'Group F WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'Belgium',    played: 1, won: 1, draw: 0, lost: 0, gf: 4, ga: 0,  gd:  4, pts: 3 },
+    { pos: 2, team: 'Denmark',    played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0,  gd:  0, pts: 1 },
+    { pos: 3, team: 'Czech Rep.', played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0,  gd:  0, pts: 1 },
+    { pos: 4, team: 'Slovenia',   played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 4,  gd: -4, pts: 0 },
+  ],
+  'Group G WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'Italy',       played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 2,  gd:  1, pts: 3 },
+    { pos: 2, team: 'Switzerland', played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0,  gd:  0, pts: 1 },
+    { pos: 3, team: 'Greece',      played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0,  gd:  0, pts: 1 },
+    { pos: 4, team: 'Slovakia',    played: 1, won: 0, draw: 0, lost: 1, gf: 2, ga: 3,  gd: -1, pts: 0 },
+  ],
+  'Group H WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'Croatia',  played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 0,  gd:  2, pts: 3 },
+    { pos: 2, team: 'Romania',  played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 1,  gd:  1, pts: 3 },
+    { pos: 3, team: 'Germany',  played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 2,  gd: -1, pts: 0 },
+    { pos: 4, team: 'Scotland', played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 2,  gd: -2, pts: 0 },
+  ],
+  'Group A WC Qualifiers Turkey 2024': [
+    { pos: 1, team: 'France',          played: 4, won: 2, draw: 1, lost: 1, gf:  8, ga: 5, gd:  3, pts:  7 },
+    { pos: 2, team: 'Montenegro',      played: 4, won: 2, draw: 1, lost: 1, gf:  7, ga: 4, gd:  3, pts:  7 },
+    { pos: 3, team: 'Hungary',         played: 4, won: 1, draw: 2, lost: 1, gf:  3, ga: 3, gd:  0, pts:  5 },
+    { pos: 4, team: 'N. Macedonia',    played: 4, won: 1, draw: 1, lost: 2, gf:  5, ga: 7, gd: -2, pts:  4 },
+    { pos: 5, team: 'Wales',           played: 4, won: 1, draw: 1, lost: 2, gf:  5, ga: 7, gd: -2, pts:  4 },
+  ],
+};
+
+/** ——— PLACEHOLDERS PARA AS OUTRAS CONFEDERAÇÕES ——— **/
+const groupMatchesSouthAmerica: Record<string, Match[]> = {
+  'Group A WC Qualifiers Argentina 2025': [
+    { home: '🇦🇷 Argentina', score: '2 - 0', away: '🇵🇾 Paraguay' },
+    { home: '🇨🇴 Colombia',  score: '2 - 3', away: '🇪🇨 Ecuador' },
+    { home: '🇪🇨 Ecuador',   score: '', away: '🇦🇷 Argentina' },
+    { home: '🇨🇱 Chile',     score: '', away: '🇨🇴 Colombia' },
+    { home: '🇦🇷 Argentina', score: '', away: '🇨🇱 Chile' },
+    { home: '🇵🇾 Paraguay',  score: '', away: '🇪🇨 Ecuador' },
+    { home: '🇨🇴 Colombia',  score: '', away: '🇦🇷 Argentina' },
+    { home: '🇨🇱 Chile',     score: '', away: '🇵🇾 Paraguay' },
+    { home: '🇵🇾 Paraguay',  score: '', away: '🇨🇴 Colombia' },
+    { home: '🇪🇨 Ecuador',   score: '', away: '🇨🇱 Chile' },
+  ],
+
+  'Group B WC Qualifiers Argentina 2025': [
+    { home: '🇧🇷 Brazil',    score: '1 - 1', away: '🇻🇪 Venezuela' },
+    { home: '🇺🇾 Uruguay',   score: '', away: '🇵🇪 Peru' },
+    { home: '🇵🇪 Peru',      score: '', away: '🇧🇷 Brazil' },
+    { home: '🇧🇴 Bolivia',   score: '', away: '🇺🇾 Uruguay' },
+    { home: '🇧🇷 Brazil',    score: '', away: '🇧🇴 Bolivia' },
+    { home: '🇻🇪 Venezuela', score: '', away: '🇵🇪 Peru' },
+    { home: '🇺🇾 Uruguay',   score: '', away: '🇧🇷 Brazil' },
+    { home: '🇧🇴 Bolivia',   score: '', away: '🇻🇪 Venezuela' },
+    { home: '🇻🇪 Venezuela', score: '', away: '🇺🇾 Uruguay' },
+    { home: '🇵🇪 Peru',      score: '', away: '🇧🇴 Bolivia' },
+  ],
+};
+const groupStandingsSouthAmerica: Record<string, Standing[]> = {
+  'Group A': [ /* TODO: CONMEBOL classificação */ ], /* … */
+};
+
+const groupMatchesAfrica: Record<string, Match[]> = {
+  'Group A WC Qualifiers Argentina 2025': [
+    { home: '🇲🇦 Morocco',      score: '', away: '🇿🇲 Zambia'     },
+    { home: '🇨🇲 Cameroon',     score: '', away: '🇲🇱 Mali'       },
+    { home: '🇲🇱 Mali',         score: '', away: '🇲🇦 Morocco'    },
+    { home: '🇰🇪 Kenya',        score: '', away: '🇨🇲 Cameroon'   },
+    { home: '🇲🇦 Morocco',      score: '', away: '🇰🇪 Kenya'      },
+    { home: '🇿🇲 Zambia',       score: '', away: '🇲🇱 Mali'       },
+    { home: '🇨🇲 Cameroon',     score: '', away: '🇲🇦 Morocco'    },
+    { home: '🇰🇪 Kenya',        score: '', away: '🇿🇲 Zambia'     },
+    { home: '🇿🇲 Zambia',       score: '', away: '🇨🇲 Cameroon'   },
+    { home: '🇲🇱 Mali',         score: '', away: '🇰🇪 Kenya'      },
+  ],
+
+  'Group B WC Qualifiers Argentina 2025': [
+    { home: '🇸🇳 Senegal',      score: '', away: '🇬🇳 Guinea'       },
+    { home: '🇹🇳 Tunisia',      score: '', away: '🇿🇦 South Africa' },
+    { home: '🇿🇦 South Africa', score: '', away: '🇸🇳 Senegal'     },
+    { home: '🇿🇼 Zimbabwe',     score: '', away: '🇹🇳 Tunisia'     },
+    { home: '🇸🇳 Senegal',      score: '', away: '🇿🇼 Zimbabwe'    },
+    { home: '🇬🇳 Guinea',       score: '', away: '🇿🇦 South Africa' },
+    { home: '🇹🇳 Tunisia',      score: '', away: '🇸🇳 Senegal'     },
+    { home: '🇿🇼 Zimbabwe',     score: '', away: '🇬🇳 Guinea'       },
+    { home: '🇬🇳 Guinea',       score: '', away: '🇹🇳 Tunisia'     },
+    { home: '🇿🇦 South Africa', score: '', away: '🇿🇼 Zimbabwe'    },
+  ],
+
+  'Group C WC Qualifiers Argentina 2025': [
+    { home: '🇪🇬 Egypt',        score: '', away: '🇬🇦 Gabon'      },
+    { home: '🇳🇬 Nigeria',      score: '', away: '🇨🇩 Congo DR'  },
+    { home: '🇨🇩 Congo DR',     score: '', away: '🇳🇬 Nigeria'   },
+    { home: '🇧🇼 Botswana',     score: '', away: '🇪🇬 Egypt'      },
+    { home: '🇪🇬 Egypt',        score: '', away: '🇧🇼 Botswana'   },
+    { home: '🇬🇦 Gabon',        score: '', away: '🇨🇩 Congo DR'  },
+    { home: '🇳🇬 Nigeria',      score: '', away: '🇪🇬 Egypt'      },
+    { home: '🇧🇼 Botswana',     score: '', away: '🇬🇦 Gabon'      },
+    { home: '🇬🇦 Gabon',        score: '', away: '🇳🇬 Nigeria'   },
+    { home: '🇨🇩 Congo DR',     score: '', away: '🇧🇼 Botswana'   },
+  ],
+
+  'Group D WC Qualifiers Argentina 2025': [
+    { home: '🇩🇿 Algeria',      score: '', away: '🇬🇭 Ghana'       },
+    { home: '🇨🇮 Ivory Coast',   score: '', away: '🇧🇫 Burkina Faso'},
+    { home: '🇧🇫 Burkina Faso', score: '', away: '🇩🇿 Algeria'    },
+    { home: '🇸🇴 Somalia',      score: '', away: '🇨🇮 Ivory Coast'},
+    { home: '🇩🇿 Algeria',      score: '', away: '🇸🇴 Somalia'    },
+    { home: '🇬🇭 Ghana',        score: '', away: '🇧🇫 Burkina Faso'},
+    { home: '🇨🇮 Ivory Coast',   score: '', away: '🇩🇿 Algeria'    },
+    { home: '🇸🇴 Somalia',      score: '', away: '🇬🇭 Ghana'      },
+    { home: '🇬🇭 Ghana',        score: '', away: '🇨🇮 Ivory Coast'},
+    { home: '🇧🇫 Burkina Faso', score: '', away: '🇸🇴 Somalia'    },
+  ],
+};
+
+const groupStandingsAfrica: Record<string, Standing[]> = {
+  'Group A': [ /* TODO: CAF classificação */ ], /* … */
+};
+
+// Asia Qualifiers
+const groupMatchesAsia: Record<string, Match[]> = {
+  // Group A
+  'Group A WC Qualifiers Argentina 2025': [
+    { home: '🇯🇵 Japan',        score: '', away: '🇰🇼 Kuwait'       },
+    { home: '🇧🇭 Bahrain',      score: '', away: '🇳🇿 New Zealand'  },
+    { home: '🇳🇿 New Zealand',  score: '', away: '🇯🇵 Japan'        },
+    { home: '🇵🇭 Philippines',  score: '', away: '🇧🇭 Bahrain'      },
+    { home: '🇯🇵 Japan',        score: '', away: '🇵🇭 Philippines'  },
+    { home: '🇰🇼 Kuwait',       score: '', away: '🇳🇿 New Zealand'  },
+    { home: '🇧🇭 Bahrain',      score: '', away: '🇯🇵 Japan'        },
+    { home: '🇵🇭 Philippines',  score: '', away: '🇰🇼 Kuwait'       },
+    { home: '🇰🇼 Kuwait',       score: '', away: '🇧🇭 Bahrain'      },
+    { home: '🇳🇿 New Zealand',  score: '', away: '🇵🇭 Philippines'  },
+  ],
+
+  // Group B
+  'Group B WC Qualifiers Argentina 2025': [
+    { home: '🇮🇷 Iran',         score: '', away: '🇲🇾 Malaysia'    },
+    { home: '🇴🇲 Oman',         score: '', away: '🇨🇳 China'       },
+    { home: '🇨🇳 China',        score: '', away: '🇮🇷 Iran'         },
+    { home: '🇭🇰 Hong Kong',    score: '', away: '🇴🇲 Oman'        },
+    { home: '🇮🇷 Iran',         score: '', away: '🇭🇰 Hong Kong'  },
+    { home: '🇲🇾 Malaysia',     score: '', away: '🇨🇳 China'       },
+    { home: '🇴🇲 Oman',         score: '', away: '🇮🇷 Iran'         },
+    { home: '🇭🇰 Hong Kong',    score: '', away: '🇲🇾 Malaysia'    },
+    { home: '🇲🇾 Malaysia',     score: '', away: '🇴🇲 Oman'        },
+    { home: '🇨🇳 China',        score: '', away: '🇭🇰 Hong Kong'  },
+  ],
+
+  // Group C
+  'Group C WC Qualifiers Argentina 2025': [
+    { home: '🇰🇷 South Korea',  score: '', away: '🇮🇳 India'       },
+    { home: '🇦🇪 UAE',          score: '', away: '🇹🇭 Thailand'    },
+    { home: '🇹🇭 Thailand',     score: '', away: '🇰🇷 South Korea'},
+    { home: '🇸🇬 Singapore',    score: '', away: '🇦🇪 UAE'         },
+    { home: '🇰🇷 South Korea',  score: '', away: '🇸🇬 Singapore'  },
+    { home: '🇮🇳 India',        score: '', away: '🇹🇭 Thailand'    },
+    { home: '🇦🇪 UAE',          score: '', away: '🇰🇷 South Korea'},
+    { home: '🇸🇬 Singapore',    score: '', away: '🇮🇳 India'       },
+    { home: '🇮🇳 India',        score: '', away: '🇦🇪 UAE'         },
+    { home: '🇹🇭 Thailand',     score: '', away: '🇸🇬 Singapore'  },
+  ],
+
+  // Group D
+  'Group D WC Qualifiers Argentina 2025': [
+    { home: '🇦🇺 Australia',    score: '', away: '🇮🇩 Indonesia'  },
+    { home: '🇯🇴 Jordan',       score: '', away: '🇵🇸 Palestine'   },
+    { home: '🇵🇸 Palestine',    score: '', away: '🇦🇺 Australia'  },
+    { home: '🇲🇲 Myanmar',      score: '', away: '🇯🇴 Jordan'      },
+    { home: '🇦🇺 Australia',    score: '', away: '🇲🇲 Myanmar'     },
+    { home: '🇮🇩 Indonesia',    score: '', away: '🇵🇸 Palestine'   },
+    { home: '🇯🇴 Jordan',       score: '', away: '🇦🇺 Australia'  },
+    { home: '🇲🇲 Myanmar',      score: '', away: '🇮🇩 Indonesia'  },
+    { home: '🇮🇩 Indonesia',    score: '', away: '🇯🇴 Jordan'      },
+    { home: '🇵🇸 Palestine',    score: '', away: '🇲🇲 Myanmar'     },
+  ],
+
+  // Group E
+  'Group E WC Qualifiers Argentina 2025': [
+    { home: '🇶🇦 Qatar',        score: '', away: '🇰🇵 North Korea'},
+    { home: '🇮🇶 Iraq',         score: '', away: '🇰🇬 Kyrgyzstan'  },
+    { home: '🇰🇬 Kyrgyzstan',   score: '', away: '🇶🇦 Qatar'       },
+    { home: '🇳🇵 Nepal',        score: '', away: '🇮🇶 Iraq'        },
+    { home: '🇶🇦 Qatar',        score: '', away: '🇳🇵 Nepal'      },
+    { home: '🇰🇵 North Korea',  score: '', away: '🇰🇬 Kyrgyzstan'  },
+    { home: '🇮🇶 Iraq',         score: '', away: '🇶🇦 Qatar'       },
+    { home: '🇳🇵 Nepal',        score: '', away: '🇰🇵 North Korea'},
+    { home: '🇰🇵 North Korea',  score: '', away: '🇮🇶 Iraq'        },
+    { home: '🇰🇬 Kyrgyzstan',   score: '', away: '🇳🇵 Nepal'      },
+  ],
+
+  // Group F
+  'Group F WC Qualifiers Argentina 2025': [
+    { home: '🇺🇿 Uzbekistan',   score: '', away: '🇱🇧 Lebanon'     },
+    { home: '🇸🇦 Saudi Arabia', score: '', away: '🇻🇳 Vietnam'     },
+    { home: '🇻🇳 Vietnam',      score: '', away: '🇺🇿 Uzbekistan' },
+    { home: '🇧🇩 Bangladesh',   score: '', away: '🇸🇦 Saudi Arabia'},
+    { home: '🇺🇿 Uzbekistan',   score: '', away: '🇧🇩 Bangladesh' },
+    { home: '🇱🇧 Lebanon',     score: '', away: '🇻🇳 Vietnam'     },
+    { home: '🇸🇦 Saudi Arabia', score: '', away: '🇺🇿 Uzbekistan' },
+    { home: '🇧🇩 Bangladesh',   score: '', away: '🇱🇧 Lebanon'     },
+    { home: '🇱🇧 Lebanon',     score: '', away: '🇸🇦 Saudi Arabia'},
+    { home: '🇻🇳 Vietnam',      score: '', away: '🇧🇩 Bangladesh' },
+  ],
+};
+
+const groupStandingsAsia: Record<string, Standing[]> = {
+  'Group A': [ /* TODO: AFC classificação */ ], /* … */
+};
+
+const groupMatchesNCAmerica: Record<string, Match[]> = {
+  'Group A': [{ home: '🇺🇸 United States', score: '', away: '🇵🇦 Panama'      },
+    { home: '🇲🇽 Mexico',        score: '', away: '🇨🇦 Canada'      },
+    { home: '🇨🇦 Canada',        score: '', away: '🇺🇸 United States'},
+    { home: '🇨🇷 Costa Rica',    score: '', away: '🇲🇽 Mexico'      },
+    { home: '🇺🇸 United States', score: '', away: '🇨🇷 Costa Rica'  },
+    { home: '🇵🇦 Panama',        score: '', away: '🇨🇦 Canada'      },
+    { home: '🇲🇽 Mexico',        score: '', away: '🇺🇸 United States'},
+    { home: '🇨🇷 Costa Rica',    score: '', away: '🇵🇦 Panama'      },
+    { home: '🇵🇦 Panama',        score: '', away: '🇲🇽 Mexico'      },
+    { home: '🇨🇦 Canada',        score: '', away: '🇨🇷 Costa Rica'  },
+  ],
+}; 
+const groupStandingsNCAmerica: Record<string, Standing[]> = {
+  'Group A': [ /* TODO: CONCACAF classificação */ ], /* … */
+};
+
+const groupMatchesByRegion: Record<Region, Record<string, Match[]>> = {
+  Europe:           groupMatchesEurope,
+  'South America':  groupMatchesSouthAmerica,
+  Africa:           groupMatchesAfrica,
+  Asia:             groupMatchesAsia,
+  'N/C America':    groupMatchesNCAmerica,
+};
+
+const groupStandingsByRegion: Record<Region, Record<string, Standing[]>> = {
+  Europe:           groupStandingsEurope,
+  'South America':  groupStandingsSouthAmerica,
+  Africa:           groupStandingsAfrica,
+  Asia:             groupStandingsAsia,
+  'N/C America':    groupStandingsNCAmerica,
+};
+
+function StandingsTable({
+  groupName,
+  rows,
+}: {
+  groupName: string;
+  rows: Standing[];
+}) {
+  return (
+    <div className="standings">
+      <h3>{groupName} Standings</h3>
+      <table className="match-table group-stage standings-table">
+        <thead>
+          <tr>
+            <th>Pos</th><th>Team</th><th>Pts</th>
+            <th>Pld</th><th>W</th><th>D</th><th>L</th>
+            <th>GF</th><th>GA</th><th>GD</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map(r => (
+            <tr key={r.pos}>
+              <td>{r.pos}</td><td>{r.team}</td><td>{r.pts}</td>
+              <td>{r.played}</td><td>{r.won}</td><td>{r.draw}</td><td>{r.lost}</td>
+              <td>{r.gf}</td><td>{r.ga}</td>
+              <td>{r.gd > 0 ? `+${r.gd}` : r.gd}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export default function WorldCup2025Page() {
+  const [activeRegion, setActiveRegion] = useState<Region>('Europe');
+  const matches   = groupMatchesByRegion[activeRegion];
+  const standings = groupStandingsByRegion[activeRegion];
 
   return (
-    <div>
-      <h1>Champions League Standings 2025</h1>
-
+    <div style={{ padding: '20px' }}>
+      <h1>World Cup Qualifiers 2025</h1>
       <div className="tabs">
-        {stageNames.map((stage, index) => (
+        {regions.map(region => (
           <button
-            key={index}
-            onClick={() => setCurrentStage(index)}
-            className={currentStage === index ? "active" : ""}
+            key={region}
+            className={region === activeRegion ? 'active' : ''}
+            onClick={() => setActiveRegion(region)}
           >
-            {stage}
+            {region}
           </button>
         ))}
       </div>
-
-      <h2>{stageNames[currentStage]}</h2>
-
-      {Array.isArray(currentData) && currentData.length > 0 && currentData[0].position !== undefined ? (
-        <table className="group-stage">
-          <thead>
-            <tr>
-              <th>Position</th><th>Team</th><th>Pts</th><th>Pld</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th>
-            </tr>
-          </thead>
-          <tbody>
-            {currentData.map((team, index) => (
-              <tr key={index}>
-                <td>{team.position}</td>
-                <td>{team.team}</td>
-                <td>{team.points}</td>
-                <td>{team.played}</td>
-                <td>{team.won}</td>
-                <td>{team.drawn}</td>
-                <td>{team.lost}</td>
-                <td>{team.goalsFor}</td>
-                <td>{team.goalsAgainst}</td>
-                <td>{team.goalDifference}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      ) : (
-        <table>
-          <thead>
-            <tr><th>Home</th><th>Score</th><th>Away</th></tr>
-          </thead>
-          <tbody>
-  {currentData.map((match, index) => (
-    <React.Fragment key={index}>
-      <tr>
-        <td>{match.home}</td>
-        <td>{match.score || '-'}</td>
-        <td>{match.away}</td>
-      </tr>
-      {index % 2 === 1 && (
-        <>
-          <tr className="aggregate-line">
-            <td colSpan={3}><strong>Aggregate: {match.aggregate || '-'}</strong></td>
-          </tr>
-          <tr className="match-divider">
-            <td colSpan={3}></td>
-          </tr>
-        </>
-      )}
-    </React.Fragment>
-  ))}
-</tbody>
-
-        </table>
-      )}
+      <div className="flex-container">
+        {Object.entries(matches).map(([fullGroupName, gm]) => {
+          // extrai "Group X" para buscar em groupStandings
+          const baseGroup = fullGroupName.split(' ').slice(0, 2).join(' ');
+          return (
+            <div key={fullGroupName} className="group-block">
+              <div className="matches-block">
+                <div className="group-title">{fullGroupName}</div>
+                <table className="match-table group-stage">
+                  <thead>
+                    <tr><th>HOME</th><th>SCORE</th><th>AWAY</th></tr>
+                  </thead>
+                  <tbody>
+                    {gm.map((m, i) => (
+                      <tr key={i}>
+                        <td>{m.home}</td>
+                        <td>{m.score}</td>
+                        <td>{m.away}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <StandingsTable
+                groupName={fullGroupName}
+                rows={standings[fullGroupName] || []}
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

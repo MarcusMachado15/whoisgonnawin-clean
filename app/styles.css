@@ -7,13 +7,14 @@ table {
 }
 
 th, td {
-  padding: 12px 20px;
+  padding: 12px 16px;
   text-align: center;
   border: 1px solid #ddd;
   font-size: 16px;
   color: #444;
 }
 
+/* Todos os th agora em azul, texto branco */
 th {
   background-color: #0044cc;
   color: white;
@@ -52,7 +53,7 @@ h1 {
   color: #222;
 }
 
-/* Extra styles for tab navigation */
+/* Abas de navegação */
 .tabs {
   display: flex;
   justify-content: center;
@@ -81,37 +82,101 @@ h1 {
   font-weight: bold;
 }
 
-/* Divider between matches (home and away legs) */
+/* Divider entre partidas */
 .match-divider td {
   border-top: 3px solid #333;
   font-weight: bold;
   background-color: #eaeaea;
 }
 
-/* === STYLES ONLY FOR GROUP STAGE TABLE === */
-.group-stage td:first-child,
-.group-stage th:first-child {
-  width: 60px;
-}
-
-.group-stage tbody tr td:first-child {
+/* === GROUP STAGE === */
+.group-stage th:nth-child(1),
+.group-stage td:nth-child(1) {
+  width: 38%;
   font-weight: bold;
+  color: #444;
 }
 
-.group-stage tbody tr:nth-child(-n+8) td:first-child {
-  color: green;
+.group-stage th:nth-child(2),
+.group-stage td:nth-child(2) {
+  width: 18%;
 }
 
-.group-stage tbody tr:nth-child(n+9):nth-child(-n+24) td:first-child {
-  color: #3399ff;
-}
-
+.group-stage th:nth-child(3),
 .group-stage td:nth-child(3) {
-  background-color: #dff0d8;
+  width: 44%;
   font-weight: bold;
 }
 
-/* Responsive tweak */
+/* garante que só o td fique branco (th já está azul acima) */
+.group-stage td:nth-child(3) {
+  background-color: #fff;
+}
+
+/* força cabeçalho AWAY em azul */
+.group-stage th:nth-child(3) {
+  background-color: #0044cc;
+  color: white;
+}
+
+/* === STANDINGS TABLE === */
+.standings-table {
+  width: 100%;
+}
+
+.standings-table th:nth-child(1),
+.standings-table td:nth-child(1) {
+  width: 36px;
+}
+
+.standings-table th:nth-child(2),
+.standings-table td:nth-child(2) {
+  width: 180px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 12px;
+}
+
+.standings-table th:nth-child(3),
+.standings-table td:nth-child(3) {
+  width: 42px;
+}
+
+/* forças específicas */
+.standings-table th {
+  background-color: #0044cc; /* cabeçalho todo em azul */
+  color: white;
+}
+
+.standings-table td:nth-child(3) {
+  /* mantém o PTS em branco */
+  background-color: #fff;
+}
+
+/* Layout lateral */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.group-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.matches-block,
+.standings {
+  flex: 1 1 48%;
+  min-width: 300px;
+}
+
+/* Responsivo */
 @media (max-width: 768px) {
   th, td {
     padding: 8px;
@@ -125,20 +190,29 @@ h1 {
   .tabs button {
     padding: 8px 12px;
     font-size: 14px;
-    
-  }.aggregate-line td {
+  }
+
+  .aggregate-line td {
     background-color: #eaeaea;
     font-weight: bold;
     text-align: center;
     padding: 10px;
     border: none;
   }
-  
+
   .match-divider td {
     border-top: 4px solid #333;
     background-color: #fff;
     height: 8px;
     padding: 0;
   }
-  
+
+  .group-block {
+    flex-direction: column;
+  }
+
+  .matches-block,
+  .standings {
+    width: 100%;
+  }
 }
