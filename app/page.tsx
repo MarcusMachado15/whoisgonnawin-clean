@@ -325,7 +325,20 @@ const groupMatchesSouthAmerica: Record<string, Match[]> = {
   ],
 };
 const groupStandingsSouthAmerica: Record<string, Standing[]> = {
-  'Group A': [ /* TODO: CONMEBOL classificação */ ], /* … */
+  'Group A': [
+    { pos: 1, team: 'Argentina', played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 0, gd: 2, pts: 3 },
+    { pos: 2, team: 'Ecuador',   played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 2, gd: 1, pts: 3 },
+    { pos: 3, team: 'Chile',     played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+    { pos: 4, team: 'Colombia',  played: 1, won: 0, draw: 0, lost: 1, gf: 2, ga: 3, gd:-1, pts: 0 },
+    { pos: 5, team: 'Paraguay',  played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 2, gd:-2, pts: 0 }
+  ],
+  'Group B': [
+    { pos: 1, team: 'Uruguay',   played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 0, gd: 3, pts: 3 },
+    { pos: 2, team: 'Brazil',    played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd: 0, pts: 1 },
+    { pos: 3, team: 'Venezuela', played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd: 0, pts: 1 },
+    { pos: 4, team: 'Bolivia',   played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+    { pos: 5, team: 'Peru',      played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 3, gd:-3, pts: 0 }
+  ]
 };
 
 const groupMatchesAfrica: Record<string, Match[]> = {
