@@ -448,7 +448,7 @@ const groupMatchesAsia: Record<string, Match[]> = {
   // Group B
   'Group B WC Qualifiers Argentina 2025': [
     { home: '🇮🇷 Iran',         score: '1 - 1', away: '🇲🇾 Malaysia'    },
-    { home: '🇴🇲 Oman',         score: '', away: '🇨🇳 China'       },
+    { home: '🇴🇲 Oman',         score: '0 - 4', away: '🇨🇳 China'       },
     { home: '🇨🇳 China',        score: '', away: '🇮🇷 Iran'         },
     { home: '🇭🇰 Hong Kong',    score: '', away: '🇴🇲 Oman'        },
     { home: '🇮🇷 Iran',         score: '', away: '🇭🇰 Hong Kong'  },
