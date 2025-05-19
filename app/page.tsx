@@ -490,7 +490,7 @@ const groupMatchesAsia: Record<string, Match[]> = {
   // Group E
   'Group E WC Qualifiers Argentina 2025': [
     { home: '🇶🇦 Qatar',        score: '2 - 0', away: '🇰🇵 North Korea'},
-    { home: '🇮🇶 Iraq',         score: '', away: '🇰🇬 Kyrgyzstan'  },
+    { home: '🇮🇶 Iraq',         score: '1 - 2', away: '🇰🇬 Kyrgyzstan'  },
     { home: '🇰🇬 Kyrgyzstan',   score: '', away: '🇶🇦 Qatar'       },
     { home: '🇳🇵 Nepal',        score: '', away: '🇮🇶 Iraq'        },
     { home: '🇶🇦 Qatar',        score: '', away: '🇳🇵 Nepal'      },
@@ -503,8 +503,8 @@ const groupMatchesAsia: Record<string, Match[]> = {
 
   // Group F
   'Group F WC Qualifiers Argentina 2025': [
-    { home: '🇺🇿 Uzbekistan',   score: '', away: '🇱🇧 Lebanon'     },
-    { home: '🇸🇦 Saudi Arabia', score: '', away: '🇻🇳 Vietnam'     },
+    { home: '🇺🇿 Uzbekistan',   score: '1 - 1', away: '🇱🇧 Lebanon'     },
+    { home: '🇸🇦 Saudi Arabia', score: '0 - 1', away: '🇻🇳 Vietnam'     },
     { home: '🇻🇳 Vietnam',      score: '', away: '🇺🇿 Uzbekistan' },
     { home: '🇧🇩 Bangladesh',   score: '', away: '🇸🇦 Saudi Arabia'},
     { home: '🇺🇿 Uzbekistan',   score: '', away: '🇧🇩 Bangladesh' },
