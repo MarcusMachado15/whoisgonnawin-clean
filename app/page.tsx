@@ -517,7 +517,53 @@ const groupMatchesAsia: Record<string, Match[]> = {
 };
 
 const groupStandingsAsia: Record<string, Standing[]> = {
-  'Group A': [ /* TODO: AFC classificação */ ], /* … */
+  'Group A WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'Japan',           played: 1, won: 1, draw: 0, lost: 0, gf: 1, ga: 0, gd:  1, pts: 3 },
+    { pos: 2, team: 'Bahrain',         played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0, gd:  0, pts: 1 },
+    { pos: 3, team: 'New Zealand',     played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0, gd:  0, pts: 1 },
+    { pos: 4, team: 'Philippines',     played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd:  0, pts: 0 },
+    { pos: 5, team: 'Kuwait',          played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 1, gd: -1, pts: 0 },
+  ],
+
+  'Group B WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'China',           played: 1, won: 1, draw: 0, lost: 0, gf: 4, ga: 0, gd:  4, pts: 3 },
+    { pos: 2, team: 'Iran',            played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
+    { pos: 3, team: 'Malaysia',        played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
+    { pos: 4, team: 'Hong Kong',       played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd:  0, pts: 0 },
+    { pos: 5, team: 'Oman',            played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 4, gd: -4, pts: 0 },
+  ],
+
+  'Group C WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'South Korea',     played: 1, won: 1, draw: 0, lost: 0, gf: 4, ga: 0, gd:  4, pts: 3 },
+    { pos: 2, team: 'Thailand',        played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 1, gd:  2, pts: 3 },
+    { pos: 3, team: 'Singapore',       played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd:  0, pts: 0 },
+    { pos: 4, team: 'United Arab Emirates', played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 3, gd: -2, pts: 0 },
+    { pos: 5, team: 'India',           played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 4, gd: -4, pts: 0 },
+  ],
+
+  'Group D WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'Jordan',          played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 2, gd:  1, pts: 3 },
+    { pos: 2, team: 'Indonesia',       played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 1, gd:  1, pts: 3 },
+    { pos: 3, team: 'Myanmar',         played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd:  0, pts: 0 },
+    { pos: 4, team: 'Palestine',       played: 1, won: 0, draw: 0, lost: 1, gf: 2, ga: 3, gd: -1, pts: 0 },
+    { pos: 5, team: 'Australia',       played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 2, gd: -1, pts: 0 },
+  ],
+
+  'Group E WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'Qatar',           played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 0, gd:  2, pts: 3 },
+    { pos: 2, team: 'Kyrgyzstan',      played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 1, gd:  1, pts: 3 },
+    { pos: 3, team: 'Nepal',           played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd:  0, pts: 0 },
+    { pos: 4, team: 'Iraq',            played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 2, gd: -1, pts: 0 },
+    { pos: 5, team: 'North Korea',     played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 2, gd: -2, pts: 0 },
+  ],
+
+  'Group F WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'Vietnam',         played: 1, won: 1, draw: 0, lost: 0, gf: 1, ga: 0, gd:  1, pts: 3 },
+    { pos: 2, team: 'Lebanon',         played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
+    { pos: 3, team: 'Uzbekistan',      played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
+    { pos: 4, team: 'Bangladesh',      played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd:  0, pts: 0 },
+    { pos: 5, team: 'Saudi Arabia',    played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 1, gd: -1, pts: 0 },
+  ],
 };
 
 const groupMatchesNCAmerica: Record<string, Match[]> = {
@@ -534,8 +580,14 @@ const groupMatchesNCAmerica: Record<string, Match[]> = {
     { home: '🇨🇦 Canada',        score: '', away: '🇨🇷 Costa Rica'  },
   ],
 }; 
-const groupStandingsNCAmerica: Record<string, Standing[]> = {
-  'Group A': [ /* TODO: CONCACAF classificação */ ], /* … */
+const groupStandingsNorthAmerica: Record<string, Standing[]> = {
+  'Group A WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'Canada',         played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 1,  gd:  1, pts: 3 },
+    { pos: 2, team: 'United States', played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0,  gd:  0, pts: 1 },
+    { pos: 3, team: 'Panama',        played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0,  gd:  0, pts: 1 },
+    { pos: 4, team: 'Costa Rica',    played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0,  gd:  0, pts: 0 },
+    { pos: 5, team: 'Mexico',        played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 2,  gd: -1, pts: 0 },
+  ],
 };
 
 const groupMatchesByRegion: Record<Region, Record<string, Match[]>> = {
