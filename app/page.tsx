@@ -521,8 +521,9 @@ const groupStandingsAsia: Record<string, Standing[]> = {
 };
 
 const groupMatchesNCAmerica: Record<string, Match[]> = {
-  'Group A': [{ home: '🇺🇸 United States', score: '', away: '🇵🇦 Panama'      },
-    { home: '🇲🇽 Mexico',        score: '', away: '🇨🇦 Canada'      },
+  'Group A': [
+    { home: '🇺🇸 United States', score: '0 - 0', away: '🇵🇦 Panama'      },
+    { home: '🇲🇽 Mexico',        score: '1 - 2', away: '🇨🇦 Canada'      },
     { home: '🇨🇦 Canada',        score: '', away: '🇺🇸 United States'},
     { home: '🇨🇷 Costa Rica',    score: '', away: '🇲🇽 Mexico'      },
     { home: '🇺🇸 United States', score: '', away: '🇨🇷 Costa Rica'  },
