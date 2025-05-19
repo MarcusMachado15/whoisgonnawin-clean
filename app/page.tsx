@@ -429,9 +429,7 @@ const groupStandingsAfrica: Record<string, Standing[]> = {
   ],
 };
 
-// Asia Qualifiers
 const groupMatchesAsia: Record<string, Match[]> = {
-  // Group A
   'Group A WC Qualifiers Argentina 2025': [
     { home: '🇯🇵 Japan',        score: '1 - 0', away: '🇰🇼 Kuwait'       },
     { home: '🇧🇭 Bahrain',      score: '0 - 0', away: '🇳🇿 New Zealand'  },
@@ -580,7 +578,7 @@ const groupMatchesNCAmerica: Record<string, Match[]> = {
     { home: '🇨🇦 Canada',        score: '', away: '🇨🇷 Costa Rica'  },
   ],
 }; 
-const groupStandingsNorthAmerica: Record<string, Standing[]> = {
+const groupStandingsNCAmerica: Record<string, Standing[]> = {
   'Group A WC Qualifiers Argentina 2025': [
     { pos: 1, team: 'Canada',         played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 1,  gd:  1, pts: 3 },
     { pos: 2, team: 'United States', played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0,  gd:  0, pts: 1 },
@@ -599,11 +597,11 @@ const groupMatchesByRegion: Record<Region, Record<string, Match[]>> = {
 };
 
 const groupStandingsByRegion: Record<Region, Record<string, Standing[]>> = {
-  Europe:           groupStandingsEurope,
-  'South America':  groupStandingsSouthAmerica,
-  Africa:           groupStandingsAfrica,
-  Asia:             groupStandingsAsia,
-  'N/C America':    groupStandingsNCAmerica,
+  Europe:          groupStandingsEurope,
+  'South America': groupStandingsSouthAmerica,
+  Africa:          groupStandingsAfrica,
+  Asia:            groupStandingsAsia,
+  'N/C America':   groupStandingsNCAmerica,   
 };
 
 function StandingsTable({
