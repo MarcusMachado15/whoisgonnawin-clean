@@ -171,17 +171,17 @@ const groupMatchesEurope: Record<string, Match[]> = {
 ],
 
   'Group D WC Qualifiers Turkey 2024': [
-    { home: '🇧🇪 Belgium',       score: '2 – 0', away: '🇦🇱 Albania'     },
-    { home: '🇺🇦 Ukraine',       score: '1 – 2', away: '🇸🇰 Slovakia'    },
-    { home: '🇸🇰 Slovakia',      score: '0 – 1', away: '🇧🇪 Belgium'     },
-    { home: '🇧🇬 Bulgaria',      score: '2 – 2', away: '🇺🇦 Ukraine'     },
-    { home: '🇧🇪 Belgium',       score: '3 – 1', away: '🇧🇬 Bulgaria'    },
-    { home: '🇦🇱 Albania',       score: '1 – 2', away: '🇸🇰 Slovakia'    },
-    { home: '🇺🇦 Ukraine',       score: '1 – 1', away: '🇧🇪 Belgium'     },
-    { home: '🇧🇬 Bulgaria',      score: '0 – 1', away: '🇦🇱 Albania'     },
-    { home: '🇸🇰 Slovakia',      score: '1 – 2', away: '🇧🇬 Bulgaria'    },
-    { home: '🇦🇱 Albania',       score: '',      away: '🇺🇦 Ukraine'     }, 
-  ],
+  { home: '🇧🇪 Belgium',   score: '2 – 0', away: '🇦🇱 Albania'  },
+  { home: '🇺🇦 Ukraine',   score: '1 – 2', away: '🇸🇰 Slovakia' },
+  { home: '🇸🇰 Slovakia',  score: '0 – 1', away: '🇧🇪 Belgium'  },
+  { home: '🇧🇬 Bulgaria',  score: '2 – 2', away: '🇺🇦 Ukraine'  },
+  { home: '🇧🇪 Belgium',   score: '3 – 1', away: '🇧🇬 Bulgaria' },
+  { home: '🇦🇱 Albania',   score: '1 – 2', away: '🇸🇰 Slovakia' },
+  { home: '🇺🇦 Ukraine',   score: '1 – 1', away: '🇧🇪 Belgium'  },
+  { home: '🇧🇬 Bulgaria',  score: '0 – 1', away: '🇦🇱 Albania'  },
+  { home: '🇦🇱 Albania',   score: '1 – 2', away: '🇺🇦 Ukraine'  },
+  { home: '🇸🇰 Slovakia',  score: '1 – 1', away: '🇧🇬 Bulgaria' },
+],
 
   'Group E WC Qualifiers Turkey 2024': [
     { home: '🇳🇱 Netherlands',   score: '3 – 1', away: '🇫🇮 Finland'     },
@@ -309,6 +309,13 @@ const groupStandingsEurope: Record<string, Standing[]> = {
     { pos: 4, team: 'Russia',  played: 4, won: 1, draw: 0, lost: 3, gf: 5,  ga: 10, gd: -5, pts:  3 },
     { pos: 5, team: 'Poland',  played: 4, won: 0, draw: 1, lost: 3, gf: 4,  ga: 10, gd: -6, pts:  1 },
   ],
+  'Group D WC Qualifiers Turkey 2024': [
+  { pos: 1, team: 'Belgium',   played: 4, won: 3, draw: 1, lost: 0, gf:  7, ga:  2, gd: +5, pts: 10 },
+  { pos: 2, team: 'Slovakia',  played: 4, won: 2, draw: 1, lost: 1, gf:  5, ga:  4, gd: +1, pts:  7 },
+  { pos: 3, team: 'Ukraine',   played: 4, won: 1, draw: 2, lost: 1, gf:  6, ga:  6, gd:  0, pts:  5 },
+  { pos: 4, team: 'Albania',   played: 4, won: 1, draw: 0, lost: 3, gf:  3, ga:  6, gd: -3, pts:  3 },
+  { pos: 5, team: 'Bulgaria',  played: 4, won: 0, draw: 2, lost: 2, gf:  4, ga:  7, gd: -3, pts:  2 },
+],
 };
 
 /** ——— PLACEHOLDERS PARA AS OUTRAS CONFEDERAÇÕES ——— **/
