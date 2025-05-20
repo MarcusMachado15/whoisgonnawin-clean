@@ -316,6 +316,13 @@ const groupStandingsEurope: Record<string, Standing[]> = {
   { pos: 4, team: 'Albania',   played: 4, won: 1, draw: 0, lost: 3, gf:  3, ga:  6, gd: -3, pts:  3 },
   { pos: 5, team: 'Bulgaria',  played: 4, won: 0, draw: 2, lost: 2, gf:  4, ga:  7, gd: -3, pts:  2 },
 ],
+'Group E WC Qualifiers Turkey 2024': [
+  { pos: 1, team: 'Finland',      played: 4, won: 3, draw: 0, lost: 1, gf:  8, ga:  5, gd: +3, pts:  9 },
+  { pos: 2, team: 'Netherlands',  played: 4, won: 1, draw: 3, lost: 0, gf:  4, ga:  2, gd: +2, pts:  6 },
+  { pos: 3, team: 'Romania',      played: 4, won: 1, draw: 2, lost: 1, gf:  4, ga:  3, gd: +1, pts:  5 },
+  { pos: 4, team: 'Austria',      played: 4, won: 0, draw: 3, lost: 1, gf:  5, ga:  6, gd: -1, pts:  3 },
+  { pos: 5, team: 'Kazakhstan',   played: 4, won: 0, draw: 2, lost: 2, gf:  2, ga:  7, gd: -5, pts:  2 },
+],
 };
 
 /** ——— PLACEHOLDERS PARA AS OUTRAS CONFEDERAÇÕES ——— **/
