@@ -562,6 +562,46 @@ const groupMatchesAsia: Record<string, Match[]> = {
     { home: '🇱🇧 Lebanon',     score: '', away: '🇸🇦 Saudi Arabia'},
     { home: '🇻🇳 Vietnam',      score: '', away: '🇧🇩 Bangladesh' },
   ],
+  'Group A WC Qualifiers Turkey 2024': [
+    { home: 'JP Japan',      score: '2 - 1', away: 'ID Indonesia' },
+    { home: 'BH Bahrain',    score: '1 - 3', away: 'CN China'       },
+    { home: 'CN China',      score: '0 - 1', away: 'JP Japan'     },
+    { home: 'MY Malaysia',   score: '2 - 1', away: 'BH Bahrain'   },
+    { home: 'JP Japan',      score: '2 - 1', away: 'MY Malaysia'  },
+    { home: 'ID Indonesia',  score: '1 - 0', away: 'CN China'     },
+    { home: 'BH Bahrain',    score: '0 - 3', away: 'JP Japan'     },
+    { home: 'MY Malaysia',   score: '1 - 2', away: 'ID Indonesia' },
+    { home: 'ID Indonesia',  score: '1 - 0', away: 'BH Bahrain'   },
+    { home: 'CN China',      score: '1 - 1', away: 'MY Malaysia'  }
+  ],
+
+  // Grupo B
+  'Group B WC Qualifiers Turkey 2024': [
+    { home: 'IR Iran',       score: '1 - 0', away: 'IN India'     },
+    { home: 'OM Oman',       score: '0 - 1', away: 'SY Syria'     },
+    { home: 'SY Syria',      score: '1 - 2', away: 'IR Iran'      },
+    { home: 'KW Kuwait',     score: '2 - 4', away: 'OM Oman'      },
+    { home: 'IR Iran',       score: '1 - 0', away: 'KW Kuwait'    },
+    { home: 'IN India',      score: '1 - 2', away: 'SY Syria'     },
+    { home: 'OM Oman',       score: '0 - 0', away: 'IR Iran'      },
+    { home: 'KW Kuwait',     score: '1 - 1', away: 'IN India'     },
+    { home: 'IN India',      score: '1 - 2', away: 'OM Oman'      },
+    { home: 'SY Syria',      score: '1 - 0', away: 'KW Kuwait'    }
+  ],
+
+  // Grupo C
+  'Group C WC Qualifiers Turkey 2024': [
+    { home: 'KR South Korea', score: '4 - 0', away: 'LB Lebanon'    },
+    { home: 'AE UAE',         score: '0 - 0', away: 'NZ New Zealand'},
+    { home: 'NZ New Zealand', score: '1 - 2', away: 'KR South Korea'},
+    { home: 'HK Hong Kong',   score: '2 - 1', away: 'AE UAE'        },
+    { home: 'KR South Korea', score: '1 - 1', away: 'HK Hong Kong'  },
+    { home: 'LB Lebanon',     score: '0 - 0', away: 'NZ New Zealand'},
+    { home: 'AE UAE',         score: '1 - 1', away: 'KR South Korea'},
+    { home: 'HK Hong Kong',   score: '2 - 1', away: 'LB Lebanon'    },
+    { home: 'LB Lebanon',     score: '1 - 0', away: 'AE UAE'        },
+    { home: 'NZ New Zealand', score: '1 - 1', away: 'HK Hong Kong'  }
+  ]
 };
 
 const groupStandingsAsia: Record<string, Standing[]> = {
