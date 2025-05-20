@@ -323,6 +323,13 @@ const groupStandingsEurope: Record<string, Standing[]> = {
   { pos: 4, team: 'Austria',      played: 4, won: 0, draw: 3, lost: 1, gf:  5, ga:  6, gd: -1, pts:  3 },
   { pos: 5, team: 'Kazakhstan',   played: 4, won: 0, draw: 2, lost: 2, gf:  2, ga:  7, gd: -5, pts:  2 },
 ],
+'Group F WC Qualifiers Turkey 2024': [
+  { pos: 1, team: 'Portugal',    played: 4, won: 2, draw: 1, lost: 1, gf:  4, ga:  4, gd:  0, pts:  7 },
+  { pos: 2, team: 'Azerbaijan',  played: 4, won: 2, draw: 0, lost: 2, gf:  5, ga:  4, gd: +1, pts:  6 },
+  { pos: 3, team: 'Ireland',     played: 4, won: 1, draw: 2, lost: 1, gf:  3, ga:  2, gd: +1, pts:  5 },
+  { pos: 4, team: 'Czech Rep.',  played: 4, won: 1, draw: 2, lost: 1, gf:  3, ga:  3, gd:  0, pts:  5 },
+  { pos: 5, team: 'Denmark',     played: 4, won: 0, draw: 3, lost: 1, gf:  3, ga:  5, gd: -2, pts:  3 },
+],
 };
 
 /** ——— PLACEHOLDERS PARA AS OUTRAS CONFEDERAÇÕES ——— **/
