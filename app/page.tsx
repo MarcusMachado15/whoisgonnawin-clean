@@ -158,17 +158,17 @@ const groupMatchesEurope: Record<string, Match[]> = {
   ],
 
   'Group C WC Qualifiers Turkey 2024': [
-    { home: '🏴 England',        score: '1 – 0', away: '🇬🇪 Georgia'      },
-    { home: '🇵🇱 Poland',        score: '1 – 2', away: '🇷🇺 Russia'       },
-    { home: '🇷🇺 Russia',        score: '2 – 3', away: '🏴 England'      },
-    { home: '🏴 England',        score: '0 – 1', away: '🇮🇱 Israel'       },
-    { home: '🇬🇪 Georgia',       score: '2 – 0', away: '🇷🇺 Russia'       },
-    { home: '🇵🇱 Poland',        score: '1 – 3', away: '🏴 England'      },
-    { home: '🇮🇱 Israel',        score: '1 – 0', away: '🇬🇪 Georgia'      },
-    { home: '🇬🇪 Georgia',       score: '4 – 1', away: '🇵🇱 Poland'       },
-    { home: '🇷🇺 Russia',        score: '1 – 4', away: '🇮🇱 Israel'       },
-    { home: '🇮🇱 Israel',        score: '',      away: '🇵🇱 Poland'       }, 
-  ],
+  { home: '🏴 England', score: '1 – 0', away: '🇬🇪 Georgia' },
+  { home: '🇵🇱 Poland',  score: '1 – 2', away: '🇷🇺 Russia' },
+  { home: '🇷🇺 Russia',  score: '2 – 3', away: '🏴 England' },
+  { home: '🇮🇱 Israel',  score: '1 – 1', away: '🇵🇱 Poland' },
+  { home: '🏴 England', score: '0 – 1', away: '🇮🇱 Israel' },
+  { home: '🇬🇪 Georgia', score: '2 – 0', away: '🇷🇺 Russia' },
+  { home: '🇵🇱 Poland',  score: '1 – 3', away: '🏴 England' },
+  { home: '🇮🇱 Israel',  score: '1 – 0', away: '🇬🇪 Georgia' },
+  { home: '🇬🇪 Georgia', score: '4 – 1', away: '🇵🇱 Poland' },
+  { home: '🇷🇺 Russia',  score: '1 – 4', away: '🇮🇱 Israel' },
+],
 
   'Group D WC Qualifiers Turkey 2024': [
     { home: '🇧🇪 Belgium',       score: '2 – 0', away: '🇦🇱 Albania'     },
@@ -180,7 +180,7 @@ const groupMatchesEurope: Record<string, Match[]> = {
     { home: '🇺🇦 Ukraine',       score: '1 – 1', away: '🇧🇪 Belgium'     },
     { home: '🇧🇬 Bulgaria',      score: '0 – 1', away: '🇦🇱 Albania'     },
     { home: '🇸🇰 Slovakia',      score: '1 – 2', away: '🇧🇬 Bulgaria'    },
-    { home: '🇦🇱 Albania',       score: '',      away: '🇺🇦 Ukraine'     }, // preencha quando souber
+    { home: '🇦🇱 Albania',       score: '',      away: '🇺🇦 Ukraine'     }, 
   ],
 
   'Group E WC Qualifiers Turkey 2024': [
@@ -294,6 +294,20 @@ const groupStandingsEurope: Record<string, Standing[]> = {
     { pos: 3, team: 'Hungary',         played: 4, won: 1, draw: 2, lost: 1, gf:  3, ga: 3, gd:  0, pts:  5 },
     { pos: 4, team: 'N. Macedonia',    played: 4, won: 1, draw: 1, lost: 2, gf:  5, ga: 7, gd: -2, pts:  4 },
     { pos: 5, team: 'Wales',           played: 4, won: 1, draw: 1, lost: 2, gf:  5, ga: 7, gd: -2, pts:  4 },
+  ],
+  'Group B WC Qualifiers Turkey 2024': [
+  { pos: 1, team: 'Spain',        played: 4, won: 3, draw: 1, lost: 0, gf: 5, ga: 2, gd:  3, pts:  8 },
+  { pos: 2, team: 'N. Ireland',   played: 4, won: 2, draw: 0, lost: 2, gf: 5, ga: 5, gd:  0, pts:  6 },
+  { pos: 3, team: 'Serbia',       played: 4, won: 1, draw: 2, lost: 1, gf: 4, ga: 3, gd:  1, pts:  5 },
+  { pos: 4, team: 'Sweden',       played: 4, won: 1, draw: 2, lost: 1, gf: 2, ga: 2, gd:  0, pts:  5 },
+  { pos: 5, team: 'Iceland',      played: 4, won: 0, draw: 2, lost: 2, gf: 1, ga: 5, gd: -4, pts:  2 },
+],  
+'Group C WC Qualifiers Turkey 2024': [
+    { pos: 1, team: 'Israel',  played: 4, won: 3, draw: 1, lost: 0, gf: 7,  ga: 2,  gd: +5, pts: 10 },
+    { pos: 2, team: 'England', played: 4, won: 3, draw: 0, lost: 1, gf: 7,  ga: 4,  gd: +3, pts:  9 },
+    { pos: 3, team: 'Georgia', played: 4, won: 2, draw: 0, lost: 2, gf: 6,  ga: 3,  gd: +3, pts:  6 },
+    { pos: 4, team: 'Russia',  played: 4, won: 1, draw: 0, lost: 3, gf: 5,  ga: 10, gd: -5, pts:  3 },
+    { pos: 5, team: 'Poland',  played: 4, won: 0, draw: 1, lost: 3, gf: 4,  ga: 10, gd: -6, pts:  1 },
   ],
 };
 
