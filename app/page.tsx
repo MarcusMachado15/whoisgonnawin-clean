@@ -602,6 +602,47 @@ const groupMatchesAsia: Record<string, Match[]> = {
     { home: 'LB Lebanon',     score: '1 - 0', away: 'AE UAE'        },
     { home: 'NZ New Zealand', score: '1 - 1', away: 'HK Hong Kong'  }
   ]
+  
+  'Group D WC Qualifiers Turkey 2024': [
+    { home: 'AU Australia',     score: '2 - 0', away: 'VN Vietnam'   },
+    { home: 'JO Jordan',        score: '3 - 0', away: 'PS Palestine' },
+    { home: 'PS Palestine',     score: '5 - 1', away: 'AU Australia' },
+    { home: 'LA Laos',          score: '1 - 1', away: 'JO Jordan'    },
+    { home: 'AU Australia',     score: '3 - 1', away: 'LA Laos'      },
+    { home: 'VN Vietnam',       score: '0 - 1', away: 'PS Palestine' },
+    { home: 'JO Jordan',        score: '0 - 1', away: 'AU Australia' },
+    { home: 'LA Laos',          score: '0 - 1', away: 'VN Vietnam'   },
+    { home: 'VN Vietnam',       score: '1 - 1', away: 'JO Jordan'    },
+    { home: 'PS Palestine',     score: '2 - 1', away: 'LA Laos'      }
+  ],
+
+  // Grupo E
+  'Group E WC Qualifiers Turkey 2024': [
+    { home: 'QA Qatar',          score: '2 - 1', away: 'KP North Korea' },
+    { home: 'UZ Uzbekistan',     score: '0 - 1', away: 'TH Thailand'    },
+    { home: 'TH Thailand',       score: '0 - 0', away: 'QA Qatar'       },
+    { home: 'MM Myanmar',        score: '2 - 0', away: 'UZ Uzbekistan' },
+    { home: 'QA Qatar',          score: '2 - 1', away: 'MM Myanmar'     },
+    { home: 'KP North Korea',    score: '1 - 0', away: 'TH Thailand'    },
+    { home: 'UZ Uzbekistan',     score: '3 - 0', away: 'QA Qatar'       },
+    { home: 'MM Myanmar',        score: '1 - 1', away: 'KP North Korea' },
+    { home: 'KP North Korea',    score: '0 - 2', away: 'UZ Uzbekistan' },
+    { home: 'TH Thailand',       score: '1 - 0', away: 'MM Myanmar'     }
+  ],
+
+  // Grupo F
+  'Group F WC Qualifiers Turkey 2024': [
+    { home: 'IQ Iraq',           score: '1 - 0', away: 'TJ Tajikistan'   },
+    { home: 'SA Saudi Arabia',   score: '3 - 1', away: 'KG Kyrgyzstan'   },
+    { home: 'KG Kyrgyzstan',     score: '1 - 0', away: 'IQ Iraq'         },
+    { home: 'KH Cambodia',       score: '1 - 1', away: 'SA Saudi Arabia' },
+    { home: 'IQ Iraq',           score: '2 - 0', away: 'KH Cambodia'     },
+    { home: 'TJ Tajikistan',     score: '2 - 0', away: 'KG Kyrgyzstan'   },
+    { home: 'SA Saudi Arabia',   score: '4 - 0', away: 'IQ Iraq'         },
+    { home: 'KH Cambodia',       score: '0 - 1', away: 'TJ Tajikistan'   },
+    { home: 'TJ Tajikistan',     score: '0 - 3', away: 'SA Saudi Arabia' },
+    { home: 'KG Kyrgyzstan',     score: '0 - 3', away: 'KH Cambodia'     }
+  ]
 };
 
 const groupStandingsAsia: Record<string, Standing[]> = {
