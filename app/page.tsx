@@ -235,15 +235,15 @@ const groupMatchesEurope: Record<string, Match[]> = {
     { home: '🇸🇮 Slovenia',      score: '2 – 1', away: '🇩🇪 Germany'     },
     { home: '🇳🇴 Norway',        score: '2 – 0', away: '🇲🇹 Malta'        },
   ],
-  'Group A WC Qualifiers Nigeria 2021'
+  'Group A WC Qualifiers Nigeria 2021':
   [],
-  'Group B WC Qualifiers Nigeria 2021'
+  'Group B WC Qualifiers Nigeria 2021':
   [],
-  'Group C WC Qualifiers Nigeria 2021'
+  'Group C WC Qualifiers Nigeria 2021':
   [],
-  'Group D WC Qualifiers Nigeria 2021'
+  'Group D WC Qualifiers Nigeria 2021':
   [],
-  'Group E WC Qualifiers Nigeria 2021'
+  'Group E WC Qualifiers Nigeria 2021':
   [],
 };
 
