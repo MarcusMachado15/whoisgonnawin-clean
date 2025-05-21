@@ -345,6 +345,41 @@ const groupStandingsEurope: Record<string, Standing[]> = {
     { pos: 4, team: 'Croatia',    played: 4, won: 1, draw: 1, lost: 2, gf:  3, ga:  4, gd: -1, pts:  4 },
     { pos: 5, team: 'Slovenia',   played: 4, won: 1, draw: 1, lost: 2, gf:  4, ga:  8, gd: -4, pts:  4 },
   ],
+  'Group A WC Qualifiers Nigeria 2021': [
+  { pos: 1, team: 'Belgium',         played: 8, pts: 15 },
+  { pos: 2, team: 'Netherlands',     played: 8, pts: 15 },
+  { pos: 3, team: 'Wales',           played: 8, pts: 10 },
+  { pos: 4, team: 'Northern Ireland',played: 8, pts:  8 },
+  { pos: 5, team: 'Iceland',         played: 8, pts:  5 },
+],
+'Group B WC Qualifiers Nigeria 2021': [
+  { pos: 1, team: 'France',      played: 8, pts: 18 },
+  { pos: 2, team: 'Finland',     played: 8, pts: 17 },
+  { pos: 3, team: 'Switzerland', played: 8, pts: 13 },
+  { pos: 4, team: 'Scotland',    played: 8, pts:  5 },
+  { pos: 5, team: 'Sweden',      played: 8, pts:  3 },
+],
+'Group C WC Qualifiers Nigeria 2021': [
+  { pos: 1, team: 'Norway',   played: 8, pts: 17 },
+  { pos: 2, team: 'Germany',  played: 8, pts: 14 },
+  { pos: 3, team: 'England',  played: 8, pts: 12 },
+  { pos: 4, team: 'Bosnia',   played: 8, pts:  9 },
+  { pos: 5, team: 'Austria',  played: 8, pts:  3 },
+],
+'Group D WC Qualifiers Nigeria 2021': [
+  { pos: 1, team: 'Portugal', played: 8, pts: 18 },
+  { pos: 2, team: 'Israel',   played: 8, pts: 11 },
+  { pos: 3, team: 'Denmark',  played: 8, pts: 10 },
+  { pos: 4, team: 'Slovakia', played: 8, pts:  9 },
+  { pos: 5, team: 'Ukraine',  played: 8, pts:  3 },
+],
+'Group E WC Qualifiers Nigeria 2021': [
+  { pos: 1, team: 'Turkey',     played: 8, pts: 16 },
+  { pos: 2, team: 'Italy',      played: 8, pts: 15 },
+  { pos: 3, team: 'Serbia',     played: 8, pts: 14 },
+  { pos: 4, team: 'Spain',      played: 8, pts: 13 },
+  { pos: 5, team: 'Luxembourg', played: 8, pts:  0 },
+],
 };
 
 /** ——— PLACEHOLDERS PARA AS OUTRAS CONFEDERAÇÕES ——— **/
