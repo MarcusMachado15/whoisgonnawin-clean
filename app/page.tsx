@@ -601,7 +601,7 @@ const groupMatchesAsia: Record<string, Match[]> = {
     { home: 'HK Hong Kong',   score: '2 - 1', away: 'LB Lebanon'    },
     { home: 'LB Lebanon',     score: '1 - 0', away: 'AE UAE'        },
     { home: 'NZ New Zealand', score: '1 - 1', away: 'HK Hong Kong'  }
-  ]
+  ],
   
   'Group D WC Qualifiers Turkey 2024': [
     { home: 'AU Australia',     score: '2 - 0', away: 'VN Vietnam'   },
@@ -642,7 +642,7 @@ const groupMatchesAsia: Record<string, Match[]> = {
     { home: 'KH Cambodia',       score: '0 - 1', away: 'TJ Tajikistan'   },
     { home: 'TJ Tajikistan',     score: '0 - 3', away: 'SA Saudi Arabia' },
     { home: 'KG Kyrgyzstan',     score: '0 - 3', away: 'KH Cambodia'     }
-  ]
+  ],
 };
 
 const groupStandingsAsia: Record<string, Standing[]> = {
