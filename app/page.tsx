@@ -291,6 +291,62 @@ const groupMatchesEurope: Record<string, Match[]> = {
     { home: '',         score: '', away: ''    },
     { home: '',      score: '', away: ''     },
     { home: '',        score: '', away: ''        },],
+    'Group A WC Qualifiers Thailand 2020':[
+    { home: '',       score: '', away: ''    },
+    { home: '',       score: '', away: ''       },
+    { home: '',        score: '', away: ''     },
+    { home: '',         score: '', away: ''     },
+    { home: '',       score: '', away: ''        },
+    { home: '',      score: '', away: ''       },
+    { home: '',       score: '', away: ''     },
+    { home: '',         score: '', away: ''    },
+    { home: '',      score: '', away: ''     },
+    { home: '',        score: '', away: ''        },
+  ],
+  'Group B WC Qualifiers Thailand 2020':
+  [{ home: '',       score: '', away: ''    },
+    { home: '',       score: '', away: ''       },
+    { home: '',        score: '', away: ''     },
+    { home: '',         score: '', away: ''     },
+    { home: '',       score: '', away: ''        },
+    { home: '',      score: '', away: ''       },
+    { home: '',       score: '', away: ''     },
+    { home: '',         score: '', away: ''    },
+    { home: '',      score: '', away: ''     },
+    { home: '',        score: '', away: ''        },],
+  'Group C WC Qualifiers Thailand 2020':
+  [{ home: '',       score: '', away: ''    },
+    { home: '',       score: '', away: ''       },
+    { home: '',        score: '', away: ''     },
+    { home: '',         score: '', away: ''     },
+    { home: '',       score: '', away: ''        },
+    { home: '',      score: '', away: ''       },
+    { home: '',       score: '', away: ''     },
+    { home: '',         score: '', away: ''    },
+    { home: '',      score: '', away: ''     },
+    { home: '',        score: '', away: ''        },],
+  'Group D WC Qualifiers Thailand 2020':
+  [{ home: '',       score: '', away: ''    },
+    { home: '',       score: '', away: ''       },
+    { home: '',        score: '', away: ''     },
+    { home: '',         score: '', away: ''     },
+    { home: '',       score: '', away: ''        },
+    { home: '',      score: '', away: ''       },
+    { home: '',       score: '', away: ''     },
+    { home: '',         score: '', away: ''    },
+    { home: '',      score: '', away: ''     },
+    { home: '',        score: '', away: ''        },],
+  'Group E WC Qualifiers Thailand 2020':
+  [{ home: '',       score: '', away: ''    },
+    { home: '',       score: '', away: ''       },
+    { home: '',        score: '', away: ''     },
+    { home: '',         score: '', away: ''     },
+    { home: '',       score: '', away: ''        },
+    { home: '',      score: '', away: ''       },
+    { home: '',       score: '', away: ''     },
+    { home: '',         score: '', away: ''    },
+    { home: '',      score: '', away: ''     },
+    { home: '',        score: '', away: ''        },],
 };
 
 const groupStandingsEurope: Record<string, Standing[]> = {
@@ -435,6 +491,45 @@ const groupStandingsEurope: Record<string, Standing[]> = {
     { pos: 3, team: 'Serbia',     played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 14 },
     { pos: 4, team: 'Spain',      played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 13 },
     { pos: 5, team: 'Luxembourg', played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  0 },
+  ],
+  'Group A WC Qualifiers Thailand 2020': [
+    { pos: 1, team: 'Portugal',        played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 16 },
+    { pos: 2, team: 'Austria',         played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 14 },
+    { pos: 3, team: 'Russia',          played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 12 },
+    { pos: 4, team: 'Italy',           played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 10 },
+    { pos: 5, team: 'Montenegro',      played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  6 },
+  ],
+
+  'Group B WC Qualifiers Thailand 2020': [
+    { pos: 1, team: 'France',          played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 19 },
+    { pos: 2, team: 'Spain',           played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 15 },
+    { pos: 3, team: 'Czech Republic',  played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 12 },
+    { pos: 4, team: 'Ireland',         played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 10 },
+    { pos: 5, team: 'Armenia',         played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  3 },
+  ],
+
+  'Group C WC Qualifiers Thailand 2020': [
+    { pos: 1, team: 'England',         played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 16 },
+    { pos: 2, team: 'Netherlands',     played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 13 },
+    { pos: 3, team: 'Bulgaria',        played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 12 },
+    { pos: 4, team: 'Ukraine',         played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  6 },
+    { pos: 5, team: 'Romania',         played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  4 },
+  ],
+
+  'Group D WC Qualifiers Thailand 2020': [
+    { pos: 1, team: 'Belgium',         played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 14 },
+    { pos: 2, team: 'Scotland',        played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 13 },
+    { pos: 3, team: 'Poland',          played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 11 },
+    { pos: 4, team: 'Germany',         played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 11 },
+    { pos: 5, team: 'Macedonia',       played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  6 },
+  ],
+
+  'Group E WC Qualifiers Thailand 2020': [
+    { pos: 1, team: 'Croatia',         played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 19 },
+    { pos: 2, team: 'Denmark',         played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 12 },
+    { pos: 3, team: 'Switzerland',     played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 10 },
+    { pos: 4, team: 'Norway',          played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  5 },
+    { pos: 5, team: 'Finland',         played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  5 },
   ],
 
 };
