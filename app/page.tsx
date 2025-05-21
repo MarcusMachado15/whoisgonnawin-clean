@@ -874,15 +874,22 @@ export default function WorldCup2025Page() {
         ))}
       </div>
       <div className="flex-container">
-  {Object.entries(matches).map(([fullGroupName, gm]) => {
-    const baseGroup = fullGroupName.split(' ').slice(0, 2).join(' ');
-    return (
-      <div key={fullGroupName} className="group-block">
-        <div className="matches-block">
-          <div className="group-title">{fullGroupName}</div>
+ {Object.entries(matches).map(([fullGroupName, gm]) => {
+  const rows = standings[fullGroupName] || [];
+  return (
+    <div key={fullGroupName} className="group-block">
+      <div className="matches-block">
+        <div className="group-title">{fullGroupName}</div>
+        {gm.length === 0 ? (
+          <p className="no-matches">Nenhum jogo cadastrado ainda</p>
+        ) : (
           <table className="match-table group-stage">
             <thead>
-              <tr><th>HOME</th><th>SCORE</th><th>AWAY</th></tr>
+              <tr>
+                <th>HOME</th>
+                <th>SCORE</th>
+                <th>AWAY</th>
+              </tr>
             </thead>
             <tbody>
               {gm.map((m, i) => (
@@ -894,16 +901,10 @@ export default function WorldCup2025Page() {
               ))}
             </tbody>
           </table>
-        </div>
-
-        <StandingsTable
-          groupName={fullGroupName}
-          rows={standings[fullGroupName] || []}
-        />
+        )}
       </div>
-    );
-  })}
-</div>
+
+      <StandingsTable groupName={fullGroupName} rows={rows} />
     </div>
   );
-}
+})}
