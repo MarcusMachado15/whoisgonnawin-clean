@@ -87,7 +87,7 @@ const groupMatchesEurope: Record<string, Match[]> = {
     { home: '🇵🇹 Portugal', score: '1 – 1', away: '🇮🇪 Ireland' },
     { home: '🇦🇹 Austria', score: '1 – 1', away: '🇳🇴 Norway' },
     { home: '🇳🇴 Norway', score: '3 - 2', away: '🇵🇹 Portugal' },
-    { home: '🇧🇬 Bulgaria', score: '', away: '🇦🇹 Austria' },
+    { home: '🇧🇬 Bulgaria', score: '0 - 1', away: '🇦🇹 Austria' },
     { home: '🇵🇹 Portugal', score: '', away: '🇧🇬 Bulgaria' },
     { home: '🇮🇪 Ireland', score: '', away: '🇳🇴 Norway' },
     { home: '🇦🇹 Austria', score: '', away: '🇵🇹 Portugal' },
@@ -378,6 +378,7 @@ const groupStandingsEurope: Record<string, Standing[]> = {
     { pos: 4, team: 'Ukraine',     played: 2, won: 1, draw: 0, lost: 1, gf: 2, ga: 4,  gd: -2, pts: 3 },
     { pos: 5, team: 'Albania',     played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 1,  gd: -1, pts: 0 },
   ],
+
   'Group E WC Qualifiers Argentina 2025': [
     { pos: 1, team: 'Portugal', played: 1, won: 0, draw: 1, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 1 },
     { pos: 2, team: 'Austria',  played: 1, won: 0, draw: 1, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 1 },
