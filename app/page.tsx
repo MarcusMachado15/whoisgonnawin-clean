@@ -98,7 +98,7 @@ const groupMatchesEurope: Record<string, Match[]> = {
   'Group F WC Qualifiers Argentina 2025': [
     { home: '🇧🇪 Belgium', score: '4 – 0', away: '🇸🇮 Slovenia' },
     { home: '🇩🇰 Denmark', score: '0 – 0', away: '🇨🇿 Czech Rep.' },
-    { home: '🇨🇿 Czech Rep.', score: '', away: '🇧🇪 Belgium' },
+    { home: '🇨🇿 Czech Rep.', score: '1 - 2', away: '🇧🇪 Belgium' },
     { home: '🇰🇿 Kazakhstan', score: '', away: '🇩🇰 Denmark' },
     { home: '🇧🇪 Belgium', score: '', away: '🇰🇿 Kazakhstan' },
     { home: '🇸🇮 Slovenia', score: '', away: '🇨🇿 Czech Rep.' },
@@ -380,10 +380,11 @@ const groupStandingsEurope: Record<string, Standing[]> = {
   ],
 
   'Group E WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'Portugal', played: 1, won: 0, draw: 1, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 1 },
-    { pos: 2, team: 'Austria',  played: 1, won: 0, draw: 1, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 1 },
-    { pos: 3, team: 'Ireland',  played: 1, won: 0, draw: 1, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 1 },
-    { pos: 4, team: 'Norway',   played: 1, won: 0, draw: 1, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 1 },
+    { pos: 1, team: 'Norway',    played: 2, won: 1, draw: 1, lost: 0, gf:  4, ga: 3,  gd: +1, pts: 4 },
+    { pos: 2, team: 'Austria',   played: 2, won: 1, draw: 1, lost: 0, gf:  2, ga: 1,  gd: +1, pts: 4 },
+    { pos: 3, team: 'Ireland',   played: 1, won: 0, draw: 1, lost: 0, gf:  1, ga: 1,  gd:  0, pts: 1 },
+    { pos: 4, team: 'Portugal',  played: 2, won: 0, draw: 1, lost: 1, gf:  3, ga: 4,  gd: -1, pts: 1 },
+    { pos: 5, team: 'Bulgaria',  played: 1, won: 0, draw: 0, lost: 1, gf:  0, ga: 1,  gd: -1, pts: 0 },
   ],
   'Group F WC Qualifiers Argentina 2025': [
     { pos: 1, team: 'Belgium',    played: 1, won: 1, draw: 0, lost: 0, gf: 4, ga: 0,  gd:  4, pts: 3 },
