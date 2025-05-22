@@ -371,11 +371,12 @@ const groupStandingsEurope: Record<string, Standing[]> = {
     { pos: 4, team: 'Turkey',       played: 2, won: 0, draw: 1, lost: 1, gf:  1, ga:  5, gd: -4, pts: 1 },
     { pos: 5, team: 'N. Macedonia', played: 1, won: 0, draw: 0, lost: 1, gf:  0, ga:  1, gd: -1, pts: 0 },
   ],
-  'Group D WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'Ukraine',     played: 1, won: 1, draw: 0, lost: 0, gf: 2,  ga: 1,  gd:  1, pts: 3 },
-    { pos: 2, team: 'Netherlands', played: 1, won: 1, draw: 0, lost: 0, gf: 1,  ga: 0,  gd:  1, pts: 3 },
-    { pos: 3, team: 'Hungary',     played: 1, won: 0, draw: 0, lost: 1, gf: 1,  ga: 2,  gd: -1, pts: 0 },
-    { pos: 4, team: 'Albania',     played: 1, won: 0, draw: 0, lost: 1, gf: 0,  ga: 1,  gd: -1, pts: 0 },
+'Group D WC Qualifiers Argentina 2025': [
+    { pos: 1, team: 'Israel',      played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 0,  gd: +3, pts: 3 },
+    { pos: 2, team: 'Hungary',     played: 2, won: 1, draw: 0, lost: 1, gf: 5, ga: 4,  gd: +1, pts: 3 },
+    { pos: 3, team: 'Netherlands', played: 2, won: 1, draw: 0, lost: 1, gf: 3, ga: 4,  gd: -1, pts: 3 },
+    { pos: 4, team: 'Ukraine',     played: 2, won: 1, draw: 0, lost: 1, gf: 2, ga: 4,  gd: -2, pts: 3 },
+    { pos: 5, team: 'Albania',     played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 1,  gd: -1, pts: 0 },
   ],
   'Group E WC Qualifiers Argentina 2025': [
     { pos: 1, team: 'Portugal', played: 1, won: 0, draw: 1, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 1 },
@@ -521,7 +522,7 @@ const groupStandingsEurope: Record<string, Standing[]> = {
     { pos: 2, team: 'Scotland',        played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 13 },
     { pos: 3, team: 'Poland',          played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 11 },
     { pos: 4, team: 'Germany',         played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 11 },
-    { pos: 5, team: 'Macedonia',       played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  6 },
+    { pos: 5, team: 'N. Macedonia',       played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  6 },
   ],
 
   'Group E WC Qualifiers Thailand 2020': [
