@@ -554,6 +554,31 @@ const groupMatchesSouthAmerica: Record<string, Match[]> = {
     { home: '🇵🇾 Paraguay',  score: '', away: '🇨🇴 Colombia' },
     { home: '🇪🇨 Ecuador',   score: '', away: '🇨🇱 Chile' },
   ],
+  'Group A WC Qualifiers Turkey 2024': [
+  { home: '🇦🇷 Argentina',   score: '1 – 2', away: '🇨🇱 Chile'     },
+  { home: '🇺🇾 Uruguay',     score: '1 – 1', away: '🇪🇨 Ecuador'   },
+  { home: '🇪🇨 Ecuador',     score: '2 – 2', away: '🇦🇷 Argentina' },
+  { home: '🇵🇾 Paraguay',    score: '1 – 2', away: '🇺🇾 Uruguay'   },
+  { home: '🇦🇷 Argentina',   score: '3 – 1', away: '🇵🇾 Paraguay'  },
+  { home: '🇨🇱 Chile',       score: '0 – 2', away: '🇪🇨 Ecuador'   },
+  { home: '🇺🇾 Uruguay',     score: '1 – 3', away: '🇦🇷 Argentina' },
+  { home: '🇵🇾 Paraguay',    score: '1 – 0', away: '🇨🇱 Chile'     },
+  { home: '🇨🇱 Chile',       score: '0 – 2', away: '🇺🇾 Uruguay'   },
+  { home: '🇪🇨 Ecuador',     score: '2 – 2', away: '🇵🇾 Paraguay'  },
+],
+
+'Group B WC Qualifiers Turkey 2024': [
+  { home: '🇧🇷 Brazil',      score: '2 – 0', away: '🇵🇪 Peru'       },
+  { home: '🇨🇴 Colombia',    score: '1 – 1', away: '🇻🇪 Venezuela' },
+  { home: '🇻🇪 Venezuela',   score: '1 – 2', away: '🇧🇷 Brazil'    },
+  { home: '🇧🇴 Bolivia',     score: '0 – 1', away: '🇨🇴 Colombia'  },
+  { home: '🇧🇷 Brazil',      score: '1 – 1', away: '🇧🇴 Bolivia'   },
+  { home: '🇵🇪 Peru',        score: '1 – 0', away: '🇻🇪 Venezuela' },
+  { home: '🇨🇴 Colombia',    score: '2 – 3', away: '🇧🇷 Brazil'    },
+  { home: '🇧🇴 Bolivia',     score: '1 – 1', away: '🇵🇪 Peru'      },
+  { home: '🇵🇪 Peru',        score: '2 – 1', away: '🇨🇴 Colombia'  },
+  { home: '🇻🇪 Venezuela',   score: '3 – 1', away: '🇧🇴 Bolivia'   },
+],
 
   'Group B WC Qualifiers Argentina 2025': [
     { home: '🇧🇷 Brazil',    score: '1 - 1', away: '🇻🇪 Venezuela' },
@@ -583,6 +608,21 @@ const groupStandingsSouthAmerica: Record<string, Standing[]> = {
     { pos: 4, team: 'Brazil',    played: 2, won: 0, draw: 1, lost: 1, gf: 2, ga: 4, gd: -2, pts: 1 },
     { pos: 5, team: 'Bolivia',   played: 1, won: 0, draw: 0, lost: 1, gf: 2, ga: 3, gd: -1, pts: 0 },
   ],
+  'Group A WC Qualifiers Turkey 2024': [
+  { pos: 1, team: 'Argentina', played: 4, won: 2, draw: 1, lost: 1, gf:  9, ga:  6, gd:  3, pts:  7 },
+  { pos: 2, team: 'Uruguay',   played: 4, won: 2, draw: 1, lost: 1, gf:  6, ga:  5, gd:  1, pts:  7 },
+  { pos: 3, team: 'Ecuador',   played: 4, won: 1, draw: 3, lost: 0, gf:  7, ga:  5, gd:  2, pts:  6 },
+  { pos: 4, team: 'Paraguay',  played: 4, won: 1, draw: 1, lost: 2, gf:  5, ga:  7, gd: -2, pts:  4 },
+  { pos: 5, team: 'Chile',     played: 4, won: 1, draw: 0, lost: 3, gf:  2, ga:  6, gd: -4, pts:  3 },
+],
+
+'Group B WC Qualifiers Turkey 2024': [
+  { pos: 1, team: 'Brazil',    played: 4, won: 3, draw: 1, lost: 0, gf:  8, ga:  4, gd:  4, pts: 10 },
+  { pos: 2, team: 'Peru',      played: 4, won: 2, draw: 1, lost: 1, gf:  4, ga:  4, gd:  0, pts:  7 },
+  { pos: 3, team: 'Venezuela', played: 4, won: 1, draw: 1, lost: 2, gf:  5, ga:  5, gd:  0, pts:  4 },
+  { pos: 4, team: 'Colombia',  played: 4, won: 1, draw: 1, lost: 2, gf:  5, ga:  6, gd: -1, pts:  4 },
+  { pos: 5, team: 'Bolivia',   played: 4, won: 0, draw: 2, lost: 2, gf:  3, ga:  6, gd: -3, pts:  2 },
+],
 };
 
 const groupMatchesAfrica: Record<string, Match[]> = {
