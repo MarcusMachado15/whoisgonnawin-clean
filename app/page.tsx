@@ -554,7 +554,19 @@ const groupMatchesSouthAmerica: Record<string, Match[]> = {
     { home: '🇵🇾 Paraguay',  score: '', away: '🇨🇴 Colombia' },
     { home: '🇪🇨 Ecuador',   score: '', away: '🇨🇱 Chile' },
   ],
-  'Group A WC Qualifiers Turkey 2024': [
+  
+  'Group B WC Qualifiers Argentina 2025': [
+    { home: '🇧🇷 Brazil',    score: '1 - 1', away: '🇻🇪 Venezuela' },
+    { home: '🇺🇾 Uruguay',   score: '3 - 0', away: '🇵🇪 Peru' },
+    { home: '🇵🇪 Peru',      score: '3 - 1', away: '🇧🇷 Brazil' },
+    { home: '🇧🇴 Bolivia',   score: '2 - 3', away: '🇺🇾 Uruguay' },
+    { home: '🇧🇷 Brazil',    score: '', away: '🇧🇴 Bolivia' },
+    { home: '🇻🇪 Venezuela', score: '', away: '🇵🇪 Peru' },
+    { home: '🇺🇾 Uruguay',   score: '', away: '🇧🇷 Brazil' },
+    { home: '🇧🇴 Bolivia',   score: '', away: '🇻🇪 Venezuela' },
+    { home: '🇻🇪 Venezuela', score: '', away: '🇺🇾 Uruguay' },
+    { home: '🇵🇪 Peru',      score: '', away: '🇧🇴 Bolivia' },
+  ],'Group A WC Qualifiers Turkey 2024': [
   { home: '🇦🇷 Argentina',   score: '1 – 2', away: '🇨🇱 Chile'     },
   { home: '🇺🇾 Uruguay',     score: '1 – 1', away: '🇪🇨 Ecuador'   },
   { home: '🇪🇨 Ecuador',     score: '2 – 2', away: '🇦🇷 Argentina' },
@@ -580,18 +592,6 @@ const groupMatchesSouthAmerica: Record<string, Match[]> = {
   { home: '🇻🇪 Venezuela',   score: '3 – 1', away: '🇧🇴 Bolivia'   },
 ],
 
-  'Group B WC Qualifiers Argentina 2025': [
-    { home: '🇧🇷 Brazil',    score: '1 - 1', away: '🇻🇪 Venezuela' },
-    { home: '🇺🇾 Uruguay',   score: '3 - 0', away: '🇵🇪 Peru' },
-    { home: '🇵🇪 Peru',      score: '3 - 1', away: '🇧🇷 Brazil' },
-    { home: '🇧🇴 Bolivia',   score: '2 - 3', away: '🇺🇾 Uruguay' },
-    { home: '🇧🇷 Brazil',    score: '', away: '🇧🇴 Bolivia' },
-    { home: '🇻🇪 Venezuela', score: '', away: '🇵🇪 Peru' },
-    { home: '🇺🇾 Uruguay',   score: '', away: '🇧🇷 Brazil' },
-    { home: '🇧🇴 Bolivia',   score: '', away: '🇻🇪 Venezuela' },
-    { home: '🇻🇪 Venezuela', score: '', away: '🇺🇾 Uruguay' },
-    { home: '🇵🇪 Peru',      score: '', away: '🇧🇴 Bolivia' },
-  ],
 };
 const groupStandingsSouthAmerica: Record<string, Standing[]> = {
     'Group A WC Qualifiers Argentina 2025': [
