@@ -558,7 +558,7 @@ const groupMatchesSouthAmerica: Record<string, Match[]> = {
   'Group B WC Qualifiers Argentina 2025': [
     { home: '🇧🇷 Brazil',    score: '1 - 1', away: '🇻🇪 Venezuela' },
     { home: '🇺🇾 Uruguay',   score: '3 - 0', away: '🇵🇪 Peru' },
-    { home: '🇵🇪 Peru',      score: '', away: '🇧🇷 Brazil' },
+    { home: '🇵🇪 Peru',      score: '3 - 1', away: '🇧🇷 Brazil' },
     { home: '🇧🇴 Bolivia',   score: '', away: '🇺🇾 Uruguay' },
     { home: '🇧🇷 Brazil',    score: '', away: '🇧🇴 Bolivia' },
     { home: '🇻🇪 Venezuela', score: '', away: '🇵🇪 Peru' },
