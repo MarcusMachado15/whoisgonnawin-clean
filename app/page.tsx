@@ -622,7 +622,34 @@ const groupStandingsSouthAmerica: Record<string, Standing[]> = {
   { pos: 3, team: 'Venezuela', played: 4, won: 1, draw: 1, lost: 2, gf:  5, ga:  5, gd:  0, pts:  4 },
   { pos: 4, team: 'Colombia',  played: 4, won: 1, draw: 1, lost: 2, gf:  5, ga:  6, gd: -1, pts:  4 },
   { pos: 5, team: 'Bolivia',   played: 4, won: 0, draw: 2, lost: 2, gf:  3, ga:  6, gd: -3, pts:  2 },
-],
+],'Group A WC Qualifiers Nigeria 2021': [
+    { pos: 1, team: 'Brazil',    played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 17 },
+    { pos: 2, team: 'Colombia',  played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 15 },
+    { pos: 3, team: 'Paraguay',  played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  9 },
+    { pos: 4, team: 'Ecuador',   played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  7 },
+    { pos: 5, team: 'Chile',     played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  5 },
+  ],
+  'Group B WC Qualifiers Nigeria 2021': [
+    { pos: 1, team: 'Uruguay',   played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 18 },
+    { pos: 2, team: 'Argentina', played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 17 },
+    { pos: 3, team: 'Bolivia',   played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 14 },
+    { pos: 4, team: 'Venezuela', played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  5 },
+    { pos: 5, team: 'Peru',      played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  1 },
+  ],
+  'Group A WC Qualifiers Thailand 2020': [
+    { pos: 1, team: 'Argentina', played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 15 },
+    { pos: 2, team: 'Uruguay',   played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 14 },
+    { pos: 3, team: 'Venezuela', played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 11 },
+    { pos: 4, team: 'Peru',      played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  9 },
+    { pos: 5, team: 'Bolivia',   played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  5 },
+  ],
+  'Group B WC Qualifiers Thailand 2020': [
+    { pos: 1, team: 'Brazil',    played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 20 },
+    { pos: 2, team: 'Colombia',  played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 12 },
+    { pos: 3, team: 'Chile',     played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts: 12 },
+    { pos: 4, team: 'Paraguay',  played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  6 },
+    { pos: 5, team: 'Ecuador',   played: 8, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd: 0, pts:  2 },
+  ],
 };
 
 const groupMatchesAfrica: Record<string, Match[]> = {
