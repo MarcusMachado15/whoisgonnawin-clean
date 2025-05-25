@@ -715,7 +715,7 @@ const groupMatchesAfrica: Record<string, Match[]> = {
   'Group B WC Qualifiers Argentina 2025': [
     { home: '🇸🇳 Senegal',      score: '3 - 2', away: '🇬🇳 Guinea'       },
     { home: '🇹🇳 Tunisia',      score: '1 - 3', away: '🇿🇦 South Africa' },
-    { home: '🇿🇦 South Africa', score: '', away: '🇸🇳 Senegal'     },
+    { home: '🇿🇦 South Africa', score: '3 - 4', away: '🇸🇳 Senegal'     },
     { home: '🇿🇼 Zimbabwe',     score: '', away: '🇹🇳 Tunisia'     },
     { home: '🇸🇳 Senegal',      score: '', away: '🇿🇼 Zimbabwe'    },
     { home: '🇬🇳 Guinea',       score: '', away: '🇿🇦 South Africa' },
