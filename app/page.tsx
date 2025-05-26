@@ -741,8 +741,8 @@ const groupMatchesAfrica: Record<string, Match[]> = {
   'Group D WC Qualifiers Argentina 2025': [
     { home: '🇩🇿 Algeria',      score: '3 - 5', away: '🇬🇭 Ghana'       },
     { home: '🇨🇮 Ivory Coast',   score: '0 - 0', away: '🇧🇫 Burkina Faso'},
-    { home: '🇧🇫 Burkina Faso', score: '', away: '🇩🇿 Algeria'    },
-    { home: '🇸🇴 Somalia',      score: '', away: '🇨🇮 Ivory Coast'},
+    { home: '🇧🇫 Burkina Faso', score: '2 - 2', away: '🇩🇿 Algeria'    },
+    { home: '🇸🇴 Somalia',      score: '1 - 2', away: '🇨🇮 Ivory Coast'},
     { home: '🇩🇿 Algeria',      score: '', away: '🇸🇴 Somalia'    },
     { home: '🇬🇭 Ghana',        score: '', away: '🇧🇫 Burkina Faso'},
     { home: '🇨🇮 Ivory Coast',   score: '', away: '🇩🇿 Algeria'    },
