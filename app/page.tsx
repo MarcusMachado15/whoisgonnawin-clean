@@ -954,36 +954,36 @@ const groupMatchesAsia: Record<string, Match[]> = {
 
 const groupStandingsAsia: Record<string, Standing[]> = {
   'Group A WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'Japan',           played: 1, won: 1, draw: 0, lost: 0, gf: 1, ga: 0, gd:  1, pts: 3 },
-    { pos: 2, team: 'Bahrain',         played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0, gd:  0, pts: 1 },
-    { pos: 3, team: 'New Zealand',     played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0, gd:  0, pts: 1 },
-    { pos: 4, team: 'Philippines',     played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd:  0, pts: 0 },
-    { pos: 5, team: 'Kuwait',          played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 1, gd: -1, pts: 0 },
-  ],
+  { pos: 1, team: 'Japan',       played: 2, won: 1, draw: 1, lost: 0, gf: 2, ga: 1, gd: +1, pts: 4 },
+  { pos: 2, team: 'Bahrain',     played: 2, won: 0, draw: 2, lost: 0, gf: 0, ga: 0, gd:  0, pts: 2 },
+  { pos: 3, team: 'New Zealand', played: 2, won: 0, draw: 2, lost: 0, gf: 1, ga: 1, gd:  0, pts: 2 },
+  { pos: 4, team: 'Philippines', played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
+  { pos: 5, team: 'Kuwait',      played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 1, gd: -1, pts: 0 },
+],
 
-  'Group B WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'China',           played: 1, won: 1, draw: 0, lost: 0, gf: 4, ga: 0, gd:  4, pts: 3 },
-    { pos: 2, team: 'Iran',            played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
-    { pos: 3, team: 'Malaysia',        played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
-    { pos: 4, team: 'Hong Kong',       played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd:  0, pts: 0 },
-    { pos: 5, team: 'Oman',            played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 4, gd: -4, pts: 0 },
-  ],
+'Group B WC Qualifiers Argentina 2025': [
+  { pos: 1, team: 'China',       played: 2, won: 2, draw: 0, lost: 0, gf: 6, ga: 1, gd: +5, pts: 6 },
+  { pos: 2, team: 'Oman',        played: 2, won: 1, draw: 0, lost: 1, gf: 3, ga: 4, gd: -1, pts: 3 },
+  { pos: 3, team: 'Malaysia',    played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
+  { pos: 4, team: 'Iran',        played: 2, won: 0, draw: 1, lost: 1, gf: 2, ga: 3, gd: -1, pts: 1 },
+  { pos: 5, team: 'Hong Kong',   played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 3, gd: -2, pts: 0 },
+],
 
   'Group C WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'South Korea',     played: 1, won: 1, draw: 0, lost: 0, gf: 4, ga: 0, gd:  4, pts: 3 },
-    { pos: 2, team: 'Thailand',        played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 1, gd:  2, pts: 3 },
-    { pos: 3, team: 'Singapore',       played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd:  0, pts: 0 },
-    { pos: 4, team: 'United Arab Emirates', played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 3, gd: -2, pts: 0 },
-    { pos: 5, team: 'India',           played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 4, gd: -4, pts: 0 },
-  ],
+  { pos: 1, team: 'Thailand',     played: 2, won: 2, draw: 0, lost: 0, gf: 5, ga: 2, gd: +3, pts: 6 },
+  { pos: 2, team: 'South Korea',  played: 2, won: 1, draw: 0, lost: 1, gf: 5, ga: 2, gd: +3, pts: 3 },
+  { pos: 3, team: 'UAE',          played: 2, won: 1, draw: 0, lost: 1, gf: 4, ga: 4, gd:  0, pts: 3 },
+  { pos: 4, team: 'Singapore',    played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 3, gd: -2, pts: 0 },
+  { pos: 5, team: 'India',        played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 4, gd: -4, pts: 0 },
+],
 
-  'Group D WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'Jordan',          played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 2, gd:  1, pts: 3 },
-    { pos: 2, team: 'Indonesia',       played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 1, gd:  1, pts: 3 },
-    { pos: 3, team: 'Myanmar',         played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd:  0, pts: 0 },
-    { pos: 4, team: 'Palestine',       played: 1, won: 0, draw: 0, lost: 1, gf: 2, ga: 3, gd: -1, pts: 0 },
-    { pos: 5, team: 'Australia',       played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 2, gd: -1, pts: 0 },
-  ],
+'Group D WC Qualifiers Argentina 2025': [
+  { pos: 1, team: 'Jordan',    played: 2, won: 1, draw: 1, lost: 0, gf: 5, ga: 4, gd: +1, pts: 4 },
+  { pos: 2, team: 'Indonesia', played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 1, gd: +1, pts: 3 },
+  { pos: 3, team: 'Myanmar',   played: 1, won: 0, draw: 1, lost: 0, gf: 2, ga: 2, gd:  0, pts: 1 },
+  { pos: 4, team: 'Palestine', played: 2, won: 0, draw: 1, lost: 1, gf: 3, ga: 4, gd: -1, pts: 1 },
+  { pos: 5, team: 'Australia', played: 2, won: 0, draw: 1, lost: 1, gf: 2, ga: 3, gd: -1, pts: 1 },
+],
 
   'Group E WC Qualifiers Argentina 2025': [
     { pos: 1, team: 'Qatar',           played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 0, gd:  2, pts: 3 },
