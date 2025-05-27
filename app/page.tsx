@@ -761,12 +761,13 @@ const groupStandingsAfrica: Record<string, Standing[]> = {
     { pos: 5, team: 'Zambia',   played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 1,  gd: -1, pts:  0 },
   ],
 
+
   'Group B WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'South Africa', played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 1,  gd:  2, pts: 3 },
-    { pos: 2, team: 'Senegal',      played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 2,  gd:  1, pts: 3 },
-    { pos: 3, team: 'Guinea',       played: 1, won: 0, draw: 0, lost: 1, gf: 2, ga: 3,  gd: -1, pts: 0 },
-    { pos: 4, team: 'Tunisia',      played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 3,  gd: -2, pts: 0 },
-    { pos: 5, team: 'Zimbabwe',     played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0,  gd:  0, pts: 0 },
+    { pos: 1, team: 'Senegal',       played: 2, won: 2, draw: 0, lost: 0, gf: 7, ga: 5, gd: +2, pts:  6 },
+    { pos: 2, team: 'South Africa',  played: 2, won: 1, draw: 0, lost: 1, gf: 6, ga: 5, gd: +1, pts:  3 },
+    { pos: 3, team: 'Zimbabwe',      played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 0, gd: +2, pts:  3 },
+    { pos: 4, team: 'Guinea',        played: 1, won: 0, draw: 0, lost: 1, gf: 2, ga: 3, gd: -1, pts:  0 },
+    { pos: 5, team: 'Tunisia',       played: 2, won: 0, draw: 0, lost: 2, gf: 0, ga: 4, gd: -4, pts:  0 },
   ],
 
   'Group C WC Qualifiers Argentina 2025': [
@@ -778,11 +779,11 @@ const groupStandingsAfrica: Record<string, Standing[]> = {
   ],
 
   'Group D WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'Ghana',          played: 1, won: 1, draw: 0, lost: 0, gf: 5, ga: 3,  gd:  2, pts: 3 },
-    { pos: 2, team: 'Burkina Faso',   played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0,  gd:  0, pts: 1 },
-    { pos: 3, team: 'Ivory Coast',    played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0,  gd:  0, pts: 1 },
-    { pos: 4, team: 'Algeria',        played: 1, won: 0, draw: 0, lost: 1, gf: 3, ga: 5,  gd: -2, pts: 0 },
-    { pos: 5, team: 'Somalia',        played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0,  gd:  0, pts: 0 },
+    { pos: 1, team: 'Ivory Coast',   played: 2, won: 1, draw: 1, lost: 0, gf: 2, ga: 1, gd: +1, pts:  4 },
+    { pos: 2, team: 'Ghana',         played: 1, won: 1, draw: 0, lost: 0, gf: 5, ga: 3, gd: +2, pts:  3 },
+    { pos: 3, team: 'Burkina Faso',  played: 2, won: 0, draw: 2, lost: 0, gf: 2, ga: 2, gd:  0, pts:  2 },
+    { pos: 4, team: 'Algeria',       played: 2, won: 0, draw: 1, lost: 1, gf: 5, ga: 7, gd: -2, pts:  1 },
+    { pos: 5, team: 'Somalia',       played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 2, gd: -1, pts:  0 },
   ],
 };
 
@@ -790,8 +791,8 @@ const groupMatchesAsia: Record<string, Match[]> = {
   'Group A WC Qualifiers Argentina 2025': [
     { home: '🇯🇵 Japan',        score: '1 - 0', away: '🇰🇼 Kuwait'       },
     { home: '🇧🇭 Bahrain',      score: '0 - 0', away: '🇳🇿 New Zealand'  },
-    { home: '🇳🇿 New Zealand',  score: '', away: '🇯🇵 Japan'        },
-    { home: '🇵🇭 Philippines',  score: '', away: '🇧🇭 Bahrain'      },
+    { home: '🇳🇿 New Zealand',  score: '1 - 1', away: '🇯🇵 Japan'        },
+    { home: '🇵🇭 Philippines',  score: '1 - 1', away: '🇧🇭 Bahrain'      },
     { home: '🇯🇵 Japan',        score: '', away: '🇵🇭 Philippines'  },
     { home: '🇰🇼 Kuwait',       score: '', away: '🇳🇿 New Zealand'  },
     { home: '🇧🇭 Bahrain',      score: '', away: '🇯🇵 Japan'        },
