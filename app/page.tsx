@@ -818,7 +818,7 @@ const groupMatchesAsia: Record<string, Match[]> = {
   'Group C WC Qualifiers Argentina 2025': [
     { home: '🇰🇷 South Korea',  score: '4 - 0', away: '🇮🇳 India'       },
     { home: '🇦🇪 UAE',          score: '1 - 3', away: '🇹🇭 Thailand'    },
-    { home: '🇹🇭 Thailand',     score: '', away: '🇰🇷 South Korea'},
+    { home: '🇹🇭 Thailand',     score: '2 - 1', away: '🇰🇷 South Korea'},
     { home: '🇸🇬 Singapore',    score: '', away: '🇦🇪 UAE'         },
     { home: '🇰🇷 South Korea',  score: '', away: '🇸🇬 Singapore'  },
     { home: '🇮🇳 India',        score: '', away: '🇹🇭 Thailand'    },
