@@ -986,20 +986,20 @@ const groupStandingsAsia: Record<string, Standing[]> = {
 ],
 
   'Group E WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'Qatar',           played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 0, gd:  2, pts: 3 },
-    { pos: 2, team: 'Kyrgyzstan',      played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 1, gd:  1, pts: 3 },
-    { pos: 3, team: 'Nepal',           played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd:  0, pts: 0 },
-    { pos: 4, team: 'Iraq',            played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 2, gd: -1, pts: 0 },
-    { pos: 5, team: 'North Korea',     played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 2, gd: -2, pts: 0 },
-  ],
+  { pos: 1, team: 'Qatar',       played: 2, won: 2, draw: 0, lost: 0, gf: 4, ga: 0, gd: +4, pts: 6 },
+  { pos: 2, team: 'Iraq',        played: 2, won: 1, draw: 0, lost: 1, gf: 3, ga: 3, gd:  0, pts: 3 },
+  { pos: 3, team: 'Kyrgyzstan',  played: 2, won: 1, draw: 0, lost: 1, gf: 2, ga: 3, gd: -1, pts: 3 },
+  { pos: 4, team: 'Nepal',       played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 2, gd: -2, pts: 0 },
+  { pos: 5, team: 'North Korea', played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 2, gd: -2, pts: 0 },
+],
 
-  'Group F WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'Vietnam',         played: 1, won: 1, draw: 0, lost: 0, gf: 1, ga: 0, gd:  1, pts: 3 },
-    { pos: 2, team: 'Lebanon',         played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
-    { pos: 3, team: 'Uzbekistan',      played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
-    { pos: 4, team: 'Bangladesh',      played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0, gd:  0, pts: 0 },
-    { pos: 5, team: 'Saudi Arabia',    played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 1, gd: -1, pts: 0 },
-  ],
+'Group F WC Qualifiers Argentina 2025': [
+  { pos: 1, team: 'Uzbekistan',    played: 2, won: 1, draw: 1, lost: 0, gf: 2, ga: 1, gd: +1, pts: 4 },
+  { pos: 2, team: 'Vietnam',       played: 2, won: 1, draw: 0, lost: 1, gf: 1, ga: 1, gd:  0, pts: 3 },
+  { pos: 3, team: 'Saudi Arabia',  played: 2, won: 1, draw: 0, lost: 1, gf: 1, ga: 1, gd:  0, pts: 3 },
+  { pos: 4, team: 'Lebanon',       played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
+  { pos: 5, team: 'Bangladesh',    played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 1, gd: -1, pts: 0 },
+],
   
   'Group A WC Qualifiers Turkey 2024': [
     { pos: 1, team: 'Japan',      played: 4, won: 4, draw: 0, lost: 0, gf:  8, ga: 2,  gd: +6, pts: 12 },
