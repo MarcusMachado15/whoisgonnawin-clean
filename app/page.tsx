@@ -1047,7 +1047,7 @@ const groupMatchesNCAmerica: Record<string, Match[]> = {
     { home: '🇺🇸 United States', score: '0 - 0', away: '🇵🇦 Panama'      },
     { home: '🇲🇽 Mexico',        score: '1 - 2', away: '🇨🇦 Canada'      },
     { home: '🇨🇦 Canada',        score: '0 - 1', away: '🇺🇸 United States'},
-    { home: '🇨🇷 Costa Rica',    score: '', away: '🇲🇽 Mexico'      },
+    { home: '🇨🇷 Costa Rica',    score: '0 - 0', away: '🇲🇽 Mexico'      },
     { home: '🇺🇸 United States', score: '', away: '🇨🇷 Costa Rica'  },
     { home: '🇵🇦 Panama',        score: '', away: '🇨🇦 Canada'      },
     { home: '🇲🇽 Mexico',        score: '', away: '🇺🇸 United States'},
