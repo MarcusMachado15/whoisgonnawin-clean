@@ -994,11 +994,11 @@ const groupStandingsAsia: Record<string, Standing[]> = {
 ],
 
 'Group F WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Uzbekistan',    played: 2, won: 1, draw: 1, lost: 0, gf: 2, ga: 1, gd: +1, pts: 4 },
-  { pos: 2, team: 'Vietnam',       played: 2, won: 1, draw: 0, lost: 1, gf: 1, ga: 1, gd:  0, pts: 3 },
-  { pos: 3, team: 'Saudi Arabia',  played: 2, won: 1, draw: 0, lost: 1, gf: 1, ga: 1, gd:  0, pts: 3 },
-  { pos: 4, team: 'Lebanon',       played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
-  { pos: 5, team: 'Bangladesh',    played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 1, gd: -1, pts: 0 },
+  { pos: 1, team: 'Uzbekistan',  played: 2, won: 1, draw: 1, lost: 0, gf: 2, ga: 1, gd: +1, pts: 4 },
+  { pos: 2, team: 'Vietnam',     played: 2, won: 1, draw: 0, lost: 1, gf: 1, ga: 1, gd:  0, pts: 3 },
+  { pos: 3, team: 'Lebanon',     played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
+  { pos: 4, team: 'Bangladesh',  played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0, gd:  0, pts: 1 },
+  { pos: 5, team: 'Saudi Arabia',played: 2, won: 0, draw: 1, lost: 1, gf: 0, ga: 1, gd: –1, pts: 1 },
 ],
   
   'Group A WC Qualifiers Turkey 2024': [
@@ -1046,7 +1046,7 @@ const groupMatchesNCAmerica: Record<string, Match[]> = {
   'Group A WC Qualifiers Argentina 2025': [
     { home: '🇺🇸 United States', score: '0 - 0', away: '🇵🇦 Panama'      },
     { home: '🇲🇽 Mexico',        score: '1 - 2', away: '🇨🇦 Canada'      },
-    { home: '🇨🇦 Canada',        score: '', away: '🇺🇸 United States'},
+    { home: '🇨🇦 Canada',        score: '0 - 1', away: '🇺🇸 United States'},
     { home: '🇨🇷 Costa Rica',    score: '', away: '🇲🇽 Mexico'      },
     { home: '🇺🇸 United States', score: '', away: '🇨🇷 Costa Rica'  },
     { home: '🇵🇦 Panama',        score: '', away: '🇨🇦 Canada'      },
