@@ -998,7 +998,7 @@ const groupStandingsAsia: Record<string, Standing[]> = {
   { pos: 2, team: 'Vietnam',     played: 2, won: 1, draw: 0, lost: 1, gf: 1, ga: 1, gd:  0, pts: 3 },
   { pos: 3, team: 'Lebanon',     played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
   { pos: 4, team: 'Bangladesh',  played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0, gd:  0, pts: 1 },
-  { pos: 5, team: 'Saudi Arabia',played: 2, won: 0, draw: 1, lost: 1, gf: 0, ga: 1, gd: –1, pts: 1 },
+  { pos: 5, team: 'Saudi Arabia',played: 2, won: 0, draw: 1, lost: 1, gf: 0, ga: 1, gd: -1, pts: 1 },
 ],
   
   'Group A WC Qualifiers Turkey 2024': [
