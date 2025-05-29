@@ -1058,12 +1058,12 @@ const groupMatchesNCAmerica: Record<string, Match[]> = {
 }; 
 const groupStandingsNCAmerica: Record<string, Standing[]> = {
   'Group A WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'Canada',         played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 1,  gd:  1, pts: 3 },
-    { pos: 2, team: 'United States', played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0,  gd:  0, pts: 1 },
-    { pos: 3, team: 'Panama',        played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0,  gd:  0, pts: 1 },
-    { pos: 4, team: 'Costa Rica',    played: 0, won: 0, draw: 0, lost: 0, gf: 0, ga: 0,  gd:  0, pts: 0 },
-    { pos: 5, team: 'Mexico',        played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 2,  gd: -1, pts: 0 },
-  ],
+  { pos: 1, team: 'United States', played: 2, won: 1, draw: 1, lost: 0, gf: 1, ga: 0, gd: +1, pts: 4 },
+  { pos: 2, team: 'Canada',        played: 2, won: 1, draw: 0, lost: 1, gf: 2, ga: 2, gd:  0, pts: 3 },
+  { pos: 3, team: 'Costa Rica',    played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0, gd:  0, pts: 1 },
+  { pos: 4, team: 'Panama',        played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0, gd:  0, pts: 1 },
+  { pos: 5, team: 'Mexico',        played: 2, won: 0, draw: 1, lost: 1, gf: 1, ga: 2, gd: -1, pts: 1 },
+],
 };
 
 const groupMatchesByRegion: Record<Region, Record<string, Match[]>> = {
