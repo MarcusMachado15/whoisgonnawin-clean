@@ -372,20 +372,20 @@ const groupStandingsEurope: Record<string, Standing[]> = {
     { pos: 5, team: 'N. Macedonia', played: 2, won: 0, draw: 0, lost: 2, gf:  1, ga: 3,  gd: -2, pts:  0 },
   ],
 'Group D WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'Israel',      played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 0,  gd: +3, pts: 3 },
-    { pos: 2, team: 'Hungary',     played: 2, won: 1, draw: 0, lost: 1, gf: 5, ga: 4,  gd: +1, pts: 3 },
-    { pos: 3, team: 'Netherlands', played: 2, won: 1, draw: 0, lost: 1, gf: 3, ga: 4,  gd: -1, pts: 3 },
-    { pos: 4, team: 'Ukraine',     played: 2, won: 1, draw: 0, lost: 1, gf: 2, ga: 4,  gd: -2, pts: 3 },
-    { pos: 5, team: 'Albania',     played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 1,  gd: -1, pts: 0 },
-  ],
+  { pos: 1, team: 'Israel',       played: 2, won: 2, draw: 0, lost: 0, gf: 5, ga: 0,  gd: +5, pts:  6 },
+  { pos: 2, team: 'Hungary',      played: 3, won: 1, draw: 1, lost: 1, gf: 6, ga: 5,  gd: +1, pts:  4 },
+  { pos: 3, team: 'Ukraine',      played: 2, won: 1, draw: 0, lost: 1, gf: 2, ga: 4,  gd: -2, pts:  3 },
+  { pos: 4, team: 'Netherlands',  played: 3, won: 1, draw: 0, lost: 2, gf: 3, ga: 6,  gd: -3, pts:  3 },
+  { pos: 5, team: 'Albania',      played: 2, won: 0, draw: 1, lost: 1, gf: 1, ga: 2,  gd: -1, pts:  1 },
+],
 
-  'Group E WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'Norway',    played: 2, won: 1, draw: 1, lost: 0, gf:  4, ga: 3,  gd: +1, pts: 4 },
-    { pos: 2, team: 'Austria',   played: 2, won: 1, draw: 1, lost: 0, gf:  2, ga: 1,  gd: +1, pts: 4 },
-    { pos: 3, team: 'Ireland',   played: 1, won: 0, draw: 1, lost: 0, gf:  1, ga: 1,  gd:  0, pts: 1 },
-    { pos: 4, team: 'Portugal',  played: 2, won: 0, draw: 1, lost: 1, gf:  3, ga: 4,  gd: -1, pts: 1 },
-    { pos: 5, team: 'Bulgaria',  played: 1, won: 0, draw: 0, lost: 1, gf:  0, ga: 1,  gd: -1, pts: 0 },
-  ],
+'Group E WC Qualifiers Argentina 2025': [
+  { pos: 1, team: 'Norway',       played: 3, won: 1, draw: 2, lost: 0, gf: 6, ga: 5,  gd: +1, pts:  5 },
+  { pos: 2, team: 'Austria',      played: 2, won: 1, draw: 1, lost: 0, gf: 2, ga: 1,  gd: +1, pts:  4 },
+  { pos: 3, team: 'Bulgaria',     played: 2, won: 1, draw: 0, lost: 1, gf: 4, ga: 3,  gd: +1, pts:  3 },
+  { pos: 4, team: 'Ireland',      played: 2, won: 0, draw: 2, lost: 0, gf: 3, ga: 3,  gd:  0, pts:  2 },
+  { pos: 5, team: 'Portugal',     played: 3, won: 0, draw: 1, lost: 2, gf: 5, ga: 8,  gd: -3, pts:  1 },
+],
   'Group F WC Qualifiers Argentina 2025': [
     { pos: 1, team: 'Belgium',    played: 2, won: 2, draw: 0, lost: 0, gf: 6, ga: 1,  gd: +5, pts: 6 },
     { pos: 2, team: 'Kazakhstan', played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 2,  gd: +1, pts: 3 },
