@@ -547,7 +547,7 @@ const groupMatchesSouthAmerica: Record<string, Match[]> = {
     { home: '🇨🇴 Colombia',  score: '2 - 3', away: '🇪🇨 Ecuador' },
     { home: '🇪🇨 Ecuador',   score: '2 - 2', away: '🇦🇷 Argentina' },
     { home: '🇨🇱 Chile',     score: '0 - 3', away: '🇨🇴 Colombia' },
-    { home: '🇦🇷 Argentina', score: '', away: '🇨🇱 Chile' },
+    { home: '🇦🇷 Argentina', score: '1 - 1', away: '🇨🇱 Chile' },
     { home: '🇵🇾 Paraguay',  score: '', away: '🇪🇨 Ecuador' },
     { home: '🇨🇴 Colombia',  score: '', away: '🇦🇷 Argentina' },
     { home: '🇨🇱 Chile',     score: '', away: '🇵🇾 Paraguay' },
