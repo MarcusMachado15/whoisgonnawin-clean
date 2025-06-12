@@ -1039,6 +1039,13 @@ const groupStandingsAsia: Record<string, Standing[]> = {
     { pos: 4, team: 'Myanmar',    played: 4, won: 1, draw: 1, lost: 2, gf:  4, ga: 4,  gd:  0, pts:  4 },
     { pos: 5, team: 'North Korea',played: 4, won: 1, draw: 1, lost: 2, gf:  3, ga: 5,  gd: -2, pts:  4 },
 ],
+'Group F WC Qualifiers Turkey 2024': [
+  { pos: 1, team: 'Saudi Arabia', played: 4, won: 3, draw: 1, lost: 0, gf: 11, ga:  2, gd: +9, pts: 10 },
+  { pos: 2, team: 'Tajikistan',  played: 4, won: 2, draw: 0, lost: 2, gf:  3, ga:  4, gd: -1, pts:  6 },
+  { pos: 3, team: 'Iraq',        played: 4, won: 2, draw: 0, lost: 2, gf:  3, ga:  5, gd: -2, pts:  6 },
+  { pos: 4, team: 'Cambodia',    played: 4, won: 1, draw: 1, lost: 2, gf:  4, ga:  4, gd:  0, pts:  4 },
+  { pos: 5, team: 'Kyrgyzstan',  played: 4, won: 1, draw: 0, lost: 3, gf:  2, ga:  8, gd: -6, pts:  3 },
+],
   };
 
 const groupMatchesNCAmerica: Record<string, Match[]> = {
@@ -1047,8 +1054,8 @@ const groupMatchesNCAmerica: Record<string, Match[]> = {
     { home: '🇲🇽 Mexico',        score: '1 - 2', away: '🇨🇦 Canada'      },
     { home: '🇨🇦 Canada',        score: '0 - 1', away: '🇺🇸 United States'},
     { home: '🇨🇷 Costa Rica',    score: '0 - 0', away: '🇲🇽 Mexico'      },
-    { home: '🇺🇸 United States', score: '', away: '🇨🇷 Costa Rica'  },
-    { home: '🇵🇦 Panama',        score: '', away: '🇨🇦 Canada'      },
+    { home: '🇺🇸 United States', score: '2 - 2', away: '🇨🇷 Costa Rica'  },
+    { home: '🇵🇦 Panama',        score: '0 - 1', away: '🇨🇦 Canada'      },
     { home: '🇲🇽 Mexico',        score: '', away: '🇺🇸 United States'},
     { home: '🇨🇷 Costa Rica',    score: '', away: '🇵🇦 Panama'      },
     { home: '🇵🇦 Panama',        score: '', away: '🇲🇽 Mexico'      },
