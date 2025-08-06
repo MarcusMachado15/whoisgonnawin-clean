@@ -115,7 +115,7 @@ const groupMatchesEurope: Record<string, Match[]> = {
     { home: '🇮🇹 Italy', score: '2 - 1', away: '🇦🇿 Azerbaijan' },
     { home: '🇸🇰 Slovakia', score: '1 - 1', away: '🇬🇷 Greece' },
     { home: '🇨🇭 Switzerland', score: '0 - 2', away: '🇮🇹 Italy' },
-    { home: '🇦🇿 Azerbaijan', score: '', away: '🇸🇰 Slovakia' },
+    { home: '🇦🇿 Azerbaijan', score: '2 - 2', away: '🇸🇰 Slovakia' },
     { home: '🇸🇰 Slovakia', score: '', away: '🇨🇭 Switzerland' },
     { home: '🇬🇷 Greece', score: '', away: '🇦🇿 Azerbaijan' },
   ],
