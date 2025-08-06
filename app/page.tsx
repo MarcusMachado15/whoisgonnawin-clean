@@ -374,9 +374,9 @@ const groupStandingsEurope: Record<string, Standing[]> = {
 'Group D WC Qualifiers Argentina 2025': [
   { pos: 1, team: 'Israel',      played: 3, won: 3, draw: 0, lost: 0, gf:  9, ga: 2,  gd: +7, pts:  9 },
   { pos: 2, team: 'Hungary',     played: 3, won: 1, draw: 1, lost: 1, gf:  6, ga: 5,  gd: +1, pts:  4 },
-  { pos: 3, team: 'Ukraine',     played: 3, won: 1, draw: 1, lost: 1, gf:  3, ga: 5,  gd: −2, pts:  4 },
-  { pos: 4, team: 'Netherlands', played: 4, won: 1, draw: 1, lost: 2, gf:  4, ga: 7,  gd: −3, pts:  4 },
-  { pos: 5, team: 'Albania',     played: 3, won: 0, draw: 1, lost: 2, gf:  3, ga: 6,  gd: −3, pts:  1 },
+  { pos: 3, team: 'Ukraine',     played: 3, won: 1, draw: 1, lost: 1, gf:  3, ga: 5,  gd: -2, pts:  4 },
+  { pos: 4, team: 'Netherlands', played: 4, won: 1, draw: 1, lost: 2, gf:  4, ga: 7,  gd: -3, pts:  4 },
+  { pos: 5, team: 'Albania',     played: 3, won: 0, draw: 1, lost: 2, gf:  3, ga: 6,  gd: -3, pts:  1 },
 ],
 
 'Group E WC Qualifiers Argentina 2025': [
