@@ -648,12 +648,12 @@ const groupStandingsSouthAmerica: Record<string, Standing[]> = {
   { pos: 5, team: 'Paraguay',    played: 3, won: 0, draw: 1, lost: 2, gf:  1, ga: 4,  gd: -3, pts:  1 },
 ],
   'Group B WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'Uruguay',    played: 2, won: 2, draw: 0, lost: 0, gf: 6,  ga: 2,  gd: +4, pts: 6 },
-    { pos: 2, team: 'Brazil',     played: 3, won: 1, draw: 1, lost: 1, gf: 6,  ga: 5,  gd: +1, pts: 4 },
-    { pos: 3, team: 'Peru',       played: 3, won: 1, draw: 1, lost: 1, gf: 3,  ga: 4,  gd: -1, pts: 4 },
-    { pos: 4, team: 'Venezuela',  played: 2, won: 0, draw: 2, lost: 0, gf: 1,  ga: 1,  gd:  0, pts: 2 },
-    { pos: 5, team: 'Bolivia',    played: 2, won: 0, draw: 0, lost: 2, gf: 3,  ga: 7,  gd: -4, pts: 0 },
-  ],
+  { pos: 1, team: 'Uruguay',    played: 3, won: 3, draw: 0, lost: 0, gf:  9, ga: 2,  gd: +7, pts:  9 },
+  { pos: 2, team: 'Peru',       played: 3, won: 1, draw: 1, lost: 1, gf:  3, ga: 4,  gd: -1, pts:  4 },
+  { pos: 3, team: 'Brazil',     played: 4, won: 1, draw: 1, lost: 2, gf:  6, ga: 8,  gd: -2, pts:  4 },
+  { pos: 4, team: 'Bolivia',    played: 3, won: 1, draw: 0, lost: 2, gf:  6, ga: 8,  gd: -2, pts:  3 },
+  { pos: 5, team: 'Venezuela',  played: 3, won: 0, draw: 2, lost: 1, gf:  2, ga: 4,  gd: -2, pts:  2 },
+],
   'Group A WC Qualifiers Turkey 2024': [
   { pos: 1, team: 'Argentina(Q)', played: 4, won: 2, draw: 1, lost: 1, gf:  9, ga:  6, gd:  3, pts:  7 },
   { pos: 2, team: 'Uruguay(Q)',   played: 4, won: 2, draw: 1, lost: 1, gf:  6, ga:  5, gd:  1, pts:  7 },
