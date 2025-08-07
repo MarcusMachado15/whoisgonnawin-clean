@@ -754,12 +754,12 @@ const groupMatchesAfrica: Record<string, Match[]> = {
 
 const groupStandingsAfrica: Record<string, Standing[]> = {
   'Group A WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'Morocco',  played: 3, won: 2, draw: 0, lost: 1, gf: 6, ga: 5,  gd: +1, pts: 6 },
-    { pos: 2, team: 'Cameroon', played: 2, won: 1, draw: 1, lost: 0, gf: 2, ga: 1,  gd: +1, pts: 4 },
-    { pos: 3, team: 'Kenya',    played: 2, won: 1, draw: 0, lost: 1, gf: 6, ga: 3,  gd: +3, pts: 3 },
-    { pos: 4, team: 'Mali',     played: 3, won: 0, draw: 2, lost: 1, gf: 0, ga: 4,  gd: -4, pts: 2 },
-    { pos: 5, team: 'Zambia',   played: 2, won: 0, draw: 1, lost: 1, gf: 0, ga: 1,  gd: -1, pts: 1 },
-  ],
+  { pos: 1, team: 'Cameroon', played: 3, won: 2, draw: 1, lost: 0, gf:  6, ga: 1,  gd: +5, pts:  7 },
+  { pos: 2, team: 'Morocco',  played: 4, won: 2, draw: 0, lost: 2, gf:  6, ga: 9,  gd: -3, pts:  6 },
+  { pos: 3, team: 'Kenya',    played: 3, won: 1, draw: 1, lost: 1, gf:  9, ga: 6,  gd: +3, pts:  4 },
+  { pos: 4, team: 'Zambia',   played: 3, won: 0, draw: 2, lost: 1, gf:  3, ga: 4,  gd: -1, pts:  2 },
+  { pos: 5, team: 'Mali',     played: 3, won: 0, draw: 2, lost: 1, gf:  0, ga: 4,  gd: -4, pts:  2 },
+],
 
 
   'Group B WC Qualifiers Argentina 2025': [
