@@ -972,11 +972,11 @@ const groupStandingsAsia: Record<string, Standing[]> = {
 
   'Group C WC Qualifiers Argentina 2025': [
     { pos: 1, team: 'Thailand',    played: 3, won: 2, draw: 0, lost: 1, gf: 6, ga: 4, gd: +2, pts: 6 },
-    { pos: 2, team: 'South Korea', played: 3, won: 1, draw: 0, lost: 2, gf: 5, ga: 4, gd: +1, pts: 3 },
-    { pos: 3, team: 'UAE',         played: 2, won: 1, draw: 0, lost: 1, gf: 4, ga: 4, gd:  0, pts: 3 },
-    { pos: 4, team: 'Singapore',   played: 2, won: 1, draw: 0, lost: 1, gf: 3, ga: 3, gd:  0, pts: 3 },
-    { pos: 5, team: 'India',       played: 2, won: 1, draw: 0, lost: 1, gf: 2, ga: 5, gd: -3, pts: 3 },
-  ],
+  { pos: 2, team: 'Singapore',   played: 3, won: 2, draw: 0, lost: 1, gf: 5, ga: 3, gd: +2, pts: 6 },
+  { pos: 3, team: 'UAE',         played: 3, won: 2, draw: 0, lost: 1, gf: 5, ga: 4, gd: +1, pts: 6 },
+  { pos: 4, team: 'South Korea', played: 4, won: 1, draw: 0, lost: 3, gf: 5, ga: 5, gd:  0, pts: 3 },
+  { pos: 5, team: 'India',       played: 3, won: 1, draw: 0, lost: 2, gf: 2, ga: 7, gd: -5, pts: 3 },
+],
 
   'Group D WC Qualifiers Argentina 2025': [
     { pos: 1, team: 'Australia',   played: 3, won: 1, draw: 1, lost: 1, gf: 5, ga: 4, gd: +1, pts: 4 },
