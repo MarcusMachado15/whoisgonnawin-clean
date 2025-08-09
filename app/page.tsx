@@ -837,7 +837,7 @@ const groupMatchesAsia: Record<string, Match[]> = {
     { home: '🇲🇲 Myanmar',      score: '2 - 2', away: '🇯🇴 Jordan'      },
     { home: '🇦🇺 Australia',    score: '3 - 1', away: '🇲🇲 Myanmar'     },
     { home: '🇮🇩 Indonesia',    score: '0 - 0', away: '🇵🇸 Palestine'   },
-    { home: '🇯🇴 Jordan',       score: '', away: '🇦🇺 Australia'  },
+    { home: '🇯🇴 Jordan',       score: '1 - 3', away: '🇦🇺 Australia'  },
     { home: '🇲🇲 Myanmar',      score: '', away: '🇮🇩 Indonesia'  },
     { home: '🇮🇩 Indonesia',    score: '', away: '🇯🇴 Jordan'      },
     { home: '🇵🇸 Palestine',    score: '', away: '🇲🇲 Myanmar'     },
