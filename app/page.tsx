@@ -809,7 +809,7 @@ const groupMatchesAsia: Record<string, Match[]> = {
     { home: '🇭🇰 Hong Kong',    score: '1 - 3', away: '🇴🇲 Oman'        },
     { home: '🇮🇷 Iran',         score: '3 - 1', away: '🇭🇰 Hong Kong'  },
     { home: '🇲🇾 Malaysia',     score: '2 - 2', away: '🇨🇳 China'       },
-    { home: '🇴🇲 Oman',         score: '', away: '🇮🇷 Iran'         },
+    { home: '🇴🇲 Oman',         score: '3 - 1', away: '🇮🇷 Iran'         },
     { home: '🇭🇰 Hong Kong',    score: '', away: '🇲🇾 Malaysia'    },
     { home: '🇲🇾 Malaysia',     score: '', away: '🇴🇲 Oman'        },
     { home: '🇨🇳 China',        score: '', away: '🇭🇰 Hong Kong'  },
