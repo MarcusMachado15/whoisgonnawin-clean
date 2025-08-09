@@ -824,7 +824,7 @@ const groupMatchesAsia: Record<string, Match[]> = {
     { home: '🇰🇷 South Korea',  score: '0 - 2', away: '🇸🇬 Singapore'  },
     { home: '🇮🇳 India',        score: '2 - 1', away: '🇹🇭 Thailand'    },
     { home: '🇦🇪 UAE',          score: '1 - 0', away: '🇰🇷 South Korea'},
-    { home: '🇸🇬 Singapore',    score: '', away: '🇮🇳 India'       },
+    { home: '🇸🇬 Singapore',    score: '2 - 0', away: '🇮🇳 India'       },
     { home: '🇮🇳 India',        score: '', away: '🇦🇪 UAE'         },
     { home: '🇹🇭 Thailand',     score: '', away: '🇸🇬 Singapore'  },
   ],
@@ -963,7 +963,7 @@ const groupStandingsAsia: Record<string, Standing[]> = {
 ],
 
   'Group B WC Qualifiers Argentina 2025': [
-    { pos: 1, team: 'China',     played: 3, won: 2, draw: 1, lost: 0, gf: 8, ga: 3, gd: +5, pts: 7 },
+  { pos: 1, team: 'China',     played: 3, won: 2, draw: 1, lost: 0, gf: 8, ga: 3, gd: +5, pts: 7 },
   { pos: 2, team: 'Oman',      played: 3, won: 2, draw: 0, lost: 1, gf: 6, ga: 6, gd:  0, pts: 6 },
   { pos: 3, team: 'Iran',      played: 4, won: 1, draw: 1, lost: 2, gf: 6, ga: 7, gd: -1, pts: 4 },
   { pos: 4, team: 'Hong Kong', played: 3, won: 1, draw: 0, lost: 2, gf: 5, ga: 8, gd: -3, pts: 3 },
