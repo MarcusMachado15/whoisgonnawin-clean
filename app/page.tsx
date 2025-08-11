@@ -55,7 +55,7 @@ const groupMatchesEurope: Record<string, Match[]> = {
     { home: '🇬🇪 Georgia', score: '0 - 1', away: '🇵🇱 Poland' },
     { home: '🇸🇪 Sweden', score: '0 - 2', away: '🇫🇷 France' },
     { home: '🇬🇧 N. Ireland', score: '1 - 2', away: '🇬🇪 Georgia' },
-    { home: '🇬🇪 Georgia', score: '', away: '🇸🇪 Sweden' },
+    { home: '🇬🇪 Georgia', score: '1 - 2', away: '🇸🇪 Sweden' },
     { home: '🇵🇱 Poland', score: '', away: '🇬🇧 N. Ireland' },
   ],
   'Group C WC Qualifiers Argentina 2025': [
@@ -356,7 +356,7 @@ const groupStandingsEurope: Record<string, Standing[]> = {
   { pos: 3, team: 'Finland',     played: 4, won: 1, draw: 3, lost: 0, gf:  7, ga: 5,  gd: +2, pts: 6 },
   { pos: 4, team: 'Montenegro',  played: 4, won: 1, draw: 0, lost: 3, gf:  7, ga:10,  gd: -3, pts: 3 },
   { pos: 5, team: 'Serbia',      played: 4, won: 0, draw: 1, lost: 3, gf:  5, ga:11,  gd: -6, pts: 1 },
-]
+],
   'Group B WC Qualifiers Argentina 2025': [
   { pos: 1, team: 'France',     played: 4, won: 4, draw: 0, lost: 0, gf: 10, ga: 1,  gd: +9, pts: 12 },
   { pos: 2, team: 'Sweden',     played: 3, won: 2, draw: 0, lost: 1, gf:  8, ga: 4,  gd: +4, pts:  6 },
