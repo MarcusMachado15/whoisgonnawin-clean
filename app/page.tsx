@@ -93,7 +93,7 @@ const groupMatchesEurope: Record<string, Match[]> = {
     { home: '🇦🇹 Austria', score: '2 - 3', away: '🇵🇹 Portugal' },
     { home: '🇧🇬 Bulgaria', score: '1 - 2', away: '🇮🇪 Ireland' },
     { home: '🇮🇪 Ireland', score: '0 - 0', away: '🇦🇹 Austria' },
-    { home: '🇳🇴 Norway', score: '', away: '🇧🇬 Bulgaria' },
+    { home: '🇳🇴 Norway', score: '4 - 3', away: '🇧🇬 Bulgaria' },
   ],
   'Group F WC Qualifiers Argentina 2025': [
     { home: '🇧🇪 Belgium', score: '4 – 0', away: '🇸🇮 Slovenia' },
