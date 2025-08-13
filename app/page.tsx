@@ -394,11 +394,11 @@ const groupStandingsEurope: Record<string, Standing[]> = {
   { pos: 5, team: 'Denmark',     played: 4, won: 1, draw: 1, lost: 2, gf: 5, ga: 8,  gd: -3, pts: 4 },
 ],
   'Group G WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Italy',       played: 4, won: 4, draw: 0, lost: 0, gf:  9, ga: 3,  gd: +6, pts: 12 },
-  { pos: 2, team: 'Switzerland', played: 3, won: 1, draw: 1, lost: 1, gf:  3, ga: 4,  gd: -1, pts:  4 },
-  { pos: 3, team: 'Slovakia',    played: 3, won: 0, draw: 2, lost: 1, gf:  5, ga: 6,  gd: -1, pts:  2 },
-  { pos: 4, team: 'Greece',      played: 3, won: 0, draw: 2, lost: 1, gf:  1, ga: 3,  gd: -2, pts:  2 },
-  { pos: 5, team: 'Azerbaijan',  played: 3, won: 0, draw: 1, lost: 2, gf:  5, ga: 7,  gd: -2, pts:  1 },
+  { pos: 1, team: 'Italy',       played: 4, won: 4, draw: 0, lost: 0, gf: 9, ga: 3,  gd: +6, pts: 12 },
+  { pos: 2, team: 'Switzerland', played: 4, won: 2, draw: 1, lost: 1, gf: 8, ga: 5,  gd: +3, pts:  7 },
+  { pos: 3, team: 'Greece',      played: 4, won: 1, draw: 2, lost: 1, gf: 5, ga: 4,  gd: +1, pts:  5 },
+  { pos: 4, team: 'Slovakia',    played: 4, won: 0, draw: 2, lost: 2, gf: 6, ga: 11, gd: -5, pts:  2 },
+  { pos: 5, team: 'Azerbaijan',  played: 4, won: 0, draw: 1, lost: 3, gf: 6, ga: 11, gd: -5, pts:  1 },
 ],
   'Group H WC Qualifiers Argentina 2025': [
   { pos: 1, team: 'Romania',   played: 3, won: 3, draw: 0, lost: 0, gf:  7, ga: 2,  gd: +5, pts:  9 },
