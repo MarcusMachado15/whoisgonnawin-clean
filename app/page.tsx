@@ -129,7 +129,7 @@ const groupMatchesEurope: Record<string, Match[]> = {
     { home: '🇭🇷 Croatia', score: '0 - 3', away: '🇩🇪 Germany' },
     { home: '🇨🇾 Cyprus', score: '1 - 3', away: '🇷🇴 Romania' },
     { home: '🇷🇴 Romania', score: '3 - 0', away: '🇭🇷 Croatia' },
-    { home: '🏴 Scotland', score: '', away: '🇨🇾 Cyprus' },
+    { home: '🏴 Scotland', score: '3 - 1', away: '🇨🇾 Cyprus' },
   ],
 
   'Group A WC Qualifiers Turkey 2024': [
