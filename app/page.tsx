@@ -565,7 +565,7 @@ const groupMatchesSouthAmerica: Record<string, Match[]> = {
     { home: '🇺🇾 Uruguay',   score: '3 - 0', away: '🇧🇷 Brazil' },
     { home: '🇧🇴 Bolivia',   score: '3 - 1', away: '🇻🇪 Venezuela' },
     { home: '🇻🇪 Venezuela', score: '1 - 0', away: '🇺🇾 Uruguay' },
-    { home: '🇵🇪 Peru',      score: '', away: '🇧🇴 Bolivia' },
+    { home: '🇵🇪 Peru',      score: '1 - 1', away: '🇧🇴 Bolivia' },
   ],'Group A WC Qualifiers Turkey 2024': [
   { home: '🇦🇷 Argentina',   score: '1 – 2', away: '🇨🇱 Chile'     },
   { home: '🇺🇾 Uruguay',     score: '1 – 1', away: '🇪🇨 Ecuador'   },
