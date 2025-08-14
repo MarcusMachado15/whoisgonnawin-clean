@@ -641,11 +641,11 @@ const groupMatchesSouthAmerica: Record<string, Match[]> = {
 };
 const groupStandingsSouthAmerica: Record<string, Standing[]> = {
     'Group A WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Ecuador',     played: 3, won: 2, draw: 1, lost: 0, gf:  6, ga: 4,  gd: +2, pts:  7 },
-  { pos: 2, team: 'Argentina',   played: 4, won: 1, draw: 3, lost: 0, gf:  7, ga: 5,  gd: +2, pts:  6 },
-  { pos: 3, team: 'Colombia',    played: 3, won: 1, draw: 1, lost: 1, gf:  7, ga: 5,  gd: +2, pts:  4 },
-  { pos: 4, team: 'Chile',       played: 3, won: 0, draw: 2, lost: 1, gf:  2, ga: 5,  gd: -3, pts:  2 },
-  { pos: 5, team: 'Paraguay',    played: 3, won: 0, draw: 1, lost: 2, gf:  1, ga: 4,  gd: -3, pts:  1 },
+  { pos: 1, team: 'Ecuador',   played: 4, won: 3, draw: 1, lost: 0, gf:  10, ga: 5, gd: +5, pts: 10 },
+  { pos: 2, team: 'Colombia',  played: 4, won: 2, draw: 1, lost: 1, gf: 12, ga: 8, gd: +4, pts:  7 },
+  { pos: 3, team: 'Argentina', played: 4, won: 1, draw: 3, lost: 0, gf:  7, ga: 5, gd: +2, pts:  6 },
+  { pos: 4, team: 'Chile',     played: 4, won: 0, draw: 2, lost: 2, gf:  3, ga: 9, gd: -6, pts:  2 },
+  { pos: 5, team: 'Paraguay',  played: 4, won: 0, draw: 1, lost: 3, gf:  4, ga: 9, gd: -5, pts:  1 },
 ],
   'Group B WC Qualifiers Argentina 2025': [
   { pos: 1, team: 'Uruguay',    played: 3, won: 3, draw: 0, lost: 0, gf:  9, ga: 2,  gd: +7, pts:  9 },
