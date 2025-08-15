@@ -735,7 +735,7 @@ const groupMatchesAfrica: Record<string, Match[]> = {
     { home: '🇳🇬 Nigeria',      score: '2 - 4', away: '🇪🇬 Egypt'      },
     { home: '🇧🇼 Botswana',     score: '2 - 1', away: '🇬🇦 Gabon'      },
     { home: '🇬🇦 Gabon',        score: '0 - 3', away: '🇳🇬 Nigeria'   },
-    { home: '🇨🇩 Congo DR',     score: '', away: '🇧🇼 Botswana'   },
+    { home: '🇨🇩 Congo DR',     score: '3 - 1', away: '🇧🇼 Botswana'   },
   ],
 
   'Group D WC Qualifiers Argentina 2025': [
