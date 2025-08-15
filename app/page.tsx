@@ -648,11 +648,11 @@ const groupStandingsSouthAmerica: Record<string, Standing[]> = {
   { pos: 5, team: 'Paraguay',  played: 4, won: 0, draw: 1, lost: 3, gf:  4, ga: 9, gd: -5, pts:  1 },
 ],
   'Group B WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Uruguay',   played: 4, won: 3, draw: 0, lost: 1, gf: 9, ga: 3, gd: +6, pts: 9 },
-  { pos: 2, team: 'Peru',      played: 4, won: 1, draw: 2, lost: 1, gf: 4, ga: 5, gd: -1, pts: 5 },
-  { pos: 3, team: 'Venezuela', played: 4, won: 1, draw: 2, lost: 1, gf: 3, ga: 4, gd: -1, pts: 5 },
-  { pos: 4, team: 'Brazil',    played: 4, won: 1, draw: 1, lost: 2, gf: 6, ga: 8, gd: -2, pts: 4 },
-  { pos: 5, team: 'Bolivia',   played: 4, won: 1, draw: 1, lost: 2, gf: 7, ga: 9, gd: -2, pts: 4 },
+  { pos: 1, team: 'Uruguay',    played: 4, won: 3, draw: 0, lost: 1, gf: 9, ga: 3, gd: +6, pts: 9 },
+  { pos: 2, team: 'Peru',       played: 4, won: 1, draw: 2, lost: 1, gf: 4, ga: 4, gd:  0, pts: 5 },
+  { pos: 3, team: 'Venezuela',  played: 4, won: 1, draw: 2, lost: 1, gf: 3, ga: 4, gd: -1, pts: 5 },
+  { pos: 4, team: 'Bolivia',    played: 4, won: 1, draw: 1, lost: 2, gf: 7, ga: 9, gd: -2, pts: 4 },
+  { pos: 5, team: 'Brazil',     played: 4, won: 1, draw: 1, lost: 2, gf: 6, ga: 8, gd: -2, pts: 4 },
 ],
   'Group A WC Qualifiers Turkey 2024': [
   { pos: 1, team: 'Argentina(Q)', played: 4, won: 2, draw: 1, lost: 1, gf:  9, ga:  6, gd:  3, pts:  7 },
@@ -708,7 +708,7 @@ const groupMatchesAfrica: Record<string, Match[]> = {
     { home: '🇿🇲 Zambia',       score: '0 - 0', away: '🇲🇱 Mali'       },
     { home: '🇨🇲 Cameroon',     score: '4 - 0', away: '🇲🇦 Morocco'    },
     { home: '🇰🇪 Kenya',        score: '3 - 3', away: '🇿🇲 Zambia'     },
-    { home: '🇿🇲 Zambia',       score: '', away: '🇨🇲 Cameroon'   },
+    { home: '🇿🇲 Zambia',       score: '1 - 2', away: '🇨🇲 Cameroon'   },
     { home: '🇲🇱 Mali',         score: '', away: '🇰🇪 Kenya'      },
   ],
 
