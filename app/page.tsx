@@ -748,7 +748,7 @@ const groupMatchesAfrica: Record<string, Match[]> = {
     { home: '🇨🇮 Ivory Coast',   score: '5 - 1', away: '🇩🇿 Algeria'    },
     { home: '🇸🇴 Somalia',      score: '0 - 1', away: '🇬🇭 Ghana'      },
     { home: '🇬🇭 Ghana',        score: '2 - 2 ', away: '🇨🇮 Ivory Coast'},
-    { home: '🇧🇫 Burkina Faso', score: '3 - 1', away: '🇸🇴 Somalia'    },
+    { home: '🇧🇫 Burkina Faso', score: '1 - 3', away: '🇸🇴 Somalia'    },
   ],
 };
 
