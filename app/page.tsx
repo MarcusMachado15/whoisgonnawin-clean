@@ -779,11 +779,11 @@ const groupStandingsAfrica: Record<string, Standing[]> = {
 ],
 
   'Group D WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Ivory Coast', played: 3, won: 2, draw: 1, lost: 0, gf: 7, ga: 2,  gd: +5, pts: 7 },
-  { pos: 2, team: 'Ghana',       played: 3, won: 2, draw: 1, lost: 0, gf: 7, ga: 4,  gd: +3, pts: 7 },
-  { pos: 3, team: 'Algeria',     played: 4, won: 1, draw: 1, lost: 2, gf: 9, ga: 12, gd: -3, pts: 4 },
-  { pos: 4, team: 'Burkina Faso',played: 3, won: 0, draw: 3, lost: 0, gf: 3, ga: 3,  gd:  0, pts: 3 },
-  { pos: 5, team: 'Somalia',     played: 3, won: 0, draw: 0, lost: 3, gf: 1, ga: 6,  gd: -5, pts: 0 },
+  { pos: 1, team: 'Ivory Coast', played: 4, won: 2, draw: 2, lost: 0, gf: 9,  ga: 4,  gd: +5, pts: 8 },
+  { pos: 2, team: 'Ghana',       played: 4, won: 2, draw: 2, lost: 0, gf: 9,  ga: 6,  gd: +3, pts: 8 },
+  { pos: 3, team: 'Algeria',     played: 4, won: 2, draw: 0, lost: 2, gf: 12, ga: 12, gd:  0, pts: 6 },
+  { pos: 4, team: 'Somalia',     played: 4, won: 1, draw: 0, lost: 3, gf: 5,  ga: 9,  gd: -4, pts: 3 },
+  { pos: 5, team: 'Burkina Faso',played: 4, won: 0, draw: 3, lost: 1, gf: 6,  ga: 8,  gd: -2, pts: 3 },
 ],
 };
 
