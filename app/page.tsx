@@ -955,19 +955,19 @@ const groupMatchesAsia: Record<string, Match[]> = {
 
 const groupStandingsAsia: Record<string, Standing[]> = {
 'Group A WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Japan',        played: 4, won: 2, draw: 2, lost: 0, gf: 7, ga: 5, gd: +2, pts: 8 },
-  { pos: 2, team: 'New Zealand',  played: 3, won: 1, draw: 2, lost: 0, gf: 4, ga: 2, gd: +2, pts: 5 },
-  { pos: 3, team: 'Bahrain',      played: 3, won: 0, draw: 3, lost: 0, gf: 3, ga: 3, gd:  0, pts: 3 },
-  { pos: 4, team: 'Kuwait',       played: 3, won: 1, draw: 0, lost: 2, gf: 3, ga: 5, gd: -2, pts: 3 },
-  { pos: 5, team: 'Philippines',  played: 3, won: 0, draw: 1, lost: 2, gf: 4, ga: 6, gd: -2, pts: 1 },
+  { pos: 1, team: 'New Zealand', played: 4, won: 2, draw: 2, lost: 0, gf: 6, ga: 3, gd: +3, pts: 8 },
+  { pos: 2, team: 'Japan',       played: 4, won: 2, draw: 2, lost: 0, gf: 7, ga: 5, gd: +2, pts: 8 },
+  { pos: 3, team: 'Kuwait',      played: 4, won: 2, draw: 0, lost: 2, gf: 6, ga: 5, gd: +1, pts: 6 },
+  { pos: 4, team: 'Bahrain',     played: 4, won: 0, draw: 3, lost: 1, gf: 3, ga: 6, gd: -3, pts: 3 },
+  { pos: 5, team: 'Philippines', played: 4, won: 0, draw: 1, lost: 3, gf: 5, ga: 8, gd: -3, pts: 1 },
 ],
 
   'Group B WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'China',     played: 3, won: 2, draw: 1, lost: 0, gf: 8, ga: 3, gd: +5, pts: 7 },
-  { pos: 2, team: 'Oman',      played: 3, won: 2, draw: 0, lost: 1, gf: 6, ga: 6, gd:  0, pts: 6 },
-  { pos: 3, team: 'Iran',      played: 4, won: 1, draw: 1, lost: 2, gf: 6, ga: 7, gd: -1, pts: 4 },
-  { pos: 4, team: 'Hong Kong', played: 3, won: 1, draw: 0, lost: 2, gf: 5, ga: 8, gd: -3, pts: 3 },
-  { pos: 5, team: 'Malaysia',  played: 3, won: 0, draw: 2, lost: 1, gf: 5, ga: 6, gd: -1, pts: 2 },
+   { pos: 1, team: 'China',      played: 4, won: 3, draw: 1, lost: 0, gf: 12, ga:  4, gd: +8, pts: 10 },
+  { pos: 2, team: 'Oman',       played: 4, won: 3, draw: 0, lost: 1, gf:  8, ga:  6, gd: +2, pts:  9 },
+  { pos: 3, team: 'Iran',       played: 4, won: 1, draw: 1, lost: 2, gf:  6, ga:  7, gd: -1, pts:  4 },
+  { pos: 4, team: 'Hong Kong',  played: 4, won: 1, draw: 0, lost: 3, gf:  6, ga: 12, gd: -6, pts:  3 },
+  { pos: 5, team: 'Malaysia',   played: 4, won: 0, draw: 2, lost: 2, gf:  5, ga:  8, gd: -3, pts:  2 },
 ],
 
   'Group C WC Qualifiers Argentina 2025': [
