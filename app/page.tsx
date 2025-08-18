@@ -981,8 +981,8 @@ const groupStandingsAsia: Record<string, Standing[]> = {
   'Group D WC Qualifiers Argentina 2025': [
   { pos: 1, team: 'Australia', played: 4, won: 2, draw: 1, lost: 1, gf: 8, ga: 5, gd: +3, pts: 7 },
   { pos: 2, team: 'Indonesia', played: 4, won: 1, draw: 3, lost: 0, gf: 3, ga: 2, gd: +1, pts: 6 },
-  { pos: 3, team: 'Jordan',    played: 4, won: 1, draw: 2, lost: 1, gf: 7, ga: 8, gd: -1, pts: 5 },
-  { pos: 4, team: 'Palestine', played: 4, won: 1, draw: 2, lost: 1, gf: 6, ga: 6, gd:  0, pts: 5 },
+  { pos: 3, team: 'Palestine', played: 4, won: 1, draw: 2, lost: 1, gf: 6, ga: 6, gd:  0, pts: 5 },
+  { pos: 4, team: 'Jordan',    played: 4, won: 1, draw: 2, lost: 1, gf: 7, ga: 8, gd: -1, pts: 5 },
   { pos: 5, team: 'Myanmar',   played: 4, won: 0, draw: 2, lost: 2, gf: 5, ga: 7, gd: -2, pts: 2 },
 ],
   'Group E WC Qualifiers Argentina 2025': [
