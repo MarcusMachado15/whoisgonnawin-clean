@@ -765,7 +765,7 @@ const groupStandingsAfrica: Record<string, Standing[]> = {
   'Group B WC Qualifiers Argentina 2025': [
   { pos: 1, team: 'Senegal(Q)',      played: 4, won: 2, draw: 2, lost: 0, gf: 10, ga:  8, gd: +2, pts: 8 },
   { pos: 2, team: 'South Africa(Q)', played: 4, won: 2, draw: 1, lost: 1, gf:  9, ga:  7, gd: +2, pts: 7 },
-  { pos: 3, team: 'Guinea',       played: 4, won: 1, draw: 2, lost: 1, gf:  7, ga:  6, gd: +1, pts: 5 },
+  { pos: 3, team: 'Guinea(Q)',       played: 4, won: 1, draw: 2, lost: 1, gf:  7, ga:  6, gd: +1, pts: 5 },
   { pos: 4, team: 'Zimbabwe',     played: 4, won: 1, draw: 2, lost: 1, gf:  4, ga:  3, gd: +1, pts: 5 },
   { pos: 5, team: 'Tunisia',      played: 4, won: 0, draw: 1, lost: 3, gf:  5, ga: 11, gd: -6, pts: 1 },
 ],
@@ -781,7 +781,7 @@ const groupStandingsAfrica: Record<string, Standing[]> = {
   'Group D WC Qualifiers Argentina 2025': [
   { pos: 1, team: 'Ivory Coast(Q)', played: 4, won: 2, draw: 2, lost: 0, gf: 9,  ga: 4,  gd: +5, pts: 8 },
   { pos: 2, team: 'Ghana(Q)',       played: 4, won: 2, draw: 2, lost: 0, gf: 9,  ga: 6,  gd: +3, pts: 8 },
-  { pos: 3, team: 'Algeria',     played: 4, won: 2, draw: 0, lost: 2, gf: 12, ga: 12, gd:  0, pts: 6 },
+  { pos: 3, team: 'Algeria(Q)',     played: 4, won: 2, draw: 0, lost: 2, gf: 12, ga: 12, gd:  0, pts: 6 },
   { pos: 4, team: 'Somalia',     played: 4, won: 1, draw: 0, lost: 3, gf: 5,  ga: 9,  gd: -4, pts: 3 },
   { pos: 5, team: 'Burkina Faso',played: 4, won: 0, draw: 3, lost: 1, gf: 6,  ga: 8,  gd: -2, pts: 3 },
 ],
