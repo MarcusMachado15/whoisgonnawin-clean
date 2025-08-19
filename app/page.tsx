@@ -641,17 +641,17 @@ const groupMatchesSouthAmerica: Record<string, Match[]> = {
 };
 const groupStandingsSouthAmerica: Record<string, Standing[]> = {
     'Group A WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Ecuador',   played: 4, won: 3, draw: 1, lost: 0, gf:  10, ga: 5, gd: +5, pts: 10 },
-  { pos: 2, team: 'Colombia',  played: 4, won: 2, draw: 1, lost: 1, gf: 12, ga: 8, gd: +4, pts:  7 },
-  { pos: 3, team: 'Argentina', played: 4, won: 1, draw: 3, lost: 0, gf:  7, ga: 5, gd: +2, pts:  6 },
-  { pos: 4, team: 'Chile',     played: 4, won: 0, draw: 2, lost: 2, gf:  3, ga: 9, gd: -6, pts:  2 },
+  { pos: 1, team: 'Ecuador(Q)',   played: 4, won: 3, draw: 1, lost: 0, gf:  10, ga: 5, gd: +5, pts: 10 },
+  { pos: 2, team: 'Colombia(Q)',  played: 4, won: 2, draw: 1, lost: 1, gf: 12, ga: 8, gd: +4, pts:  7 },
+  { pos: 3, team: 'Argentina(Q)', played: 4, won: 1, draw: 3, lost: 0, gf:  7, ga: 5, gd: +2, pts:  6 },
+  { pos: 4, team: 'Chile(Q)',     played: 4, won: 0, draw: 2, lost: 2, gf:  3, ga: 9, gd: -6, pts:  2 },
   { pos: 5, team: 'Paraguay',  played: 4, won: 0, draw: 1, lost: 3, gf:  4, ga: 9, gd: -5, pts:  1 },
 ],
   'Group B WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Uruguay',    played: 4, won: 3, draw: 0, lost: 1, gf: 9, ga: 3, gd: +6, pts: 9 },
-  { pos: 2, team: 'Peru',       played: 4, won: 1, draw: 2, lost: 1, gf: 4, ga: 4, gd:  0, pts: 5 },
-  { pos: 3, team: 'Venezuela',  played: 4, won: 1, draw: 2, lost: 1, gf: 3, ga: 4, gd: -1, pts: 5 },
-  { pos: 4, team: 'Bolivia',    played: 4, won: 1, draw: 1, lost: 2, gf: 7, ga: 9, gd: -2, pts: 4 },
+  { pos: 1, team: 'Uruguay(Q)',    played: 4, won: 3, draw: 0, lost: 1, gf: 9, ga: 3, gd: +6, pts: 9 },
+  { pos: 2, team: 'Peru(Q)',       played: 4, won: 1, draw: 2, lost: 1, gf: 4, ga: 4, gd:  0, pts: 5 },
+  { pos: 3, team: 'Venezuela(Q)',  played: 4, won: 1, draw: 2, lost: 1, gf: 3, ga: 4, gd: -1, pts: 5 },
+  { pos: 4, team: 'Bolivia(Q)',    played: 4, won: 1, draw: 1, lost: 2, gf: 7, ga: 9, gd: -2, pts: 4 },
   { pos: 5, team: 'Brazil',     played: 4, won: 1, draw: 1, lost: 2, gf: 6, ga: 8, gd: -2, pts: 4 },
 ],
   'Group A WC Qualifiers Turkey 2024': [
@@ -754,8 +754,8 @@ const groupMatchesAfrica: Record<string, Match[]> = {
 
 const groupStandingsAfrica: Record<string, Standing[]> = {
   'Group A WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Cameroon', played: 4, won: 3, draw: 1, lost: 0, gf: 8, ga: 2, gd: +6, pts: 10 },
-  { pos: 2, team: 'Morocco',  played: 4, won: 2, draw: 0, lost: 2, gf: 6, ga: 9, gd: -3, pts:  6 },
+  { pos: 1, team: 'Cameroon(Q)', played: 4, won: 3, draw: 1, lost: 0, gf: 8, ga: 2, gd: +6, pts: 10 },
+  { pos: 2, team: 'Morocco(Q)',  played: 4, won: 2, draw: 0, lost: 2, gf: 6, ga: 9, gd: -3, pts:  6 },
   { pos: 3, team: 'Kenya',    played: 4, won: 1, draw: 2, lost: 1, gf: 9, ga: 6, gd: +3, pts:  5 },
   { pos: 4, team: 'Mali',     played: 4, won: 0, draw: 3, lost: 1, gf: 0, ga: 4, gd: -4, pts:  3 },
   { pos: 5, team: 'Zambia',   played: 4, won: 0, draw: 2, lost: 2, gf: 4, ga: 6, gd: -2, pts:  2 },
@@ -763,24 +763,24 @@ const groupStandingsAfrica: Record<string, Standing[]> = {
 
 
   'Group B WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Senegal',      played: 4, won: 2, draw: 2, lost: 0, gf: 10, ga:  8, gd: +2, pts: 8 },
-  { pos: 2, team: 'South Africa', played: 4, won: 2, draw: 1, lost: 1, gf:  9, ga:  7, gd: +2, pts: 7 },
+  { pos: 1, team: 'Senegal(Q)',      played: 4, won: 2, draw: 2, lost: 0, gf: 10, ga:  8, gd: +2, pts: 8 },
+  { pos: 2, team: 'South Africa(Q)', played: 4, won: 2, draw: 1, lost: 1, gf:  9, ga:  7, gd: +2, pts: 7 },
   { pos: 3, team: 'Guinea',       played: 4, won: 1, draw: 2, lost: 1, gf:  7, ga:  6, gd: +1, pts: 5 },
   { pos: 4, team: 'Zimbabwe',     played: 4, won: 1, draw: 2, lost: 1, gf:  4, ga:  3, gd: +1, pts: 5 },
   { pos: 5, team: 'Tunisia',      played: 4, won: 0, draw: 1, lost: 3, gf:  5, ga: 11, gd: -6, pts: 1 },
 ],
 
   'Group C WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Congo DR', played: 4, won: 3, draw: 1, lost: 0, gf: 9, ga: 2, gd: +7, pts: 10 },
-  { pos: 2, team: 'Egypt',    played: 4, won: 2, draw: 1, lost: 1, gf: 6, ga: 5, gd: +1, pts: 7 },
+  { pos: 1, team: 'Congo DR(Q)', played: 4, won: 3, draw: 1, lost: 0, gf: 9, ga: 2, gd: +7, pts: 10 },
+  { pos: 2, team: 'Egypt(Q)',    played: 4, won: 2, draw: 1, lost: 1, gf: 6, ga: 5, gd: +1, pts: 7 },
   { pos: 3, team: 'Nigeria',  played: 4, won: 2, draw: 0, lost: 2, gf: 7, ga: 7, gd:  0, pts: 6 },
   { pos: 4, team: 'Botswana', played: 4, won: 1, draw: 0, lost: 3, gf: 3, ga: 7, gd: -4, pts: 3 },
   { pos: 5, team: 'Gabon',    played: 4, won: 0, draw: 2, lost: 2, gf: 3, ga: 7, gd: -4, pts: 2 },
 ],
 
   'Group D WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Ivory Coast', played: 4, won: 2, draw: 2, lost: 0, gf: 9,  ga: 4,  gd: +5, pts: 8 },
-  { pos: 2, team: 'Ghana',       played: 4, won: 2, draw: 2, lost: 0, gf: 9,  ga: 6,  gd: +3, pts: 8 },
+  { pos: 1, team: 'Ivory Coast(Q)', played: 4, won: 2, draw: 2, lost: 0, gf: 9,  ga: 4,  gd: +5, pts: 8 },
+  { pos: 2, team: 'Ghana(Q)',       played: 4, won: 2, draw: 2, lost: 0, gf: 9,  ga: 6,  gd: +3, pts: 8 },
   { pos: 3, team: 'Algeria',     played: 4, won: 2, draw: 0, lost: 2, gf: 12, ga: 12, gd:  0, pts: 6 },
   { pos: 4, team: 'Somalia',     played: 4, won: 1, draw: 0, lost: 3, gf: 5,  ga: 9,  gd: -4, pts: 3 },
   { pos: 5, team: 'Burkina Faso',played: 4, won: 0, draw: 3, lost: 1, gf: 6,  ga: 8,  gd: -2, pts: 3 },
@@ -955,7 +955,7 @@ const groupMatchesAsia: Record<string, Match[]> = {
 
 const groupStandingsAsia: Record<string, Standing[]> = {
 'Group A WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'New Zealand', played: 4, won: 2, draw: 2, lost: 0, gf: 6, ga: 3, gd: +3, pts: 8 },
+  { pos: 1, team: 'New Zealand(Q)', played: 4, won: 2, draw: 2, lost: 0, gf: 6, ga: 3, gd: +3, pts: 8 },
   { pos: 2, team: 'Japan',       played: 4, won: 2, draw: 2, lost: 0, gf: 7, ga: 5, gd: +2, pts: 8 },
   { pos: 3, team: 'Kuwait',      played: 4, won: 2, draw: 0, lost: 2, gf: 6, ga: 5, gd: +1, pts: 6 },
   { pos: 4, team: 'Bahrain',     played: 4, won: 0, draw: 3, lost: 1, gf: 3, ga: 6, gd: -3, pts: 3 },
@@ -963,7 +963,7 @@ const groupStandingsAsia: Record<string, Standing[]> = {
 ],
 
   'Group B WC Qualifiers Argentina 2025': [
-   { pos: 1, team: 'China',      played: 4, won: 3, draw: 1, lost: 0, gf: 12, ga:  4, gd: +8, pts: 10 },
+   { pos: 1, team: 'China(Q)',      played: 4, won: 3, draw: 1, lost: 0, gf: 12, ga:  4, gd: +8, pts: 10 },
   { pos: 2, team: 'Oman',       played: 4, won: 3, draw: 0, lost: 1, gf:  8, ga:  6, gd: +2, pts:  9 },
   { pos: 3, team: 'Iran',       played: 4, won: 1, draw: 1, lost: 2, gf:  6, ga:  7, gd: -1, pts:  4 },
   { pos: 4, team: 'Hong Kong',  played: 4, won: 1, draw: 0, lost: 3, gf:  6, ga: 12, gd: -6, pts:  3 },
@@ -971,7 +971,7 @@ const groupStandingsAsia: Record<string, Standing[]> = {
 ],
 
   'Group C WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Thailand',    played: 4, won: 3, draw: 0, lost: 1, gf: 8, ga: 5, gd: +3, pts: 9 },
+  { pos: 1, team: 'Thailand(Q)',    played: 4, won: 3, draw: 0, lost: 1, gf: 8, ga: 5, gd: +3, pts: 9 },
   { pos: 2, team: 'UAE',         played: 4, won: 3, draw: 0, lost: 1, gf: 6, ga: 4, gd: +2, pts: 9 },
   { pos: 3, team: 'Singapore',   played: 4, won: 2, draw: 0, lost: 2, gf: 7, ga: 7, gd:  0, pts: 6 },
   { pos: 4, team: 'South Korea', played: 4, won: 1, draw: 0, lost: 3, gf: 5, ga: 7, gd: -2, pts: 3 },
@@ -979,14 +979,14 @@ const groupStandingsAsia: Record<string, Standing[]> = {
 ],
 
   'Group D WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Australia', played: 4, won: 2, draw: 1, lost: 1, gf: 8, ga: 5, gd: +3, pts: 7 },
+  { pos: 1, team: 'Australia(Q)', played: 4, won: 2, draw: 1, lost: 1, gf: 8, ga: 5, gd: +3, pts: 7 },
   { pos: 2, team: 'Indonesia', played: 4, won: 1, draw: 3, lost: 0, gf: 3, ga: 2, gd: +1, pts: 6 },
   { pos: 3, team: 'Palestine', played: 4, won: 1, draw: 2, lost: 1, gf: 6, ga: 6, gd:  0, pts: 5 },
   { pos: 4, team: 'Jordan',    played: 4, won: 1, draw: 2, lost: 1, gf: 7, ga: 8, gd: -1, pts: 5 },
   { pos: 5, team: 'Myanmar',   played: 4, won: 0, draw: 2, lost: 2, gf: 5, ga: 7, gd: -2, pts: 2 },
 ],
   'Group E WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Qatar',       played: 4, won: 3, draw: 0, lost: 1, gf: 10, ga: 6, gd: +4, pts: 9 },
+  { pos: 1, team: 'Qatar(Q)',       played: 4, won: 3, draw: 0, lost: 1, gf: 10, ga: 6, gd: +4, pts: 9 },
   { pos: 2, team: 'Kyrgyzstan',  played: 4, won: 3, draw: 0, lost: 1, gf: 8,  ga: 4, gd: +4, pts: 9 },
   { pos: 3, team: 'Iraq',        played: 4, won: 2, draw: 1, lost: 1, gf: 10, ga: 6, gd: +4, pts: 7 },
   { pos: 4, team: 'North Korea', played: 4, won: 1, draw: 1, lost: 2, gf: 3,  ga: 8, gd: -5, pts: 4 },
@@ -994,7 +994,7 @@ const groupStandingsAsia: Record<string, Standing[]> = {
 ],
 
   'Group F WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Vietnam',     played: 4, won: 3, draw: 0, lost: 1, gf: 6, ga: 2, gd: +4, pts: 9 },
+  { pos: 1, team: 'Vietnam(Q)',     played: 4, won: 3, draw: 0, lost: 1, gf: 6, ga: 2, gd: +4, pts: 9 },
   { pos: 2, team: 'Uzbekistan',  played: 4, won: 2, draw: 2, lost: 0, gf: 4, ga: 1, gd: +3, pts: 8 },
   { pos: 3, team: 'Saudi Arabia',played: 4, won: 1, draw: 2, lost: 1, gf: 4, ga: 4, gd:  0, pts: 5 },
   { pos: 4, team: 'Bangladesh',  played: 4, won: 1, draw: 1, lost: 2, gf: 1, ga: 5, gd: -4, pts: 4 },
@@ -1064,10 +1064,10 @@ const groupMatchesNCAmerica: Record<string, Match[]> = {
 }; 
 const groupStandingsNCAmerica: Record<string, Standing[]> = {
   'Group A WC Qualifiers Argentina 2025': [
-  { pos: 1, team: 'Canada',       played: 4, won: 3, draw: 0, lost: 1, gf: 7, ga: 2, gd: +5, pts: 9 },
-  { pos: 2, team: 'United States',played: 4, won: 2, draw: 2, lost: 0, gf: 6, ga: 2, gd: +4, pts: 8 },
-  { pos: 3, team: 'Costa Rica',   played: 4, won: 1, draw: 2, lost: 1, gf: 5, ga: 8, gd: -3, pts: 5 },
-  { pos: 4, team: 'Mexico',       played: 4, won: 1, draw: 1, lost: 2, gf: 3, ga: 5, gd: -2, pts: 4 },
+  { pos: 1, team: 'Canada(Q)',       played: 4, won: 3, draw: 0, lost: 1, gf: 7, ga: 2, gd: +5, pts: 9 },
+  { pos: 2, team: 'United States(Q)',played: 4, won: 2, draw: 2, lost: 0, gf: 6, ga: 2, gd: +4, pts: 8 },
+  { pos: 3, team: 'Costa Rica(Q)',   played: 4, won: 1, draw: 2, lost: 1, gf: 5, ga: 8, gd: -3, pts: 5 },
+  { pos: 4, team: 'Mexico(Q)',       played: 4, won: 1, draw: 1, lost: 2, gf: 3, ga: 5, gd: -2, pts: 4 },
   { pos: 5, team: 'Panama',       played: 4, won: 0, draw: 1, lost: 3, gf: 2, ga: 6, gd: -4, pts: 1 },
 ],
 };
