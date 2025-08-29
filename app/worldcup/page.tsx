@@ -57,10 +57,11 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇦🇷 Argentina',   score: '–', away: '🇨🇭 Switzerland' },
       { home: '🇶🇦 Qatar',       score: '–', away: '🇬🇭 Ghana' },
     ],
-    standings: [{ pos: 1, team: 'AR Argentina',     played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 1, gd:  2, pts: 3 },
-  { pos: 2, team: 'QA Qatar',         played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 2, gd:  1, pts: 3 },
-  { pos: 3, team: 'CH Switzerland',   played: 1, won: 0, draw: 0, lost: 1, gf: 2, ga: 3, gd: -1, pts: 0 },
-  { pos: 4, team: 'GH Ghana',         played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 3, gd: -2, pts: 0 },],
+    standings: [
+  { pos: 1, team: '🇦🇷 Argentina',     played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 1, gd:  2, pts: 3 },
+  { pos: 2, team: '🇶🇦 Qatar',         played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 2, gd:  1, pts: 3 },
+  { pos: 3, team: '🇨🇭 Switzerland',   played: 1, won: 0, draw: 0, lost: 1, gf: 2, ga: 3, gd: -1, pts: 0 },
+  { pos: 4, team: '🇬🇭 Ghana',         played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 3, gd: -2, pts: 0 },],
   },
 
   'Group B': {
