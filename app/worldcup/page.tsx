@@ -50,7 +50,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
   'Group A': {
     title: 'Group A — WC Finals 2025',
     matches: [
-      { home: '🇦🇷 Argentina',   score: '–', away: '🇬🇭 Ghana' },
+      { home: '🇦🇷 Argentina',   score: '3-1', away: '🇬🇭 Ghana' },
       { home: '🇨🇭 Switzerland', score: '–', away: '🇶🇦 Qatar' },
       { home: '🇦🇷 Argentina',   score: '–', away: '🇶🇦 Qatar' },
       { home: '🇨🇭 Switzerland', score: '–', away: '🇬🇭 Ghana' },
