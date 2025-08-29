@@ -1,8 +1,9 @@
-/// app/worldcup2025/page.tsx
+// app/worldcup2025/page.tsx
 'use client';
 
 import React, { useState } from 'react';
-import './styles.css';
+import Link from "next/link";
+import './styles.css'; // ajuste para "./styles.css" se o CSS estiver dentro de /worldcup2025
 
 type Standing = {
   pos: number;
@@ -980,7 +981,7 @@ const groupStandingsAsia: Record<string, Standing[]> = {
 
   'Group D WC Qualifiers Argentina 2025': [
   { pos: 1, team: 'Australia(Q)', played: 4, won: 2, draw: 1, lost: 1, gf: 8, ga: 5, gd: +3, pts: 7 },
-  { pos: 2, team: 'Indonesia', played: 4, won: 1, draw: 3, lost: 0, gf: 3, ga: 2, gd: +1, pts: 6 },
+  { pos: 2, team: 'Indonesia(Q)', played: 4, won: 1, draw: 3, lost: 0, gf: 3, ga: 2, gd: +1, pts: 6 },
   { pos: 3, team: 'Palestine', played: 4, won: 1, draw: 2, lost: 1, gf: 6, ga: 6, gd:  0, pts: 5 },
   { pos: 4, team: 'Jordan',    played: 4, won: 1, draw: 2, lost: 1, gf: 7, ga: 8, gd: -1, pts: 5 },
   { pos: 5, team: 'Myanmar',   played: 4, won: 0, draw: 2, lost: 2, gf: 5, ga: 7, gd: -2, pts: 2 },
@@ -1128,10 +1129,27 @@ export default function WorldCup2025Page() {
 
   return (
     <div style={{ padding: '20px' }}>
-      <h1>World Cup Qualifiers 2025</h1>
+      <h1>World Cup Qualifiers</h1>
+
+      {/* Link para as Finais */}
+      <div style={{ marginBottom: 12 }}>
+        <Link href="/worldcup" className="btn">World Cup 2025(Argentina)</Link>
+
+        {/* Se quiser abrir em nova aba, troque pelo bloco abaixo:
+        <Link
+          href="/worldcup"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn"
+          style={{ marginLeft: 8 }}
+        >
+          Abrir Finais em nova aba
+        </Link>
+        */}
+      </div>
 
       <div className="tabs">
-        {regions.map(region => (
+        {regions.map((region) => (
           <button
             key={region}
             className={region === activeRegion ? 'active' : ''}
@@ -1149,6 +1167,7 @@ export default function WorldCup2025Page() {
             <div key={fullGroupName} className="group-block">
               <div className="matches-block">
                 <div className="group-title">{fullGroupName}</div>
+
                 {gm.length === 0 ? (
                   <p className="no-matches">Nenhum jogo cadastrado ainda</p>
                 ) : (

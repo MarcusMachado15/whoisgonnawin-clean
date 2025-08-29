@@ -1,3 +1,69 @@
+/* ================================
+   Global / Colors / Typography
+   ================================ */
+:root{
+  /* Match your table blue */
+  --accent: #0044cc;
+  --accent-dark: #0038a8;
+  --accent-ring: rgba(0, 68, 204, .35);
+  --text: #0f172a;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 36px;
+  color: #222;
+}
+
+/* ================================
+   Buttons (nice pill style)
+   ================================ */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  padding:.6rem 1rem;
+  border-radius:9999px;
+  font-weight:600;
+  border:1px solid transparent;
+  text-decoration:none;
+  line-height:1;
+  color:var(--text);
+  background:#fff;
+  transition: transform .12s ease, box-shadow .12s ease, background .2s ease, color .2s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+  will-change: transform;
+}
+.btn:hover{ transform: translateY(-1px); box-shadow: 0 8px 22px rgba(0,0,0,.12); }
+.btn:active{ transform: translateY(0);  box-shadow: 0 3px 10px rgba(0,0,0,.10); }
+.btn:focus-visible{ outline:none; box-shadow: 0 0 0 4px var(--accent-ring); }
+
+.btn-primary{
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color:#fff;
+  border-color: var(--accent-dark);
+}
+.btn-primary:hover{ filter: brightness(1.05); }
+
+.btn-outline{
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.btn-outline:hover{ background: rgba(0,68,204,.08); }
+
+.btn--sm{ padding:.45rem .85rem; font-size:.9rem; }
+.btn--lg{ padding:.8rem 1.25rem; font-size:1.05rem; }
+
+.btn-row{ display:flex; flex-wrap:wrap; gap:.75rem; margin-bottom:12px; }
+
+.btn .icon{ font-size:1.1em; line-height:0; }
+
+/* ================================
+   Tables (matches + standings)
+   ================================ */
+
 /* General styling for the table */
 table {
   width: 100%;
@@ -16,23 +82,17 @@ th, td {
 
 /* Todos os th agora em azul, texto branco */
 th {
-  background-color: #0044cc;
+  background-color: var(--accent);
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-td {
-  background-color: #fff;
-}
+td { background-color: #fff; }
 
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
+tr:nth-child(even) { background-color: #f9f9f9; }
 
-tr:hover {
-  background-color: #f1f1f1;
-}
+tr:hover { background-color: #f1f1f1; }
 
 caption {
   font-size: 24px;
@@ -44,13 +104,6 @@ img {
   vertical-align: middle;
   width: 25px;
   height: auto;
-}
-
-h1 {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 36px;
-  color: #222;
 }
 
 /* Abas de navegação */
@@ -72,12 +125,10 @@ h1 {
   transition: background-color 0.2s ease;
 }
 
-.tabs button:hover {
-  background-color: #ccc;
-}
+.tabs button:hover { background-color: #ccc; }
 
 .tabs button.active {
-  background-color: #0044cc;
+  background-color: var(--accent);
   color: white;
   font-weight: bold;
 }
@@ -109,20 +160,16 @@ h1 {
 }
 
 /* garante que só o td fique branco (th já está azul acima) */
-.group-stage td:nth-child(3) {
-  background-color: #fff;
-}
+.group-stage td:nth-child(3) { background-color: #fff; }
 
 /* força cabeçalho AWAY em azul */
 .group-stage th:nth-child(3) {
-  background-color: #0044cc;
+  background-color: var(--accent);
   color: white;
 }
 
 /* === STANDINGS TABLE === */
-.standings-table {
-  width: 100%;
-}
+.standings-table { width: 100%; }
 
 .standings-table th:nth-child(1),
 .standings-table td:nth-child(1) {
@@ -144,7 +191,7 @@ h1 {
 
 /* forças específicas */
 .standings-table th {
-  background-color: #0044cc; /* cabeçalho todo em azul */
+  background-color: var(--accent); /* cabeçalho todo em azul */
   color: white;
 }
 
@@ -183,9 +230,7 @@ h1 {
     font-size: 14px;
   }
 
-  h1 {
-    font-size: 28px;
-  }
+  h1 { font-size: 28px; }
 
   .tabs button {
     padding: 8px 12px;
@@ -207,12 +252,8 @@ h1 {
     padding: 0;
   }
 
-  .group-block {
-    flex-direction: column;
-  }
+  .group-block { flex-direction: column; }
 
   .matches-block,
-  .standings {
-    width: 100%;
-  }
+  .standings { width: 100%; }
 }

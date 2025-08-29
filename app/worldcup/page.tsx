@@ -1,0 +1,297 @@
+// app/worldcup/page.tsx
+'use client';
+
+import React from 'react';
+import Link from 'next/link';
+import '../styles.css';
+
+type Match = { home: string; score: string; away: string };
+type Standing = {
+  pos: number;
+  team: string;
+  played: number;
+  won: number;
+  draw: number;
+  lost: number;
+  gf: number;
+  ga: number;
+  gd: number; // e.g. 9, -4
+  pts: number;
+};
+
+/**
+ * When standings are empty, we auto-generate rows with the team names (0 pts).
+ */
+function deriveZeroRows(matches: Match[]): Standing[] {
+  const seen = new Map<string, true>();
+  for (const m of matches) {
+    if (m.home) seen.set(m.home, true);
+    if (m.away) seen.set(m.away, true);
+  }
+  const teams = Array.from(seen.keys()).sort((a, b) =>
+    a.localeCompare(b, 'en', { sensitivity: 'base' })
+  );
+
+  return teams.map((team, i) => ({
+    pos: i + 1,
+    team,
+    played: 0,
+    won: 0,
+    draw: 0,
+    lost: 0,
+    gf: 0,
+    ga: 0,
+    gd: 0,
+    pts: 0,
+  }));
+}
+
+const groupsData: Record<string, { title?: string; matches: Match[]; standings: Standing[] }> = {
+  'Group A': {
+    title: 'Group A — WC Finals 2025',
+    matches: [
+      { home: '🇦🇷 Argentina',   score: '–', away: '🇬🇭 Ghana' },
+      { home: '🇨🇭 Switzerland', score: '–', away: '🇶🇦 Qatar' },
+      { home: '🇦🇷 Argentina',   score: '–', away: '🇶🇦 Qatar' },
+      { home: '🇨🇭 Switzerland', score: '–', away: '🇬🇭 Ghana' },
+      { home: '🇦🇷 Argentina',   score: '–', away: '🇨🇭 Switzerland' },
+      { home: '🇶🇦 Qatar',       score: '–', away: '🇬🇭 Ghana' },
+    ],
+    standings: [],
+  },
+
+  'Group B': {
+    title: 'Group B — WC Finals 2025',
+    matches: [
+      { home: '🇩🇪 Germany', score: '–', away: '🇧🇴 Bolivia' },
+      { home: '🏴 Wales',    score: '–', away: '🇨🇲 Cameroon' },
+      { home: '🇩🇪 Germany', score: '–', away: '🇨🇲 Cameroon' },
+      { home: '🏴 Wales',    score: '–', away: '🇧🇴 Bolivia' },
+      { home: '🇩🇪 Germany', score: '–', away: '🏴 Wales' },
+      { home: '🇨🇲 Cameroon',score: '–', away: '🇧🇴 Bolivia' },
+    ],
+    standings: [],
+  },
+
+  'Group C': {
+    title: 'Group C — WC Finals 2025',
+    matches: [
+      { home: '🇺🇸 United States', score: '–', away: '🇳🇿 New Zealand' },
+      { home: '🇺🇦 Ukraine',       score: '–', away: '🇨🇱 Chile' },
+      { home: '🇺🇸 United States', score: '–', away: '🇨🇱 Chile' },
+      { home: '🇺🇦 Ukraine',       score: '–', away: '🇳🇿 New Zealand' },
+      { home: '🇺🇸 United States', score: '–', away: '🇺🇦 Ukraine' },
+      { home: '🇨🇱 Chile',         score: '–', away: '🇳🇿 New Zealand' },
+    ],
+    standings: [],
+  },
+
+  'Group D': {
+    title: 'Group D — WC Finals 2025',
+    matches: [
+      { home: '🇮🇹 Italy',   score: '–', away: '🇻🇳 Vietnam' },
+      { home: '🇳🇴 Norway',  score: '–', away: '🇵🇪 Peru' },
+      { home: '🇮🇹 Italy',   score: '–', away: '🇵🇪 Peru' },
+      { home: '🇳🇴 Norway',  score: '–', away: '🇻🇳 Vietnam' },
+      { home: '🇮🇹 Italy',   score: '–', away: '🇳🇴 Norway' },
+      { home: '🇵🇪 Peru',    score: '–', away: '🇻🇳 Vietnam' },
+    ],
+    standings: [],
+  },
+
+  'Group E': {
+    title: 'Group E — WC Finals 2025',
+    matches: [
+      { home: '🇪🇸 Spain',        score: '–', away: '🇮🇪 Ireland' },
+      { home: '🇯🇵 Japan',        score: '–', away: '🇨🇮 Ivory Coast' },
+      { home: '🇪🇸 Spain',        score: '–', away: '🇨🇮 Ivory Coast' },
+      { home: '🇯🇵 Japan',        score: '–', away: '🇮🇪 Ireland' },
+      { home: '🇪🇸 Spain',        score: '–', away: '🇯🇵 Japan' },
+      { home: '🇨🇮 Ivory Coast',  score: '–', away: '🇮🇪 Ireland' },
+    ],
+    standings: [],
+  },
+
+  'Group F': {
+    title: 'Group F — WC Finals 2025',
+    matches: [
+      { home: '🇺🇾 Uruguay',    score: '–', away: '🇬🇳 Guinea' },
+      { home: '🇸🇪 Sweden',     score: '–', away: '🇺🇿 Uzbekistan' },
+      { home: '🇺🇾 Uruguay',    score: '–', away: '🇺🇿 Uzbekistan' },
+      { home: '🇸🇪 Sweden',     score: '–', away: '🇬🇳 Guinea' },
+      { home: '🇺🇾 Uruguay',    score: '–', away: '🇸🇪 Sweden' },
+      { home: '🇺🇿 Uzbekistan', score: '–', away: '🇬🇳 Guinea' },
+    ],
+    standings: [],
+  },
+
+  'Group G': {
+    title: 'Group G — WC Finals 2025',
+    matches: [
+      { home: '🇧🇪 Belgium',      score: '–', away: '🇹🇭 Thailand' },
+      { home: '🇷🇺 Russia',       score: '–', away: '🇿🇦 South Africa' },
+      { home: '🇧🇪 Belgium',      score: '–', away: '🇿🇦 South Africa' },
+      { home: '🇷🇺 Russia',       score: '–', away: '🇹🇭 Thailand' },
+      { home: '🇧🇪 Belgium',      score: '–', away: '🇷🇺 Russia' },
+      { home: '🇿🇦 South Africa', score: '–', away: '🇹🇭 Thailand' },
+    ],
+    standings: [],
+  },
+
+  'Group H': {
+    title: 'Group H — WC Finals 2025',
+    matches: [
+      { home: '🇨🇴 Colombia', score: '–', away: '🇮🇱 Israel' },
+      { home: '🇨🇦 Canada',   score: '–', away: '🇩🇿 Algeria' },
+      { home: '🇨🇴 Colombia', score: '–', away: '🇩🇿 Algeria' },
+      { home: '🇨🇦 Canada',   score: '–', away: '🇮🇱 Israel' },
+      { home: '🇨🇴 Colombia', score: '–', away: '🇨🇦 Canada' },
+      { home: '🇩🇿 Algeria',  score: '–', away: '🇮🇱 Israel' },
+    ],
+    standings: [],
+  },
+
+  'Group I': {
+    title: 'Group I — WC Finals 2025',
+    matches: [
+      { home: '🇫🇷 France',    score: '–', away: '🇨🇩 DR Congo' },
+      { home: '🇦🇺 Australia', score: '–', away: '🇻🇪 Venezuela' },
+      { home: '🇫🇷 France',    score: '–', away: '🇻🇪 Venezuela' },
+      { home: '🇦🇺 Australia', score: '–', away: '🇨🇩 DR Congo' },
+      { home: '🇫🇷 France',    score: '–', away: '🇦🇺 Australia' },
+      { home: '🇻🇪 Venezuela', score: '–', away: '🇨🇩 DR Congo' },
+    ],
+    standings: [],
+  },
+
+  'Group J': {
+    title: 'Group J — WC Finals 2025',
+    matches: [
+      { home: '🇲🇽 Mexico',  score: '–', away: '🇦🇪 UAE' },
+      { home: '🇸🇳 Senegal', score: '–', away: '🇷🇴 Romania' },
+      { home: '🇲🇽 Mexico',  score: '–', away: '🇷🇴 Romania' },
+      { home: '🇸🇳 Senegal', score: '–', away: '🇦🇪 UAE' },
+      { home: '🇲🇽 Mexico',  score: '–', away: '🇸🇳 Senegal' },
+      { home: '🇷🇴 Romania', score: '–', away: '🇦🇪 UAE' },
+    ],
+    standings: [],
+  },
+
+  'Group K': {
+    title: 'Group K — WC Finals 2025',
+    matches: [
+      { home: '🏴 England',     score: '–', away: '🇮🇩 Indonesia' },
+      { home: '🇪🇬 Egypt',      score: '–', away: '🇨🇷 Costa Rica' },
+      { home: '🏴 England',     score: '–', away: '🇨🇷 Costa Rica' },
+      { home: '🇪🇬 Egypt',      score: '–', away: '🇮🇩 Indonesia' },
+      { home: '🏴 England',     score: '–', away: '🇪🇬 Egypt' },
+      { home: '🇨🇷 Costa Rica', score: '–', away: '🇮🇩 Indonesia' },
+    ],
+    standings: [],
+  },
+
+  'Group L': {
+    title: 'Group L — WC Finals 2025',
+    matches: [
+      { home: '🇲🇦 Morocco',        score: '–', away: '🇨🇳 China' },
+      { home: '🇪🇨 Ecuador',        score: '–', away: '🇨🇿 Czech Republic' },
+      { home: '🇲🇦 Morocco',        score: '–', away: '🇨🇿 Czech Republic' },
+      { home: '🇪🇨 Ecuador',        score: '–', away: '🇨🇳 China' },
+      { home: '🇲🇦 Morocco',        score: '–', away: '🇪🇨 Ecuador' },
+      { home: '🇨🇿 Czech Republic', score: '–', away: '🇨🇳 China' },
+    ],
+    standings: [],
+  },
+};
+
+export default function WorldCupFinalsPage() {
+  return (
+    <div style={{ padding: '20px' }}>
+      <div className="btn-row">
+        {/* Sends to app/page (home) */}
+        <Link href="/" className="btn btn-outline">← Go to qualifiers</Link>
+
+        {/* If you want to go to the Qualifiers page instead, use this: */}
+        {/* <Link href="/worldcup2025" className="btn btn-outline">← Go to Qualifiers 2025</Link> */}
+      </div>
+
+      <h1>World Cup 2025 (Argentina)</h1>
+
+      <div className="flex-container">
+        {Object.entries(groupsData).map(([groupKey, group]) => {
+          const rowsToShow =
+            group.standings.length > 0 ? group.standings : deriveZeroRows(group.matches);
+
+          // Show "Group A — Group Stage", "Group B — Group Stage", etc.
+          const heading = `${groupKey} — Group Stage`;
+
+          return (
+            <div key={groupKey} className="group-block">
+              <div className="matches-block">
+                <div className="group-title">{heading}</div>
+
+                {group.matches.length === 0 ? (
+                  <p className="no-matches">Nenhum jogo cadastrado ainda</p>
+                ) : (
+                  <table className="match-table group-stage">
+                    <thead>
+                      <tr>
+                        <th>HOME</th>
+                        <th>SCORE</th>
+                        <th>AWAY</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {group.matches.map((m, i) => (
+                        <tr key={i}>
+                          <td>{m.home}</td>
+                          <td>{m.score}</td>
+                          <td>{m.away}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                )}
+              </div>
+
+              <StandingsTable groupName={heading} rows={rowsToShow} />
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function StandingsTable({ groupName, rows }: { groupName: string; rows: Standing[] }) {
+  return (
+    <div className="standings">
+      <h3>{groupName} Standings</h3>
+      <table className="match-table group-stage standings-table">
+        <thead>
+          <tr>
+            <th>Pos</th><th>Team</th><th>Pts</th>
+            <th>Pld</th><th>W</th><th>D</th><th>L</th>
+            <th>GF</th><th>GA</th><th>GD</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr key={r.team}>
+              <td>{r.pos}</td>
+              <td>{r.team}</td>
+              <td>{r.pts}</td>
+              <td>{r.played}</td>
+              <td>{r.won}</td>
+              <td>{r.draw}</td>
+              <td>{r.lost}</td>
+              <td>{r.gf}</td>
+              <td>{r.ga}</td>
+              <td>{r.gd > 0 ? `+${r.gd}` : r.gd}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
