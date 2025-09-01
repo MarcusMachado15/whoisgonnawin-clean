@@ -84,8 +84,8 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
   'Group C': {
     title: 'Group C — WC Finals 2025',
     matches: [
-      { home: '🇺🇸 United States', score: '–', away: '🇳🇿 New Zealand' },
-      { home: '🇺🇦 Ukraine',       score: '–', away: '🇨🇱 Chile' },
+      { home: '🇺🇸 United States', score: '3-1', away: '🇳🇿 New Zealand' },
+      { home: '🇺🇦 Ukraine',       score: '3-2', away: '🇨🇱 Chile' },
       { home: '🇺🇸 United States', score: '–', away: '🇨🇱 Chile' },
       { home: '🇺🇦 Ukraine',       score: '–', away: '🇳🇿 New Zealand' },
       { home: '🇺🇸 United States', score: '–', away: '🇺🇦 Ukraine' },
