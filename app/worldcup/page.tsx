@@ -118,7 +118,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
   'Group E': {
     title: 'Group E — WC Finals 2025',
     matches: [
-      { home: '🇪🇸 Spain',        score: '–', away: '🇮🇪 Ireland' },
+      { home: '🇪🇸 Spain',        score: '2-1', away: '🇮🇪 Ireland' },
       { home: '🇯🇵 Japan',        score: '–', away: '🇨🇮 Ivory Coast' },
       { home: '🇪🇸 Spain',        score: '–', away: '🇨🇮 Ivory Coast' },
       { home: '🇯🇵 Japan',        score: '–', away: '🇮🇪 Ireland' },
