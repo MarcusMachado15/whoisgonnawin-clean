@@ -136,7 +136,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
     title: 'Group F — WC Finals 2025',
     matches: [
       { home: '🇺🇾 Uruguay',    score: '0-1', away: '🇬🇳 Guinea' },
-      { home: '🇸🇪 Sweden',     score: '–', away: '🇺🇿 Uzbekistan' },
+      { home: '🇸🇪 Sweden',     score: '2-1', away: '🇺🇿 Uzbekistan' },
       { home: '🇺🇾 Uruguay',    score: '–', away: '🇺🇿 Uzbekistan' },
       { home: '🇸🇪 Sweden',     score: '–', away: '🇬🇳 Guinea' },
       { home: '🇺🇾 Uruguay',    score: '–', away: '🇸🇪 Sweden' },
