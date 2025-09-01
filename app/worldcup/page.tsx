@@ -97,7 +97,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
   'Group D': {
     title: 'Group D — WC Finals 2025',
     matches: [
-      { home: '🇮🇹 Italy',   score: '–', away: '🇻🇳 Vietnam' },
+      { home: '🇮🇹 Italy',   score: '3-2', away: '🇻🇳 Vietnam' },
       { home: '🇳🇴 Norway',  score: '–', away: '🇵🇪 Peru' },
       { home: '🇮🇹 Italy',   score: '–', away: '🇵🇪 Peru' },
       { home: '🇳🇴 Norway',  score: '–', away: '🇻🇳 Vietnam' },
