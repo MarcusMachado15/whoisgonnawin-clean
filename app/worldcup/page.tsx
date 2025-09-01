@@ -142,13 +142,17 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇺🇾 Uruguay',    score: '–', away: '🇸🇪 Sweden' },
       { home: '🇺🇿 Uzbekistan', score: '–', away: '🇬🇳 Guinea' },
     ],
-    standings: [],
+    standings: [{ pos: 1, team: 'se Sweden',     played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 1, gd: +1, pts: 3 },
+  { pos: 2, team: 'gn Guinea',     played: 1, won: 1, draw: 0, lost: 0, gf: 1, ga: 0, gd: +1, pts: 3 },
+  { pos: 3, team: 'uy Uruguay',    played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 1, gd: -1, pts: 0 },
+  { pos: 4, team: 'uz Uzbekistan', played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 2, gd: -1, pts: 0 },
+],
   },
 
   'Group G': {
     title: 'Group G — WC Finals 2025',
     matches: [
-      { home: '🇧🇪 Belgium',      score: '–', away: '🇹🇭 Thailand' },
+      { home: '🇧🇪 Belgium',      score: '0-0', away: '🇹🇭 Thailand' },
       { home: '🇷🇺 Russia',       score: '–', away: '🇿🇦 South Africa' },
       { home: '🇧🇪 Belgium',      score: '–', away: '🇿🇦 South Africa' },
       { home: '🇷🇺 Russia',       score: '–', away: '🇹🇭 Thailand' },
