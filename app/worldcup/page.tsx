@@ -91,7 +91,11 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇺🇸 United States', score: '–', away: '🇺🇦 Ukraine' },
       { home: '🇨🇱 Chile',         score: '–', away: '🇳🇿 New Zealand' },
     ],
-    standings: [],
+    standings: [ { pos: 1, team: 'US United States', played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 1, gd:  2, pts: 3 },
+  { pos: 2, team: 'UA Ukraine',       played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 2, gd:  1, pts: 3 },
+  { pos: 3, team: 'CL Chile',         played: 1, won: 0, draw: 0, lost: 1, gf: 2, ga: 3, gd: -1, pts: 0 },
+  { pos: 4, team: 'NZ New Zealand',   played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 3, gd: -2, pts: 0 },
+],
   },
 
   'Group D': {
