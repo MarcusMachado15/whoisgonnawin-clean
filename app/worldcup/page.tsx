@@ -68,7 +68,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
     title: 'Group B — WC Finals 2025',
     matches: [
       { home: '🇩🇪 Germany', score: '3-0', away: '🇧🇴 Bolivia' },
-      { home: '🏴 Wales',    score: '3-1', away: '🇨🇲 Cameroon' },
+      { home: '🏴 Wales',    score: '1-3', away: '🇨🇲 Cameroon' },
       { home: '🇩🇪 Germany', score: '–', away: '🇨🇲 Cameroon' },
       { home: '🏴 Wales',    score: '–', away: '🇧🇴 Bolivia' },
       { home: '🇩🇪 Germany', score: '–', away: '🏴 Wales' },
