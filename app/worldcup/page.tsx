@@ -170,7 +170,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
     title: 'Group H — WC Finals 2025',
     matches: [
       { home: '🇨🇴 Colombia', score: '6-2', away: '🇮🇱 Israel' },
-      { home: '🇨🇦 Canada',   score: '–', away: '🇩🇿 Algeria' },
+      { home: '🇨🇦 Canada',   score: '2-1', away: '🇩🇿 Algeria' },
       { home: '🇨🇴 Colombia', score: '–', away: '🇩🇿 Algeria' },
       { home: '🇨🇦 Canada',   score: '–', away: '🇮🇱 Israel' },
       { home: '🇨🇴 Colombia', score: '–', away: '🇨🇦 Canada' },
