@@ -227,7 +227,11 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🏴 England',     score: '–', away: '🇪🇬 Egypt' },
       { home: '🇨🇷 Costa Rica', score: '–', away: '🇮🇩 Indonesia' },
     ],
-    standings: [],
+    standings: [  { pos: 1, team: 'eg Egypt',       played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 2, gd: +1, pts: 3 },
+  { pos: 2, team: 'gb England',     played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
+  { pos: 3, team: 'id Indonesia',   played: 1, won: 0, draw: 1, lost: 0, gf: 1, ga: 1, gd:  0, pts: 1 },
+  { pos: 4, team: 'cr Costa Rica',  played: 1, won: 0, draw: 0, lost: 1, gf: 2, ga: 3, gd: -1, pts: 0 },
+],
   },
 
   'Group L': {
