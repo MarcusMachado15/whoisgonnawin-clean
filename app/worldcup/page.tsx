@@ -193,7 +193,11 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇫🇷 France',    score: '–', away: '🇦🇺 Australia' },
       { home: '🇻🇪 Venezuela', score: '–', away: '🇨🇩 DR Congo' },
     ],
-    standings: [],
+    standings: [ { pos: 1, team: 'fr France',    played: 1, won: 1, draw: 0, lost: 0, gf: 5, ga: 1, gd: +4, pts: 3 },
+  { pos: 2, team: 'au Australia', played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 1, gd: +2, pts: 3 },
+  { pos: 3, team: 've Venezuela', played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 3, gd: -2, pts: 0 },
+  { pos: 4, team: 'cd DR Congo',  played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 5, gd: -4, pts: 0 },
+],
   },
 
   'Group J': {
