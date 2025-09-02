@@ -176,7 +176,11 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇨🇴 Colombia', score: '–', away: '🇨🇦 Canada' },
       { home: '🇩🇿 Algeria',  score: '–', away: '🇮🇱 Israel' },
     ],
-    standings: [],
+    standings: [ { pos: 1, team: 'co Colombia', played: 1, won: 1, draw: 0, lost: 0, gf: 6, ga: 2, gd: +4, pts: 3 },
+  { pos: 2, team: 'ca Canada',   played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 1, gd: +1, pts: 3 },
+  { pos: 3, team: 'dz Algeria',  played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 2, gd: -1, pts: 0 },
+  { pos: 4, team: 'il Israel',   played: 1, won: 0, draw: 0, lost: 1, gf: 2, ga: 6, gd: -4, pts: 0 },
+],
   },
 
   'Group I': {
