@@ -210,7 +210,11 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇲🇽 Mexico',  score: '–', away: '🇸🇳 Senegal' },
       { home: '🇷🇴 Romania', score: '–', away: '🇦🇪 UAE' },
     ],
-    standings: [],
+    standings: [ { pos: 1, team: 'mx Mexico',  played: 1, won: 1, draw: 0, lost: 0, gf: 2, ga: 1, gd: +1, pts: 3 },
+  { pos: 2, team: 'sn Senegal', played: 1, won: 0, draw: 1, lost: 0, gf: 3, ga: 3, gd:  0, pts: 1 },
+  { pos: 3, team: 'ro Romania', played: 1, won: 0, draw: 1, lost: 0, gf: 3, ga: 3, gd:  0, pts: 1 },
+  { pos: 4, team: 'ae UAE',     played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 2, gd: -1, pts: 0 },
+],
   },
 
   'Group K': {
