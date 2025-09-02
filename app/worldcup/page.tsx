@@ -221,7 +221,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
     title: 'Group K — WC Finals 2025',
     matches: [
       { home: '🏴 England',     score: '1-1', away: '🇮🇩 Indonesia' },
-      { home: '🇪🇬 Egypt',      score: '–', away: '🇨🇷 Costa Rica' },
+      { home: '🇪🇬 Egypt',      score: '3-2', away: '🇨🇷 Costa Rica' },
       { home: '🏴 England',     score: '–', away: '🇨🇷 Costa Rica' },
       { home: '🇪🇬 Egypt',      score: '–', away: '🇮🇩 Indonesia' },
       { home: '🏴 England',     score: '–', away: '🇪🇬 Egypt' },
