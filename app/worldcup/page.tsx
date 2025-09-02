@@ -204,7 +204,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
     title: 'Group J — WC Finals 2025',
     matches: [
       { home: '🇲🇽 Mexico',  score: '2-1', away: '🇦🇪 UAE' },
-      { home: '🇸🇳 Senegal', score: '–', away: '🇷🇴 Romania' },
+      { home: '🇸🇳 Senegal', score: '3-3', away: '🇷🇴 Romania' },
       { home: '🇲🇽 Mexico',  score: '–', away: '🇷🇴 Romania' },
       { home: '🇸🇳 Senegal', score: '–', away: '🇦🇪 UAE' },
       { home: '🇲🇽 Mexico',  score: '–', away: '🇸🇳 Senegal' },
