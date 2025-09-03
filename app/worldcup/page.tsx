@@ -237,7 +237,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
   'Group L': {
     title: 'Group L — WC Finals 2025',
     matches: [
-      { home: '🇲🇦 Morocco',        score: '–', away: '🇨🇳 China' },
+      { home: '🇲🇦 Morocco',        score: '4-1', away: '🇨🇳 China' },
       { home: '🇪🇨 Ecuador',        score: '–', away: '🇨🇿 Czech Republic' },
       { home: '🇲🇦 Morocco',        score: '–', away: '🇨🇿 Czech Republic' },
       { home: '🇪🇨 Ecuador',        score: '–', away: '🇨🇳 China' },
