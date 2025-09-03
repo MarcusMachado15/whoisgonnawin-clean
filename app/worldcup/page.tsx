@@ -58,11 +58,11 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇶🇦 Qatar',       score: '–', away: '🇬🇭 Ghana' },
     ],
     standings: [
-  { pos: 1, team: '🇦🇷 Argentina',     played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 1, gd:  2, pts: 3 },
-  { pos: 2, team: '🇶🇦 Qatar',         played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 2, gd:  1, pts: 3 },
-  { pos: 3, team: '🇨🇭 Switzerland',   played: 1, won: 0, draw: 0, lost: 1, gf: 2, ga: 3, gd: -1, pts: 0 },
-  { pos: 4, team: '🇬🇭 Ghana',         played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 3, gd: -2, pts: 0 },],
-  },
+  { pos: 1, team: 'qa Qatar',      played: 2, won: 2, draw: 0, lost: 0, gf: 6, ga: 4, gd: +2, pts: 6 },
+  { pos: 2, team: 'ar Argentina',  played: 2, won: 1, draw: 0, lost: 1, gf: 5, ga: 4, gd: +1, pts: 3 },
+  { pos: 3, team: 'ch Switzerland',played: 2, won: 1, draw: 0, lost: 1, gf: 3, ga: 3, gd:  0, pts: 3 },
+  { pos: 4, team: 'gh Ghana',      played: 2, won: 0, draw: 0, lost: 2, gf: 1, ga: 4, gd: -3, pts: 0 },
+] },
 
   'Group B': {
     title: 'Group B — WC Finals 2025',
