@@ -69,7 +69,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
     matches: [
       { home: '🇩🇪 Germany', score: '3-0', away: '🇧🇴 Bolivia' },
       { home: '🏴 Wales',    score: '1-3', away: '🇨🇲 Cameroon' },
-      { home: '🇩🇪 Germany', score: '–', away: '🇨🇲 Cameroon' },
+      { home: '🇩🇪 Germany', score: '1-1', away: '🇨🇲 Cameroon' },
       { home: '🏴 Wales',    score: '–', away: '🇧🇴 Bolivia' },
       { home: '🇩🇪 Germany', score: '–', away: '🏴 Wales' },
       { home: '🇨🇲 Cameroon',score: '–', away: '🇧🇴 Bolivia' },
