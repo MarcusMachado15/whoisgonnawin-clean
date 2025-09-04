@@ -87,7 +87,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇺🇸 United States', score: '3-1', away: '🇳🇿 New Zealand' },
       { home: '🇺🇦 Ukraine',       score: '3-2', away: '🇨🇱 Chile' },
       { home: '🇺🇸 United States', score: '0-1', away: '🇨🇱 Chile' },
-      { home: '🇺🇦 Ukraine',       score: '–', away: '🇳🇿 New Zealand' },
+      { home: '🇺🇦 Ukraine',       score: '3-0', away: '🇳🇿 New Zealand' },
       { home: '🇺🇸 United States', score: '–', away: '🇺🇦 Ukraine' },
       { home: '🇨🇱 Chile',         score: '–', away: '🇳🇿 New Zealand' },
     ],
