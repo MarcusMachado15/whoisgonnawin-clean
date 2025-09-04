@@ -103,7 +103,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
     matches: [
       { home: '🇮🇹 Italy',   score: '3-2', away: '🇻🇳 Vietnam' },
       { home: '🇳🇴 Norway',  score: '2-0', away: '🇵🇪 Peru' },
-      { home: '🇮🇹 Italy',   score: '–', away: '🇵🇪 Peru' },
+      { home: '🇮🇹 Italy',   score: '1-0', away: '🇵🇪 Peru' },
       { home: '🇳🇴 Norway',  score: '–', away: '🇻🇳 Vietnam' },
       { home: '🇮🇹 Italy',   score: '–', away: '🇳🇴 Norway' },
       { home: '🇵🇪 Peru',    score: '–', away: '🇻🇳 Vietnam' },
