@@ -74,10 +74,10 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇩🇪 Germany', score: '–', away: '🏴 Wales' },
       { home: '🇨🇲 Cameroon',score: '–', away: '🇧🇴 Bolivia' },
     ],
-    standings: [ { pos: 1, team: '🇩🇪 Germany',   played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 0, gd:  3, pts: 3 },
-  { pos: 2, team: '🇨🇲 Cameroon',  played: 1, won: 1, draw: 0, lost: 0, gf: 3, ga: 1, gd:  2, pts: 3 },
-  { pos: 3, team: '🏴 Wales',      played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 3, gd: -2, pts: 0 },
-  { pos: 4, team: '🇧🇴 Bolivia',   played: 1, won: 0, draw: 0, lost: 1, gf: 0, ga: 3, gd: -3, pts: 0 },
+    standings: [  { pos: 1, team: 'de Germany',  played: 2, won: 1, draw: 1, lost: 0, gf: 4, ga: 1, gd: +3, pts: 4 },
+  { pos: 2, team: 'cm Cameroon', played: 2, won: 1, draw: 1, lost: 0, gf: 4, ga: 2, gd: +2, pts: 4 },
+  { pos: 3, team: '🏴 Wales',     played: 2, won: 0, draw: 1, lost: 1, gf: 2, ga: 4, gd: -2, pts: 1 },
+  { pos: 4, team: 'bo Bolivia',  played: 2, won: 0, draw: 1, lost: 1, gf: 1, ga: 4, gd: -3, pts: 1 },
 ],
   },
 
@@ -86,7 +86,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
     matches: [
       { home: '🇺🇸 United States', score: '3-1', away: '🇳🇿 New Zealand' },
       { home: '🇺🇦 Ukraine',       score: '3-2', away: '🇨🇱 Chile' },
-      { home: '🇺🇸 United States', score: '–', away: '🇨🇱 Chile' },
+      { home: '🇺🇸 United States', score: '0-1', away: '🇨🇱 Chile' },
       { home: '🇺🇦 Ukraine',       score: '–', away: '🇳🇿 New Zealand' },
       { home: '🇺🇸 United States', score: '–', away: '🇺🇦 Ukraine' },
       { home: '🇨🇱 Chile',         score: '–', away: '🇳🇿 New Zealand' },
