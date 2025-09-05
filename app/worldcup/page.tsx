@@ -121,7 +121,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇪🇸 Spain',        score: '2-1', away: '🇮🇪 Ireland' },
       { home: '🇯🇵 Japan',        score: '4-3', away: '🇨🇮 Ivory Coast' },
       { home: '🇪🇸 Spain',        score: '1-0', away: '🇨🇮 Ivory Coast' },
-      { home: '🇯🇵 Japan',        score: '–', away: '🇮🇪 Ireland' },
+      { home: '🇯🇵 Japan',        score: '1-2', away: '🇮🇪 Ireland' },
       { home: '🇪🇸 Spain',        score: '–', away: '🇯🇵 Japan' },
       { home: '🇨🇮 Ivory Coast',  score: '–', away: '🇮🇪 Ireland' },
     ],
