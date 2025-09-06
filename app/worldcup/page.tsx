@@ -155,7 +155,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
     matches: [
       { home: '🇧🇪 Belgium',      score: '0-0', away: '🇹🇭 Thailand' },
       { home: '🇷🇺 Russia',       score: '6-1', away: '🇿🇦 South Africa' },
-      { home: '🇧🇪 Belgium',      score: '–', away: '🇿🇦 South Africa' },
+      { home: '🇧🇪 Belgium',      score: '3-0', away: '🇿🇦 South Africa' },
       { home: '🇷🇺 Russia',       score: '–', away: '🇹🇭 Thailand' },
       { home: '🇧🇪 Belgium',      score: '–', away: '🇷🇺 Russia' },
       { home: '🇿🇦 South Africa', score: '–', away: '🇹🇭 Thailand' },
