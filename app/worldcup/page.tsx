@@ -160,10 +160,11 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇧🇪 Belgium',      score: '–', away: '🇷🇺 Russia' },
       { home: '🇿🇦 South Africa', score: '–', away: '🇹🇭 Thailand' },
     ],
-    standings: [ { pos: 1, team: 'ru Russia',        played: 1, won: 1, draw: 0, lost: 0, gf: 6, ga: 1, gd: +5, pts: 3 },
-  { pos: 2, team: 'be Belgium',       played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0, gd:  0, pts: 1 },
-  { pos: 3, team: 'th Thailand',      played: 1, won: 0, draw: 1, lost: 0, gf: 0, ga: 0, gd:  0, pts: 1 },
-  { pos: 4, team: 'za South Africa',  played: 1, won: 0, draw: 0, lost: 1, gf: 1, ga: 6, gd: -5, pts: 0 },
+    standings: [  
+  { pos: 1, team: 'ru Russia',        played: 2, won: 2, draw: 0, lost: 0, gf: 7, ga: 1, gd: +6, pts: 6 },
+  { pos: 2, team: 'be Belgium',       played: 2, won: 1, draw: 1, lost: 0, gf: 3, ga: 0, gd: +3, pts: 4 },
+  { pos: 3, team: 'th Thailand',      played: 2, won: 0, draw: 1, lost: 1, gf: 0, ga: 1, gd: -1, pts: 1 },
+  { pos: 4, team: 'za South Africa',  played: 2, won: 0, draw: 0, lost: 2, gf: 1, ga: 9, gd: -8, pts: 0 },
 ],
   },
 
