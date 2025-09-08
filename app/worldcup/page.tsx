@@ -226,7 +226,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🏴 England',     score: '1-1', away: '🇮🇩 Indonesia' },
       { home: '🇪🇬 Egypt',      score: '3-2', away: '🇨🇷 Costa Rica' },
       { home: '🏴 England',     score: '3-0', away: '🇨🇷 Costa Rica' },
-      { home: '🇪🇬 Egypt',      score: '–', away: '🇮🇩 Indonesia' },
+      { home: '🇪🇬 Egypt',      score: '1-1', away: '🇮🇩 Indonesia' },
       { home: '🏴 England',     score: '–', away: '🇪🇬 Egypt' },
       { home: '🇨🇷 Costa Rica', score: '–', away: '🇮🇩 Indonesia' },
     ],
