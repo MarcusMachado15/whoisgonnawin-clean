@@ -209,7 +209,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇲🇽 Mexico',  score: '2-1', away: '🇦🇪 UAE' },
       { home: '🇸🇳 Senegal', score: '3-3', away: '🇷🇴 Romania' },
       { home: '🇲🇽 Mexico',  score: '3-3', away: '🇷🇴 Romania' },
-      { home: '🇸🇳 Senegal', score: '–', away: '🇦🇪 UAE' },
+      { home: '🇸🇳 Senegal', score: '3-0', away: '🇦🇪 UAE' },
       { home: '🇲🇽 Mexico',  score: '–', away: '🇸🇳 Senegal' },
       { home: '🇷🇴 Romania', score: '–', away: '🇦🇪 UAE' },
     ],
