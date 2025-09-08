@@ -192,7 +192,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇫🇷 France',    score: '5-1', away: '🇨🇩 DR Congo' },
       { home: '🇦🇺 Australia', score: '3-1', away: '🇻🇪 Venezuela' },
       { home: '🇫🇷 France',    score: '4-1', away: '🇻🇪 Venezuela' },
-      { home: '🇦🇺 Australia', score: '5-2', away: '🇨🇩 DR Congo' },
+      { home: '🇦🇺 Australia', score: '2-5', away: '🇨🇩 DR Congo' },
       { home: '🇫🇷 France',    score: '–', away: '🇦🇺 Australia' },
       { home: '🇻🇪 Venezuela', score: '–', away: '🇨🇩 DR Congo' },
     ],
