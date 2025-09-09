@@ -71,7 +71,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🏴 Wales',    score: '1-3', away: '🇨🇲 Cameroon' },
       { home: '🇩🇪 Germany', score: '1-1', away: '🇨🇲 Cameroon' },
       { home: '🏴 Wales',    score: '1-1', away: '🇧🇴 Bolivia' },
-      { home: '🇩🇪 Germany', score: '–', away: '🏴 Wales' },
+      { home: '🇩🇪 Germany', score: '2-0', away: '🏴 Wales' },
       { home: '🇨🇲 Cameroon',score: '–', away: '🇧🇴 Bolivia' },
     ],
     standings: [  { pos: 1, team: 'de Germany',  played: 2, won: 1, draw: 1, lost: 0, gf: 4, ga: 1, gd: +3, pts: 4 },
