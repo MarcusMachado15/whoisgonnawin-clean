@@ -54,7 +54,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇨🇭 Switzerland', score: '2-3', away: '🇶🇦 Qatar' },
       { home: '🇦🇷 Argentina',   score: '2-3', away: '🇶🇦 Qatar' },
       { home: '🇨🇭 Switzerland', score: '1-0', away: '🇬🇭 Ghana' },
-      { home: '🇦🇷 Argentina',   score: '–', away: '🇨🇭 Switzerland' },
+      { home: '🇦🇷 Argentina',   score: '2-0', away: '🇨🇭 Switzerland' },
       { home: '🇶🇦 Qatar',       score: '–', away: '🇬🇭 Ghana' },
     ],
     standings: [
