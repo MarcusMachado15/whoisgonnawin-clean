@@ -92,7 +92,8 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇺🇸 United States', score: '4-2', away: '🇺🇦 Ukraine' },
       { home: '🇨🇱 Chile',         score: '1-1', away: '🇳🇿 New Zealand' },
     ],
-    standings: [    { pos: 1, team: 'us United States', played: 3, won: 2, draw: 0, lost: 1, gf: 7, ga: 4, gd: +3, pts: 6 },
+    standings: [    
+  { pos: 1, team: 'us United States', played: 3, won: 2, draw: 0, lost: 1, gf: 7, ga: 4, gd: +3, pts: 6 },
   { pos: 2, team: 'ua Ukraine',       played: 3, won: 2, draw: 0, lost: 1, gf: 8, ga: 6, gd: +2, pts: 6 },
   { pos: 3, team: 'cl Chile',         played: 3, won: 1, draw: 1, lost: 1, gf: 4, ga: 4, gd:  0, pts: 4 },
   { pos: 4, team: 'nz New Zealand',   played: 3, won: 0, draw: 1, lost: 2, gf: 2, ga: 7, gd: -5, pts: 1 },
@@ -106,7 +107,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇳🇴 Norway',  score: '2-0', away: '🇵🇪 Peru' },
       { home: '🇮🇹 Italy',   score: '1-0', away: '🇵🇪 Peru' },
       { home: '🇳🇴 Norway',  score: '2-1', away: '🇻🇳 Vietnam' },
-      { home: '🇮🇹 Italy',   score: '–', away: '🇳🇴 Norway' },
+      { home: '🇮🇹 Italy',   score: '3-2', away: '🇳🇴 Norway' },
       { home: '🇵🇪 Peru',    score: '–', away: '🇻🇳 Vietnam' },
     ],
     standings: [   { pos: 1, team: 'no Norway',  played: 2, won: 2, draw: 0, lost: 0, gf: 4, ga: 1, gd: +3, pts: 6 },
