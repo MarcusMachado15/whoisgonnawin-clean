@@ -129,10 +129,10 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇨🇮 Ivory Coast',  score: '1-1', away: '🇮🇪 Ireland' },
     ],
     standings: [   
-  { pos: 1, team: 'es Spain',      played: 2, won: 2, draw: 0, lost: 0, gf: 3, ga: 1, gd: +2, pts: 6 },
-  { pos: 2, team: 'jp Japan',      played: 2, won: 1, draw: 0, lost: 1, gf: 5, ga: 5, gd:  0, pts: 3 },
-  { pos: 3, team: 'ie Ireland',    played: 2, won: 1, draw: 0, lost: 1, gf: 3, ga: 3, gd:  0, pts: 3 },
-  { pos: 4, team: 'ci Ivory Coast',played: 2, won: 0, draw: 0, lost: 2, gf: 3, ga: 5, gd: -2, pts: 0 },
+  { pos: 1, team: 'es Spain',       played: 3, won: 3, draw: 0, lost: 0, gf: 7, ga: 2, gd: +5, pts: 9 },
+  { pos: 2, team: 'ie Ireland',     played: 3, won: 1, draw: 1, lost: 1, gf: 4, ga: 4, gd:  0, pts: 4 },
+  { pos: 3, team: 'jp Japan',       played: 3, won: 1, draw: 0, lost: 2, gf: 6, ga: 9, gd: -3, pts: 3 },
+  { pos: 4, team: 'ci Ivory Coast', played: 3, won: 0, draw: 1, lost: 2, gf: 4, ga: 6, gd: -2, pts: 1 },
 ],
   },
 
