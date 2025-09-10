@@ -162,7 +162,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇧🇪 Belgium',      score: '3-0', away: '🇿🇦 South Africa' },
       { home: '🇷🇺 Russia',       score: '1-0', away: '🇹🇭 Thailand' },
       { home: '🇧🇪 Belgium',      score: '1-1', away: '🇷🇺 Russia' },
-      { home: '🇿🇦 South Africa', score: '–', away: '🇹🇭 Thailand' },
+      { home: '🇿🇦 South Africa', score: '2-3', away: '🇹🇭 Thailand' },
     ],
     standings: [  
   { pos: 1, team: 'ru Russia',        played: 2, won: 2, draw: 0, lost: 0, gf: 7, ga: 1, gd: +6, pts: 6 },
