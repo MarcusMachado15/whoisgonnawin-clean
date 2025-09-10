@@ -110,10 +110,11 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇮🇹 Italy',   score: '3-2', away: '🇳🇴 Norway' },
       { home: '🇵🇪 Peru',    score: '1-0', away: '🇻🇳 Vietnam' },
     ],
-    standings: [   { pos: 1, team: 'no Norway',  played: 2, won: 2, draw: 0, lost: 0, gf: 4, ga: 1, gd: +3, pts: 6 },
-  { pos: 2, team: 'it Italy',   played: 2, won: 2, draw: 0, lost: 0, gf: 4, ga: 2, gd: +2, pts: 6 },
-  { pos: 3, team: 'vn Vietnam', played: 2, won: 0, draw: 0, lost: 2, gf: 3, ga: 5, gd: -2, pts: 0 },
-  { pos: 4, team: 'pe Peru',    played: 2, won: 0, draw: 0, lost: 2, gf: 0, ga: 3, gd: -3, pts: 0 },
+    standings: [   
+  { pos: 1, team: 'it Italy',   played: 3, won: 3, draw: 0, lost: 0, gf: 7, ga: 4, gd: +3, pts: 9 },
+  { pos: 2, team: 'no Norway',  played: 3, won: 2, draw: 0, lost: 1, gf: 6, ga: 4, gd: +2, pts: 6 },
+  { pos: 3, team: 'pe Peru',    played: 3, won: 1, draw: 0, lost: 2, gf: 1, ga: 3, gd: -2, pts: 3 },
+  { pos: 4, team: 'vn Vietnam', played: 3, won: 0, draw: 0, lost: 3, gf: 3, ga: 6, gd: -3, pts: 0 },
 ],
   },
 
