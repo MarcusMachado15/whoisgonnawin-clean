@@ -144,7 +144,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇺🇾 Uruguay',    score: '0-0', away: '🇺🇿 Uzbekistan' },
       { home: '🇸🇪 Sweden',     score: '2-0', away: '🇬🇳 Guinea' },
       { home: '🇺🇾 Uruguay',    score: '5-1', away: '🇸🇪 Sweden' },
-      { home: '🇺🇿 Uzbekistan', score: '–', away: '🇬🇳 Guinea' },
+      { home: '🇺🇿 Uzbekistan', score: '3-2', away: '🇬🇳 Guinea' },
     ],
     standings: [  { pos: 1, team: 'se Sweden',      played: 2, won: 2, draw: 0, lost: 0, gf: 4, ga: 1, gd: +3, pts: 6 },
   { pos: 2, team: 'gn Guinea',      played: 2, won: 1, draw: 0, lost: 1, gf: 1, ga: 2, gd: -1, pts: 3 },
