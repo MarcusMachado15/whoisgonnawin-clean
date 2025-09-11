@@ -218,10 +218,11 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇲🇽 Mexico',  score: '1-2', away: '🇸🇳 Senegal' },
       { home: '🇷🇴 Romania', score: '0-2', away: '🇦🇪 UAE' },
     ],
-    standings: [   { pos: 1, team: 'sn Senegal', played: 2, won: 1, draw: 1, lost: 0, gf: 6, ga: 3, gd: +3, pts: 4 },
-  { pos: 2, team: 'mx Mexico',  played: 2, won: 1, draw: 1, lost: 0, gf: 5, ga: 4, gd: +1, pts: 4 },
-  { pos: 3, team: 'ro Romania', played: 2, won: 0, draw: 2, lost: 0, gf: 6, ga: 6, gd:  0, pts: 2 },
-  { pos: 4, team: 'ae UAE',     played: 2, won: 0, draw: 0, lost: 2, gf: 1, ga: 5, gd: -4, pts: 0 },
+    standings: [     
+  { pos: 1, team: 'sn Senegal',  played: 3, won: 2, draw: 1, lost: 0, gf: 8, ga: 4, gd: +4, pts: 7 },
+  { pos: 2, team: 'mx Mexico',   played: 3, won: 1, draw: 1, lost: 1, gf: 6, ga: 6, gd:  0, pts: 4 },
+  { pos: 3, team: 'ae UAE',      played: 3, won: 1, draw: 0, lost: 2, gf: 3, ga: 5, gd: -2, pts: 3 },
+  { pos: 4, team: 'ro Romania',  played: 3, won: 0, draw: 2, lost: 1, gf: 6, ga: 8, gd: -2, pts: 2 },
 ],
   },
 
