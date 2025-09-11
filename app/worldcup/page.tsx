@@ -198,7 +198,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇫🇷 France',    score: '4-1', away: '🇻🇪 Venezuela' },
       { home: '🇦🇺 Australia', score: '2-5', away: '🇨🇩 DR Congo' },
       { home: '🇫🇷 France',    score: '3-1', away: '🇦🇺 Australia' },
-      { home: '🇻🇪 Venezuela', score: '–', away: '🇨🇩 DR Congo' },
+      { home: '🇻🇪 Venezuela', score: '3-3', away: '🇨🇩 DR Congo' },
     ],
     standings: [ { pos: 1, team: 'fr France',    played: 2, won: 2, draw: 0, lost: 0, gf: 9, ga: 2, gd: +7, pts: 6 },
   { pos: 2, team: 'cd DR Congo',  played: 2, won: 1, draw: 0, lost: 1, gf: 6, ga: 7, gd: -1, pts: 3 },
