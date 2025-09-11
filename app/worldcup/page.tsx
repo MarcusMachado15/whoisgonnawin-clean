@@ -252,7 +252,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇲🇦 Morocco',        score: '2-0', away: '🇨🇿 Czech Republic' },
       { home: '🇪🇨 Ecuador',        score: '1-2', away: '🇨🇳 China' },
       { home: '🇲🇦 Morocco',        score: '1-0', away: '🇪🇨 Ecuador' },
-      { home: '🇨🇿 Czech Republic', score: '–', away: '🇨🇳 China' },
+      { home: '🇨🇿 Czech Republic', score: '2-0', away: '🇨🇳 China' },
     ],
     standings: [ 
   { pos: 1, team: 'ma Morocco',        played: 2, won: 2, draw: 0, lost: 0, gf: 6, ga: 1, gd: +5, pts: 6 },
