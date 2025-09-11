@@ -180,7 +180,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇨🇴 Colombia', score: '2-2', away: '🇩🇿 Algeria' },
       { home: '🇨🇦 Canada',   score: '2-2', away: '🇮🇱 Israel' },
       { home: '🇨🇴 Colombia', score: '0-2', away: '🇨🇦 Canada' },
-      { home: '🇩🇿 Algeria',  score: '–', away: '🇮🇱 Israel' },
+      { home: '🇩🇿 Algeria',  score: '2-2', away: '🇮🇱 Israel' },
     ],
     standings: [    
   { pos: 1, team: 'co Colombia', played: 2, won: 1, draw: 1, lost: 0, gf: 8, ga: 4, gd: +4, pts: 4 },
