@@ -255,10 +255,10 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇨🇿 Czech Republic', score: '2-0', away: '🇨🇳 China' },
     ],
     standings: [ 
-  { pos: 1, team: 'ma Morocco',        played: 2, won: 2, draw: 0, lost: 0, gf: 6, ga: 1, gd: +5, pts: 6 },
-  { pos: 2, team: 'ec Ecuador',        played: 2, won: 1, draw: 0, lost: 1, gf: 2, ga: 2, gd:  0, pts: 3 },
-  { pos: 3, team: 'cn China',          played: 2, won: 1, draw: 0, lost: 1, gf: 3, ga: 5, gd: -2, pts: 3 },
-  { pos: 4, team: 'cz Czech Republic', played: 2, won: 0, draw: 0, lost: 2, gf: 0, ga: 3, gd: -3, pts: 0 },
+  { pos: 1, team: 'ma Morocco',       played: 3, won: 3, draw: 0, lost: 0, gf: 7, ga: 1, gd:  6, pts: 9 },
+  { pos: 2, team: 'ec Ecuador',        played: 3, won: 1, draw: 0, lost: 2, gf: 2, ga: 3, gd: -1, pts: 3 },
+  { pos: 3, team: 'cz Czech Republic', played: 3, won: 1, draw: 0, lost: 2, gf: 2, ga: 3, gd: -1, pts: 3 },
+  { pos: 4, team: 'cn China',          played: 3, won: 1, draw: 0, lost: 2, gf: 3, ga: 7, gd: -4, pts: 3 },
 ],
   },
 };
