@@ -183,10 +183,10 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇩🇿 Algeria',  score: '2-2', away: '🇮🇱 Israel' },
     ],
     standings: [    
-  { pos: 1, team: 'co Colombia', played: 2, won: 1, draw: 1, lost: 0, gf: 8, ga: 4, gd: +4, pts: 4 },
-  { pos: 2, team: 'dz Algeria',  played: 2, won: 1, draw: 1, lost: 0, gf: 4, ga: 3, gd: +1, pts: 4 },
-  { pos: 3, team: 'ca Canada',   played: 2, won: 0, draw: 1, lost: 1, gf: 3, ga: 4, gd: -1, pts: 1 },
-  { pos: 4, team: 'il Israel',   played: 2, won: 0, draw: 1, lost: 1, gf: 4, ga: 8, gd: -4, pts: 1 },
+  { pos: 1, team: 'dz Algeria',  played: 3, won: 1, draw: 2, lost: 0, gf: 6, ga: 5,  gd: +1, pts: 5 },
+  { pos: 2, team: 'co Colombia', played: 3, won: 1, draw: 1, lost: 1, gf: 8, ga: 6,  gd: +2, pts: 4 },
+  { pos: 3, team: 'ca Canada',   played: 3, won: 1, draw: 1, lost: 1, gf: 5, ga: 4,  gd: +1, pts: 4 },
+  { pos: 4, team: 'il Israel',   played: 3, won: 0, draw: 2, lost: 1, gf: 6, ga: 10, gd: -4, pts: 2 },
 ],
   },
 
