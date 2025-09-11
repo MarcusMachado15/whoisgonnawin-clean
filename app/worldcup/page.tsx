@@ -215,7 +215,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
       { home: '🇸🇳 Senegal', score: '3-3', away: '🇷🇴 Romania' },
       { home: '🇲🇽 Mexico',  score: '3-3', away: '🇷🇴 Romania' },
       { home: '🇸🇳 Senegal', score: '3-0', away: '🇦🇪 UAE' },
-      { home: '🇲🇽 Mexico',  score: '–', away: '🇸🇳 Senegal' },
+      { home: '🇲🇽 Mexico',  score: '1-2', away: '🇸🇳 Senegal' },
       { home: '🇷🇴 Romania', score: '–', away: '🇦🇪 UAE' },
     ],
     standings: [   { pos: 1, team: 'sn Senegal', played: 2, won: 1, draw: 1, lost: 0, gf: 6, ga: 3, gd: +3, pts: 4 },
