@@ -271,7 +271,7 @@ const knockoutData = {
     { home: '🇦🇷 Argentina', away: '🇦🇪 UAE' },
     { home: '🇫🇷 France', away: '🇻🇪 Venezuela' },
     { home: '🏴 England', away: '🇨🇷 Costa Rica' },
-    { home: '🇲🇦 Morocco', away: '🇨🇳 China' },
+    { home: '🇲🇦 Morocco', away: '🇨🇳 China taipei' },
     // ...adicione os outros confrontos
   ] as KMatch[],
   roundOf16: [] as KMatch[],
