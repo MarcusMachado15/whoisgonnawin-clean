@@ -264,7 +264,7 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
 };
 const knockoutData = {
   roundOf32: [
-  { home: '🇦🇷 Argentina', away: '🇦🇪 UAE' },
+  {  home: '🇦🇷 Argentina', score: '3-2', away: '🇦🇪 UAE' },
   { home: '🇺🇾 Uruguay',   away: '🇪🇨 Ecuador' },
   { home: '🇺🇸 USA',       away: '🇪🇬 Egypt' },
   { home: '🇸🇳 Senegal',   away: '🇮🇩 Indonesia' },
