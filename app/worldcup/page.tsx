@@ -1,4 +1,3 @@
-// app/worldcup/page.tsx
 'use client';
 
 import React, { useState } from 'react';
@@ -15,12 +14,12 @@ type Standing = {
   lost: number;
   gf: number;
   ga: number;
-  gd: number; // ex.: 9, -4
+  gd: number;
   pts: number;
 };
 type KMatch = { home: string; away: string; score?: string };
 
-/** Quando standings vier vazio, criamos linhas 0 pts com os times da tabela de jogos. */
+/** Gera linhas zeradas quando standings vier vazio */
 function deriveZeroRows(matches: Match[]): Standing[] {
   const seen = new Map<string, true>();
   for (const m of matches) {
@@ -263,26 +262,20 @@ const groupsData: Record<string, { title?: string; matches: Match[]; standings: 
     ],
   },
 };
-/* ================================================================ */
-
-/* ===================== KNOCKOUT (SÓ JOGOS) ===================== */
 const knockoutData = {
   roundOf32: [
     { home: '🇦🇷 Argentina', away: '🇦🇪 UAE' },
-    { home: '🇫🇷 France', away: '🇻🇪 Venezuela' },
-    { home: '🏴 England', away: '🇨🇷 Costa Rica' },
-    { home: '🇲🇦 Morocco', away: '🇨🇳 China taipei' },
-    // ...adicione os outros confrontos
+    { home: '🇫🇷 France',    away: '🇻🇪 Venezuela' },
+    { home: '🏴 England',    away: '🇨🇷 Costa Rica' },
+    { home: '🇲🇦 Morocco',   away: '🇨🇳 China taipei' },
   ] as KMatch[],
   roundOf16: [] as KMatch[],
   quarterfinals: [] as KMatch[],
   semifinals: [] as KMatch[],
   final: [] as KMatch[],
 };
-/* ================================================================ */
 
 export default function WorldCupFinalsPage() {
-  // 'group' = fase de grupos; 'knockout' = só jogos
   const [tab, setTab] = useState<'group' | 'knockout'>('group');
 
   return (
@@ -293,7 +286,7 @@ export default function WorldCupFinalsPage() {
 
       <h1>World Cup 2025 (Argentina)</h1>
 
-      {/* Abas no estilo da sua página de Qualifiers */}
+      {/* use the segmented class to match the Qualifiers pills */}
       <nav className="segmented" role="tablist" aria-label="World Cup sections">
         <button
           type="button"
@@ -320,8 +313,7 @@ export default function WorldCupFinalsPage() {
   );
 }
 
-/* ===================== COMPONENTES ===================== */
-
+/* ===== COMPONENTES ===== */
 function GroupStage() {
   return (
     <div className="flex-container">
