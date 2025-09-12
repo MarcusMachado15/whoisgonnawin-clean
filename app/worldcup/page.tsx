@@ -267,7 +267,7 @@ const knockoutData = {
     { home: '🇦🇷 Argentina', away: '🇦🇪 UAE' },
     { home: '🇫🇷 France',    away: '🇻🇪 Venezuela' },
     { home: '🏴 England',    away: '🇨🇷 Costa Rica' },
-    { home: '🇲🇦 Morocco',   away: '🇨🇳 China taipei' },
+    { home: '🇲🇦 Morocco',   away: '🇨🇳 China' },
   ] as KMatch[],
   roundOf16: [] as KMatch[],
   quarterfinals: [] as KMatch[],
