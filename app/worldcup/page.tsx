@@ -276,7 +276,7 @@ const knockoutData = {
   { home: '🇨🇴 Colombia',score: '2-1',  away: '🇺🇦 Ukraine' },
   { home: '🇲🇦 Morocco',score: '1-0',   away: '🇨🇦 Canada' },
   { home: '🇸🇪 Sweden',score: '2-2 ET(0-1)',    away: '🇨🇩 DR Congo' },
-  { home: '🇫🇷 France',    away: '🇨🇿 Czech Republic' },
+  { home: '🇫🇷 France',score: '1-0',     away: '🇨🇿 Czech Republic' },
   { home: '🇲🇽 Mexico',    away: '🇳🇴 Norway' },
   { home: '🇮🇹 Italy',     away: '🇨🇱 Chile' },
   { home: '🇷🇺 Russia',    away: '🇮🇪 Ireland' },
