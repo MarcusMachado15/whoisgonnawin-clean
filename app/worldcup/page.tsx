@@ -289,6 +289,7 @@ const knockoutData = {
     { home: '🇪🇸 Spain', score: '',    away: '🇨🇴 Colombia' },
     { home: '🇲🇦 Morocco',score: '',   away: '🇨🇩 DR Congo' },
     { home: '🇫🇷 France',score: '',     away: '🇳🇴 Norway' },
+    { home: '🇮🇹 Italy', score: '',    away: '🇷🇺 Russia' },
   ] as KMatch[],
   quarterfinals: [] as KMatch[],
   semifinals: [] as KMatch[],
