@@ -287,7 +287,7 @@ const knockoutData = {
     { home: '🏴 England',score: '0-3',    away: '🇧🇪 Belgium' },
     { home: '🇺🇿 Uzbekistan', score: '2-4',  away: '🇩🇿 Algeria' },
     { home: '🇪🇸 Spain', score: '5-3',    away: '🇨🇴 Colombia' },
-    { home: '🇲🇦 Morocco',score: '',   away: '🇨🇩 DR Congo' },
+    { home: '🇲🇦 Morocco',score: '4-0',   away: '🇨🇩 DR Congo' },
     { home: '🇫🇷 France',score: '',     away: '🇳🇴 Norway' },
     { home: '🇮🇹 Italy', score: '',    away: '🇷🇺 Russia' },
   ] as KMatch[],
