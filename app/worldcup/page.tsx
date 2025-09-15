@@ -282,7 +282,7 @@ const knockoutData = {
   { home: '🇷🇺 Russia',score: '3-1',    away: '🇮🇪 Ireland' },
 ] as KMatch[],
   roundOf16: [
-    {  home: '🇦🇷 Argentina', score: '', away: '🇺🇾 Uruguay' },
+    {  home: '🇦🇷 Argentina', score: '3-1', away: '🇺🇾 Uruguay' },
     { home: '🇺🇸 USA', score: '',      away: '🇸🇳 Senegal' },
     { home: '🏴 England',score: '',    away: '🇧🇪 Belgium' },
     { home: '🇺🇿 Uzbekistan', score: '',  away: '🇩🇿 Algeria' },
