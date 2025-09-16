@@ -301,7 +301,7 @@ const knockoutData = {
     { home: '🇺🇸 USA', score: '4-3', away: '🇧🇪 Belgium'},
     { home: '🇪🇸 Spain', score: '1-2',    away: '🇮🇹 Italy'},
   ] as KMatch[],
-    thirdplace: [ 
+  thirdplace: [ 
     { home: '🇧🇪 Belgium', score: '', away: '🇪🇸 Spain'},] as KMatch[],
   final: [ 
     { home: '🇺🇸 USA', score: '', away: '🇮🇹 Italy'},] as KMatch[],
