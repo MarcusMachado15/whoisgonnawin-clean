@@ -299,12 +299,12 @@ const knockoutData = {
   ] as KMatch[],
   semifinals: [
     { home: '🇺🇸 USA', score: '4-3', away: '🇧🇪 Belgium'},
-    { home: '🇪🇸 Spain', score: '',    away: '🇮🇹 Italy'},
+    { home: '🇪🇸 Spain', score: '1-2',    away: '🇮🇹 Italy'},
   ] as KMatch[],
-  thirdPlace: [ 
-    { home: '🇧🇪 Belgium', score: '', away: ''},] as KMatch[],
+    thirdplace: [ 
+    { home: '🇧🇪 Belgium', score: '', away: '🇪🇸 Spain'},] as KMatch[],
   final: [ 
-    { home: '🇺🇸 USA', score: '', away: ''},] as KMatch[],
+    { home: '🇺🇸 USA', score: '', away: '🇮🇹 Italy'},] as KMatch[],
 };
 
 export default function WorldCupFinalsPage() {
