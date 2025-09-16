@@ -295,9 +295,12 @@ const knockoutData = {
     { home: '🇦🇷 Argentina', score: '1-3', away: '🇺🇸 USA' },
     { home: '🇧🇪 Belgium',score: '1-0',    away: '🇩🇿 Algeria' },
     { home: '🇪🇸 Spain', score: '3-2',    away: '🇲🇦 Morocco' },
-    { home: '🇫🇷 France',score: '',     away: '🇮🇹 Italy' },
+    { home: '🇫🇷 France',score: '1-1 PK(2-3)',     away: '🇮🇹 Italy' },
   ] as KMatch[],
-  semifinals: [{ home: '🇦🇷 Argentina', score: '', away: '🇧🇪 Belgium' },] as KMatch[],
+  semifinals: [
+    { home: '🇦🇷 Argentina', score: '', away: '🇧🇪 Belgium'},
+    { home: '🇪🇸 Spain', score: '3-2',    away: '🇮🇹 Italy'},
+  ] as KMatch[],
   final: [] as KMatch[],
 };
 
